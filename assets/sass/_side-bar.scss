@@ -1,0 +1,208 @@
+
+aside{
+	height: calc(100% - 51px);
+	float: right;
+}
+.side-bar{
+	background:#3d3d3b;
+	width: 265px;
+	overflow: hidden;
+	min-height: 100%;
+	margin-bottom: -37px; 
+	&:after {
+		content: "";
+		display: block;
+		height: 37px; 
+	}
+	&.store{
+		background:#202020;
+	}
+
+}
+.profile-pic{
+	max-height:237px;
+	overflow: hidden;
+}
+.side-bar-footer{
+		height: 37px; 
+		background:#3d3d3b;
+		li {
+			float: right;
+			width: 50%;
+			a{
+				
+				height: 37px;
+				display: block;
+				background-color:#1b1b1b;
+				padding: 13px 42px 0 0;
+				font-size: 13px;
+				&.settings{
+					background-image: url(../img/settings.png);
+					background-repeat:no-repeat;
+					background-position:99px center;
+					border-left:$border;
+				}
+				&.sign-out{
+					background-image: url(../img/sign-out.png);
+					background-repeat:no-repeat;
+					background-position:99px center;
+				}
+			}
+		}
+	}
+.user-info li{
+	float: right;
+
+	a{
+		width: 66px;
+		height: 58px;
+		display: block;
+		background:url(../img/user-info.png) no-repeat left top;
+	}
+	&.followrs-count a{
+		background-position: -204px top;
+	}
+	&.pins-count a{
+		background-position: -135px top;
+	}
+	&.books-count a{
+		background-position: -69px top;
+	}
+	&.views-count a{
+
+	}
+	.count{
+		padding-top: 19px;
+		text-align: center;
+		font-size:12px;
+		color:#d2d2d2;
+	}
+}
+.user-actions{
+	li{
+		&:first-child a{
+				border-top:none;
+			}
+		a{
+			display: block;
+			padding: 10px 30px;
+			background:#00465a;
+			border-top:1px solid #336b7b;
+			transition: background-color .1s linear;
+			background-image:url(../img/user-actions.png);
+			background-repeat:no-repeat;
+			background-position:244px top;
+			&.selected,&:hover{
+				background-color:#007597;
+			}
+			&.my-books{
+				background-position:244px -31px;
+			}
+			&.my-pens{
+				background-position:244px -31px * 2;
+			}
+		}
+	}
+}
+a.user {
+	font-family:"pens-english",sans-serif;
+    margin: 15px 11px;
+    display: block;
+    .name {
+    font-size: 20px;
+    padding-right:5px;
+	}
+	.domain {
+	    font-size: 14px;
+	}
+}
+.social{
+	p{color:#fff;padding: 5px 9px 0 0;margin: 5px 0 0 0;}
+	ul li{
+		float: right;
+		a{
+			width: 28px;
+			height: 29px;
+			display: block;
+			background:url(../img/social-icons.png) no-repeat ;
+			margin: 9px;
+			}
+		&.twitter a{
+				background-position: -28px;
+			}
+		&.facebook a{
+			background-position: -56px;
+		}
+	}
+}
+.store.side-bar{
+	h3{
+		margin: 0;
+		position: relative;
+		.ui-accordion-header-icon {
+			position: absolute;
+			left: .5em;
+			top: 50%;
+			margin-top: -1px;
+		}	
+		.ui-icon {
+			width: 6px;
+			height: 6px;
+			display: block;
+			text-indent: -99999px;
+			overflow: hidden;
+			background-repeat: no-repeat;
+		}
+		&.ui-accordion-header-active a{
+		background-color: #007597;
+		}
+		&.ui-accordion-header .ui-accordion-header-icon{
+			background:url(../img/acc-up.png) no-repeat;
+		}
+		&.ui-accordion-header-active .ui-accordion-header-icon{
+			background:url(../img/acc-down.png) no-repeat;
+		}
+		
+		a{
+			display: block;
+			padding: 10px 30px;
+			background:$blue;
+			border-top:1px solid #336b7b;
+			transition: background-color .1s linear;
+			background-image:url(../img/user-actions.png);
+			background-repeat:no-repeat;
+			background-position:244px top;
+			color: #fff;
+			cursor: pointer;
+			
+			font-weight: normal;
+			&.selected,&:hover{
+				background-color:#007597;
+			}
+			&.books{
+				background-position:244px -31px;
+			}
+			&.pens{
+				background-position:244px -31px * 2;
+			}
+		}
+	}
+	#accordion{
+		ul{
+			width: 90%;
+			li{
+				padding: 8px 20px;
+				a{
+					display: block;
+					padding-right:18px;
+					background:url(../img/list-bullet.png) no-repeat right;
+					transition: padding-right .2s ease;
+					&:hover{
+						padding-right:14px;
+					}
+				}
+
+			}
+		}
+	}
+}

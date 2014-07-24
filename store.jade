@@ -1,0 +1,12 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/store-side-bar
+		article.store
+			div
+				- for(i=0;i<10;i++)
+					img(src="img/book-store.jpg")
+
+		include assets/jade/footer

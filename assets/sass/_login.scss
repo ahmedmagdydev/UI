@@ -1,0 +1,69 @@
+.login{
+	background: url(../img/login-bg.jpg) no-repeat center center fixed; 
+	background-size: cover;
+	padding:25px 50px;
+	.logo{
+		float: left;
+	}
+	.new-user{
+		float: right;
+		a{
+			padding: .5em; 
+			background: url(../img/signup-icon.png) right no-repeat;
+			font-size: 14px;
+			font-weight: bold;
+			padding-right: 28px;
+			color: #fff;
+			border: none;
+		}
+	}
+	#login-form,#register-form{
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 380px;
+		margin: 10px auto;
+		padding: 20px 60px;
+		color: #fff;
+		border-radius: $normal-radius;
+		.form-control{
+			background: white url(../img/edit-input.png) no-repeat;
+			padding-right: 38px;
+			&.user-name{
+				background-position: 224px 0;
+			}
+			&.user-pass{
+				background-position: 224px -31px;
+			}
+		}
+		.submit{
+			width: 100%;
+			border-radius: $small-radius;
+			height: 50px;
+			background: #fff;
+			color: #000;
+			font-weight: bold;
+			font-size: 15px;
+			border:$border;
+			box-shadow: 0px 9px 21px 0px #313131;
+		}
+	}
+	.links{
+		text-align:center;
+		ul li{
+			display: inline;
+
+			a{
+				color: $font-color;
+				padding:0 14px;
+				border-right:1px solid $font-color;
+
+			}
+			&:first-child a{
+					padding-right:0;
+					border:none;
+				}
+		}
+	}
+}
+#register-form{
+	
+}

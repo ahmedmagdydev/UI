@@ -1,0 +1,15 @@
+aside
+	.side-bar.store
+		#accordion
+			h3.title.books: a(href="#") كتب
+			ul
+				- for(i=0;i<10;i++)
+					li: a(href="#") ادب
+			h3.title.books: a(href="#") مقالات
+			ul
+				- for(i=0;i<10;i++)
+					li: a(href="#") ادب
+	.side-bar-footer
+		ul
+			li: a.settings(href="settings.html") الإعدادات
+			li: a.sign-out(href="sign-out.html") تسجيل الخروج

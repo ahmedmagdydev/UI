@@ -1,0 +1,47 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body.login
+		header.clearfix
+			.logo: img(src="img/logo.png")
+			.new-user: a(href="register.html") تسجيل مستخدم جديد
+		.main-content
+			#register-form
+				.form-group
+					label.required اسم المستخدم
+					input.form-control.user-name(type="text")
+				.form-group
+					label.required الاسم
+					input.form-control.user-name(type="text")
+				.form-group
+					label.required البريد الالكترونى
+					input.form-control.user-name(type="email")
+				.form-group
+					label.required كلمة السر
+					input.form-control.user-pass(type="password")
+				.form-group
+					label.required النوع
+					select.select
+						option ذكر
+						option انثى
+				.form-group
+					label.required اسم المجلة
+					input.form-control.user-name(type="text")
+				.form-group
+					button.submit(type="submit") تسجيل
+				.inline-form.clearfix
+					.form-group.checkbox.pull-right
+						input(type="checkbox" id="remember")
+						label(for="remember") تذكرنى
+					.pull-left
+						a(href="forgot-pass.html")  نسيت كلمة المرور 
+			.links
+				ul
+					li: a(href="who-we-are.html") من نحن
+					li: a(href="privacy.html") الخصوصية
+					li: a(href="licence.html") الشروط والأحكام
+		include assets/jade/footer
+
+
+
+

@@ -1,0 +1,109 @@
+.blackbar{
+	background:#282828;
+	min-width: 1190px;
+}
+.top-nav{
+	padding: 9px 11px;
+	.pageLogo {
+		margin: 0;
+		a{
+			width: 171px;
+			height: 33px;
+			background:url(../img/logo-page.png);
+			display: block;
+
+		}
+	}
+	ul.pageNav{
+		padding: 0;
+		margin: 5px 0 5px 20px;
+	}
+	.pageNav li{
+		display: inline;
+		float: right;
+		position: relative;
+		padding-left: 22px;
+		padding-right: 22px;
+		border-right:$border;
+		&:first-child{
+			border:none;
+		}
+		a{
+			background:url(../img/top-nav-items.png) no-repeat ;
+			height: 19px;
+			transition:all .1s linear;
+		}
+		&.flag a{
+			background-position:-66px 0;
+			width: 21px;
+			&:hover{
+				background-position:-66px -19px;
+			}
+		}
+		&.messages a{
+			background-position: -43px 0;
+			width: 23px;
+			&:hover{
+				background-position: -43px -19px;
+			}
+		}
+		&.archive a{
+			background-position: -24px 0;
+			width: 20px;
+			&:hover{
+				background-position: -24px -19px;
+			}
+		}
+		&.profile a{
+			width: 24px;
+			&:hover{
+				background-position:  0 -19px;
+			}
+		}
+		span.alert{
+			position: absolute;
+			display: none;
+			text-align: center;
+			font-size: 12px;
+			padding: 0px 4px;
+			background:$red;
+			color: #fff;
+			border-radius:$very-small-radius;
+			bottom: -10px;
+			left: 17px;
+			&.active{
+				display: block;
+			}
+		}
+	}
+	.main-search {
+		position: relative;
+		input{
+			width: 600px;
+			background: #fff url(../img/search-placeholder.png) no-repeat 580px ;
+			padding: 5px 22px 5px 38px;
+			border:none;
+			border-radius:$small-radius;
+			height: 29px;
+		}
+		button[type="submit"]{
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: #fff url(../img/search.jpg) no-repeat right;
+			border: none;
+			width: 38px;
+			height: 29px;	
+			border-radius: $small-radius 0 0 $small-radius;
+		}
+	}
+	a.main-home{
+		background:url(../img/home-icon.png) no-repeat right top;
+		padding:0 25px 0 15px ;
+		margin:5px 0; 
+		transition:background-position .1s linear;
+		&:hover{
+			background-position:right bottom;
+		}
+	}
+}

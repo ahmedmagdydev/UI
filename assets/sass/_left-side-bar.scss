@@ -1,0 +1,111 @@
+.left-side-bar{
+	width: 260px;
+	margin: 9px 0 9px 9px;
+	float: left;
+	background:#fff;
+	border:$border-dark;
+
+	a{color:$black;font-weight: bold;}
+	
+
+	.follow-others{
+
+		.title{
+			background-position: right 0px;
+		}
+		.follow-user{
+			position: relative;
+			width: 94%;
+			border-bottom: $border-dark;
+			padding-bottom: 10px;
+			position: relative;
+			width: 94%;
+			border-bottom: 1px solid #e8e8e8;
+			padding: 6px 12px 10px 0;
+			&:last-child{
+				border:none;
+			}
+		}
+		
+		a.follow{
+			position: absolute;
+			left: 0;
+			top: 10%;
+			width: 46px;
+			height: 20px;
+			padding: 3px 0;
+			text-align: center;
+			background-color:lighten($blue, 35%);
+			color: #fff;
+		}
+	}	
+	
+
+}
+.follow-others,.choosen-pens,.choosen-books{
+	background:url(../img/short-border.jpg) no-repeat 185px 45px;
+	border-bottom:$border-dark;
+	padding-bottom:10px;
+	padding-top:10px;
+	.title{
+	color: lighten(#777777 , 20%);
+	height: 18px;
+	padding-right:23px;
+	margin: 10px;
+	background:url(../img/left-side-title.png) no-repeat right;
+	display: block;
+}
+}
+.choosen-pens{
+	.title{
+		background-position: right -18px;
+	}
+}
+.choosen-books{
+	.title{
+		background-position: right -36px;
+	}
+}
+.choosen-pens .pen,.choosen-books .book{
+	border-bottom: 1px solid #e8e8e8;
+	padding: 6px 12px 10px 0;
+	width: 94%;
+	&:last-child{
+			border:none;
+		}
+	img{float: right;margin-left: 10px;}
+	.pen-title,.book-title{
+		line-height: 20px;
+	}
+
+}
+
+.info li {
+	float: right;
+	width: 37px;
+	height: 12px;
+	text-align:center;
+	background:url(../img/follow-user.png) no-repeat right;
+	color: lighten(#333333, 40%);
+	padding-right: 14px;
+	margin-left: 12px;
+	border-left:  $border-dark;
+	&:last-child{
+		border:none;
+	}
+	&.followrs-count{
+		background-position:right 0;
+	}
+	&.pens-count{
+		background-position:right -12px;
+	}
+	&.books-count{
+		background-position:right -24px;
+	}
+	&.views-count{
+		background-position:right -36px;
+	}
+	&.retweets-count{
+		background-position:right -48px;
+	}
+}

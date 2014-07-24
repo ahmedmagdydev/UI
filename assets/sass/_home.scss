@@ -1,0 +1,70 @@
+.user-pic img{
+			width: 33px;
+			float: right;
+			margin-left: 9px;
+		}
+.top{position: relative;margin: 7px;}
+.home{
+	width: calc(100% - 235px);
+	float: right;
+	.writer-info{
+		display: inline-block;
+		min-width: 160px;
+		border-bottom:$border-blue;
+		
+		.user-url{
+			color: $black;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.date{
+			margin: 0 4px;
+			color: #095e77;
+		}
+	}
+	.content{
+		h2{
+			padding-right: 28px;
+			margin: 20px 0;
+			}
+			p{
+				font-size: 14px;
+				text-align:justify;
+			}
+			a.more{
+				color: $red;
+				float: left;
+			}
+		&.book h2{
+			background:url(../img/article-title.png) no-repeat right;
+		}
+	}
+}
+.cover{
+	max-width: 215px;
+	float: left;
+}
+.article-actions{
+	position: absolute;
+	bottom: 10px;
+	a{
+		padding: 8px 22px 8px 8px;
+		background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
+		border:$border-darker;
+		margin-left: 36px;
+		float: right;
+		font-size: 12px;
+		&.like{
+			color:#157d00;
+			background-position: 98% 2px;
+		}
+		&.dislike{
+			color:$red;
+			background-position: 98% -26px;
+		}
+		&.retweet{
+			color: #1ca5cf;
+			background-position: 98% -54px;
+		}
+	}
+}

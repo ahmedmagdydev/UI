@@ -1,0 +1,142 @@
+article{
+	width: calc(100% - 265px);
+	float: right;
+}
+.profile-summary{
+	padding: 40px;
+	padding-bottom: 0;
+	&:hover .profile-details{bottom:0 !important;}
+	.profile-pic{
+		float: right;
+		position: relative;
+		margin-left: 20px;
+		.profile-details{
+			position: absolute;
+			bottom: -30px;
+			right: 0;
+			width: 100%;
+			background:rgba(0,0,0,.3);
+			padding: 10px 0;
+			transition: all .2s ease;
+			li{
+				float: right;
+				background: url(../img/profile-details.png) no-repeat right 0;
+				width: 25%;
+				padding: 0 31px;
+				margin-right: 20px;
+				color: #fff;
+				border-left: $border;
+				&.followers{
+					background-position: right -19px;
+				}
+				&.views{
+					background-position: right -35px;
+
+				}
+				&:last-child{
+					border:none;
+				}
+			}
+		}
+	}
+	.profile-info{
+		overflow: hidden;
+		.domain{
+			color: $black;
+			font-family: "pens-english";
+			h1{margin: 0;}
+		}
+		.title{
+			background:url(../img/profile-title.png) no-repeat right;
+			padding: 12px 27px 12px 0;
+			color: $gray;
+			border-bottom:$border-blue;
+			display: inline-block;
+		}
+	}
+}
+.bottom{
+	background: #fff url(../img/down-arrow.png) no-repeat top center; 
+	border-top:$border-dark;
+	padding: 20px 40px;
+}
+.user-data{
+	width: 456px;
+	float: right;
+	padding: 0 18px;
+	border-right:8px solid $blue;
+	background:$light-gray;
+	.data{
+		padding: 10px 0;
+		border-bottom:$border-dark;
+		label{
+			width: 72px;
+			display: inline-block;
+			border-left:2px solid $blue;
+			margin-left: 10px;
+			vertical-align: middle;
+			&.hide-text{
+				background:url(../img/user-data.png) no-repeat right 3px;
+				height: 17px;
+			}
+			&.sex{
+				
+			}
+			&.nationality{
+				background-position:right -14px;
+			}
+			&.job{
+				background-position:right -31px;
+			}
+			&.study{
+				background-position:right -48px;
+			}
+			&.email{
+				background-position:right -67px;
+			}
+			&.phone{
+				background-position:right -84px;
+			}
+		}
+		.social{
+			display: inline-block;
+			vertical-align: middle;
+			li{
+				margin-left: 4px;
+				float: right;
+				a{
+					width: 25px;
+					height: 25px;
+					display: inline-block;
+					background:url(../img/social-icons.jpg) no-repeat top right;
+					&:hover{
+						background-position-y:bottom !important;
+						transition: all .2s linear;
+					}
+				}
+				&.facebook a{
+					background-position: -24px top;
+				}
+				&.twitter a{
+					background-position: -49px top;
+				}
+				&.blogger a{
+					background-position: 1px top;
+				}
+			}
+		}
+	}
+}
+.new-panel{
+	width: calc(100% - 456px);
+	float: right;
+	&>div{
+		float: right;
+		width: 240px;
+		padding-right: 100px;
+		border-bottom: none;
+		&.choosen-pens, &.choosen-books{
+			background-position: 72px 45px;
+		}
+	}
+}
