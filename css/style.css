@@ -574,6 +574,9 @@ html, body {
   border: 1px solid #cccccc;
   -webkit-box-shadow: 0px 9px 21px 0px #313131;
   box-shadow: 0px 9px 21px 0px #313131;
+  display: block;
+  text-align: center;
+  padding: 14px;
 }
 .login .links {
   text-align: center;
@@ -626,35 +629,41 @@ html, body {
 .top-nav .pageNav li a {
   background: url(../img/top-nav-items.png) no-repeat;
   height: 19px;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+}
+.top-nav .pageNav li.main-home a {
+  background: url(../img/home-icon.png) no-repeat top;
+  height: 29px;
+  margin-top: -5px;
+}
+.top-nav .pageNav li.main-home a:hover {
+  background-position: bottom;
 }
 .top-nav .pageNav li.flag a {
   background-position: -66px 0;
   width: 21px;
 }
 .top-nav .pageNav li.flag a:hover {
-  background-position: -66px -19px;
+  background-position: -66px -20px;
 }
 .top-nav .pageNav li.messages a {
   background-position: -43px 0;
   width: 23px;
 }
 .top-nav .pageNav li.messages a:hover {
-  background-position: -43px -19px;
+  background-position: -43px -20px;
 }
 .top-nav .pageNav li.archive a {
   background-position: -24px 0;
   width: 20px;
 }
 .top-nav .pageNav li.archive a:hover {
-  background-position: -24px -19px;
+  background-position: -24px -20px;
 }
 .top-nav .pageNav li.profile a {
   width: 24px;
 }
 .top-nav .pageNav li.profile a:hover {
-  background-position: 0 -19px;
+  background-position: 0 -20px;
 }
 .top-nav .pageNav li span.alert {
   position: absolute;
@@ -691,16 +700,6 @@ html, body {
   width: 38px;
   height: 29px;
   border-radius: 5px 0 0 5px;
-}
-.top-nav a.main-home {
-  background: url(../img/home-icon.png) no-repeat right top;
-  padding: 0 25px 0 15px;
-  margin: 5px 0;
-  -webkit-transition: background-position .1s linear;
-  transition: background-position .1s linear;
-}
-.top-nav a.main-home:hover {
-  background-position: right bottom;
 }
 
 aside {
@@ -895,17 +894,17 @@ a.user .domain {
   width: 90%;
 }
 .store.side-bar #accordion ul li {
-  padding: 8px 20px;
+  margin-right: 20px;
+}
+.store.side-bar #accordion ul li:hover a {
+  padding-right: 14px;
 }
 .store.side-bar #accordion ul li a {
   display: block;
-  padding-right: 18px;
   background: url(../img/list-bullet.png) no-repeat right;
   -webkit-transition: padding-right .2s ease;
   transition: padding-right .2s ease;
-}
-.store.side-bar #accordion ul li a:hover {
-  padding-right: 14px;
+  padding: 8px 18px;
 }
 
 .left-side-bar {
@@ -945,6 +944,7 @@ a.user .domain {
   text-align: center;
   background-color: #92e2f9;
   color: #fff;
+  font-size: 9px;
 }
 
 .follow-others, .choosen-pens, .choosen-books {
@@ -1207,7 +1207,7 @@ article {
 }
 .home .content a.more {
   color: #ee0303;
-  float: left;
+  margin: 0 5px;
 }
 .home .content.book h2 {
   background: url(../img/article-title.png) no-repeat right;
@@ -1223,24 +1223,26 @@ article {
   bottom: 10px;
 }
 .article-actions a {
-  padding: 8px 22px 8px 8px;
+  padding: 3px 22px 3px 8px;
   background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
   border: 1px solid #cccccc;
   margin-left: 36px;
   float: right;
   font-size: 12px;
+  height: 23px;
+  min-width: 50px;
 }
 .article-actions a.like {
   color: #157d00;
-  background-position: 98% 2px;
+  background-position: 98% -3px;
 }
 .article-actions a.dislike {
   color: #ee0303;
-  background-position: 98% -26px;
+  background-position: 98% -31px;
 }
 .article-actions a.retweet {
   color: #1ca5cf;
-  background-position: 98% -54px;
+  background-position: 98% -59px;
 }
 
 article.store > div {

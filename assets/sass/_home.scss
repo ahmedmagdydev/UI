@@ -33,7 +33,7 @@
 			}
 			a.more{
 				color: $red;
-				float: left;
+				margin: 0 5px;
 			}
 		&.book h2{
 			background:url(../img/article-title.png) no-repeat right;
@@ -48,23 +48,25 @@
 	position: absolute;
 	bottom: 10px;
 	a{
-		padding: 8px 22px 8px 8px;
+		padding: 3px 22px 3px 8px;
 		background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
 		border:$border-darker;
 		margin-left: 36px;
 		float: right;
 		font-size: 12px;
+		height: 23px;
+		min-width: 50px;
 		&.like{
 			color:#157d00;
-			background-position: 98% 2px;
+			background-position: 98% -3px;
 		}
 		&.dislike{
 			color:$red;
-			background-position: 98% -26px;
+			background-position: 98% -31px;
 		}
 		&.retweet{
 			color: #1ca5cf;
-			background-position: 98% -54px;
+			background-position: 98% -59px;
 		}
 	}
 }

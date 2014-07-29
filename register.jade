@@ -4,7 +4,7 @@ html(dir="rtl")
 	body.login
 		header.clearfix
 			.logo: img(src="img/logo.png")
-			.new-user: a(href="register.html") تسجيل مستخدم جديد
+			.new-user: a(href="login.html") تسجيل الدخول
 		.main-content
 			#register-form
 				.form-group
@@ -28,7 +28,7 @@ html(dir="rtl")
 					label.required اسم المجلة
 					input.form-control.user-name(type="text")
 				.form-group
-					button.submit(type="submit") تسجيل
+					a.submit(href="index.html") تسجيل
 				.inline-form.clearfix
 					.form-group.checkbox.pull-right
 						input(type="checkbox" id="remember")

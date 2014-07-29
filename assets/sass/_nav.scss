@@ -31,33 +31,41 @@
 		a{
 			background:url(../img/top-nav-items.png) no-repeat ;
 			height: 19px;
-			transition:all .1s linear;
+			// transition:all .1s linear;
+		}
+		&.main-home a{
+			background:url(../img/home-icon.png) no-repeat  top;
+			height: 29px;
+			margin-top: -5px;
+			&:hover{
+				background-position: bottom;
+			}
 		}
 		&.flag a{
 			background-position:-66px 0;
 			width: 21px;
 			&:hover{
-				background-position:-66px -19px;
+				background-position:-66px -20px;
 			}
 		}
 		&.messages a{
 			background-position: -43px 0;
 			width: 23px;
 			&:hover{
-				background-position: -43px -19px;
+				background-position: -43px -20px;
 			}
 		}
 		&.archive a{
 			background-position: -24px 0;
 			width: 20px;
 			&:hover{
-				background-position: -24px -19px;
+				background-position: -24px -20px;
 			}
 		}
 		&.profile a{
 			width: 24px;
 			&:hover{
-				background-position:  0 -19px;
+				background-position:  0 -20px;
 			}
 		}
 		span.alert{
@@ -97,13 +105,5 @@
 			border-radius: $small-radius 0 0 $small-radius;
 		}
 	}
-	a.main-home{
-		background:url(../img/home-icon.png) no-repeat right top;
-		padding:0 25px 0 15px ;
-		margin:5px 0; 
-		transition:background-position .1s linear;
-		&:hover{
-			background-position:right bottom;
-		}
-	}
+	
 }
