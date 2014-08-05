@@ -75,3 +75,16 @@ html,body{
 	background-color:#fff;
 	
 }
+
+a.follow{
+			position: absolute;
+			left: 0;
+			top: 10%;
+			width: 46px;
+			height: 20px;
+			padding: 3px 0;
+			text-align: center;
+			background-color:lighten($blue, 35%);
+			color: #fff !important;
+			font-size: 9px;
+		}

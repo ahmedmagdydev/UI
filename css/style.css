@@ -487,6 +487,19 @@ html, body {
   background-color: #fff;
 }
 
+a.follow {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 46px;
+  height: 20px;
+  padding: 3px 0;
+  text-align: center;
+  background-color: #92e2f9;
+  color: #fff !important;
+  font-size: 9px;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -936,18 +949,6 @@ a.user .domain {
 .left-side-bar .follow-others .follow-user:last-child {
   border: none;
 }
-.left-side-bar .follow-others a.follow {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  width: 46px;
-  height: 20px;
-  padding: 3px 0;
-  text-align: center;
-  background-color: #92e2f9;
-  color: #fff;
-  font-size: 9px;
-}
 
 .follow-others, .choosen-pens, .choosen-books {
   background: url(../img/short-border.jpg) no-repeat 185px 45px;
@@ -1028,9 +1029,6 @@ article {
   padding: 40px;
   padding-bottom: 0;
 }
-.profile-summary:hover .profile-details {
-  bottom: 0 !important;
-}
 .profile-summary .profile-pic {
   float: right;
   position: relative;
@@ -1038,10 +1036,10 @@ article {
 }
 .profile-summary .profile-pic .profile-details {
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   right: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -1066,6 +1064,7 @@ article {
 }
 .profile-summary .profile-info {
   overflow: hidden;
+  position: relative;
 }
 .profile-summary .profile-info .domain {
   color: #3d3d3b;
@@ -1080,6 +1079,14 @@ article {
   color: #646464;
   border-bottom: 2px solid #0099c6;
   display: inline-block;
+}
+.profile-summary .profile-info a.follow {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  top: 0;
+  padding-top: 8px;
+  background: #0ba2ce;
 }
 
 .bottom {

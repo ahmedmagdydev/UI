@@ -5,17 +5,16 @@ article{
 .profile-summary{
 	padding: 40px;
 	padding-bottom: 0;
-	&:hover .profile-details{bottom:0 !important;}
 	.profile-pic{
 		float: right;
 		position: relative;
 		margin-left: 20px;
 		.profile-details{
 			position: absolute;
-			bottom: -30px;
+			bottom: 0;
 			right: 0;
 			width: 100%;
-			background:rgba(0,0,0,.3);
+			background:rgba(0,0,0,.5);
 			padding: 10px 0;
 			transition: all .2s ease;
 			li{
@@ -41,6 +40,7 @@ article{
 	}
 	.profile-info{
 		overflow: hidden;
+		position: relative;
 		.domain{
 			color: $black;
 			font-family: "pens-english";
@@ -52,6 +52,14 @@ article{
 			color: $gray;
 			border-bottom:$border-blue;
 			display: inline-block;
+		}
+		a.follow{
+			width: 100px;
+			height: 30px;
+			font-size: 14px;
+			top: 0;
+			padding-top: 8px;
+			background:$blue;
 		}
 	}
 }
