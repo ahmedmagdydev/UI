@@ -465,6 +465,7 @@ li {
 p {
   margin-bottom: 2px;
   margin-top: 4px;
+  font-family: tahoma;
 }
 
 .hide-text {
@@ -619,8 +620,8 @@ html, body {
   display: inline;
   float: right;
   position: relative;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 11px;
+  padding-right: 11px;
   border-right: 1px solid #cccccc;
 }
 .top-nav .pageNav li:first-child {
@@ -684,12 +685,13 @@ html, body {
   position: relative;
 }
 .top-nav .main-search input {
-  width: 600px;
+  width: 700px;
   background: white url(../img/search-placeholder.png) no-repeat 580px;
   padding: 5px 22px 5px 38px;
   border: none;
   border-radius: 5px;
   height: 29px;
+  margin-right: 85px;
 }
 .top-nav .main-search button[type="submit"] {
   position: absolute;
@@ -787,7 +789,7 @@ aside {
 .user-actions li a {
   display: block;
   padding: 10px 30px;
-  background: #00465a;
+  background: #007597;
   border-top: 1px solid #336b7b;
   -webkit-transition: background-color .1s linear;
   transition: background-color .1s linear;
@@ -796,7 +798,7 @@ aside {
   background-position: 244px top;
 }
 .user-actions li a.selected, .user-actions li a:hover {
-  background-color: #007597;
+  background-color: #00465a;
 }
 .user-actions li a.my-books {
   background-position: 244px -31px;
@@ -807,12 +809,12 @@ aside {
 
 a.user {
   font-family: "pens-english",sans-serif;
-  margin: 15px 11px;
+  padding: 15px 11px;
   display: block;
+  border-bottom: 1px solid #4d4d4d;
 }
 a.user .name {
   font-size: 20px;
-  padding-right: 5px;
 }
 a.user .domain {
   font-size: 14px;
@@ -867,6 +869,12 @@ a.user .domain {
 .store.side-bar h3.ui-accordion-header-active .ui-accordion-header-icon {
   background: url(../img/acc-down.png) no-repeat;
 }
+.store.side-bar h3.books a {
+  background-position: 244px -31px;
+}
+.store.side-bar h3.pens a {
+  background-position: 244px -62px;
+}
 .store.side-bar h3 a {
   display: block;
   padding: 10px 30px;
@@ -883,12 +891,6 @@ a.user .domain {
 }
 .store.side-bar h3 a.selected, .store.side-bar h3 a:hover {
   background-color: #007597;
-}
-.store.side-bar h3 a.books {
-  background-position: 244px -31px;
-}
-.store.side-bar h3 a.pens {
-  background-position: 244px -62px;
 }
 .store.side-bar #accordion ul {
   width: 90%;
@@ -1003,7 +1005,7 @@ a.user .domain {
 .info li.followrs-count {
   background-position: right 0;
 }
-.info li.pens-count {
+.info li.pins-count {
   background-position: right -12px;
 }
 .info li.books-count {
@@ -1198,11 +1200,11 @@ article {
   color: #095e77;
 }
 .home .content h2 {
-  padding-right: 28px;
+  padding: 2px 28px;
   margin: 20px 0;
 }
 .home .content p {
-  font-size: 14px;
+  font-size: 15px;
   text-align: justify;
 }
 .home .content a.more {
@@ -1223,26 +1225,26 @@ article {
   bottom: 10px;
 }
 .article-actions a {
-  padding: 3px 22px 3px 8px;
+  padding: 5px 22px 5px 8px;
   background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
   border: 1px solid #cccccc;
   margin-left: 36px;
   float: right;
   font-size: 12px;
-  height: 23px;
+  height: 28px;
   min-width: 50px;
 }
 .article-actions a.like {
   color: #157d00;
-  background-position: 98% -3px;
+  background-position: 98% -1px;
 }
 .article-actions a.dislike {
   color: #ee0303;
-  background-position: 98% -31px;
+  background-position: 98% -29px;
 }
 .article-actions a.retweet {
   color: #1ca5cf;
-  background-position: 98% -59px;
+  background-position: 98% -56px;
 }
 
 article.store > div {

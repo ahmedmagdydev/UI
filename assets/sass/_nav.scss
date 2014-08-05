@@ -22,8 +22,8 @@
 		display: inline;
 		float: right;
 		position: relative;
-		padding-left: 22px;
-		padding-right: 22px;
+		padding-left: 11px;
+		padding-right: 11px;
 		border-right:$border;
 		&:first-child{
 			border:none;
@@ -87,12 +87,13 @@
 	.main-search {
 		position: relative;
 		input{
-			width: 600px;
+			width: 700px;
 			background: #fff url(../img/search-placeholder.png) no-repeat 580px ;
 			padding: 5px 22px 5px 38px;
 			border:none;
 			border-radius:$small-radius;
 			height: 29px;
+			margin-right: 85px;
 		}
 		button[type="submit"]{
 			position: absolute;

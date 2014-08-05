@@ -86,14 +86,14 @@ aside{
 		a{
 			display: block;
 			padding: 10px 30px;
-			background:#00465a;
+			background:#007597;
 			border-top:1px solid #336b7b;
 			transition: background-color .1s linear;
 			background-image:url(../img/user-actions.png);
 			background-repeat:no-repeat;
 			background-position:244px top;
 			&.selected,&:hover{
-				background-color:#007597;
+				background-color:#00465a;
 			}
 			&.my-books{
 				background-position:244px -31px;
@@ -106,11 +106,13 @@ aside{
 }
 a.user {
 	font-family:"pens-english",sans-serif;
-    margin: 15px 11px;
+    padding: 15px 11px ;
+	
     display: block;
+    border-bottom:1px solid darken(#fff,70%);
     .name {
     font-size: 20px;
-    padding-right:5px;
+    // padding-right:5px;
 	}
 	.domain {
 	    font-size: 14px;
@@ -162,7 +164,12 @@ a.user {
 		&.ui-accordion-header-active .ui-accordion-header-icon{
 			background:url(../img/acc-down.png) no-repeat;
 		}
-		
+		&.books a{
+				background-position:244px -31px;
+		}
+		&.pens a{
+			background-position:244px -31px * 2;
+		}
 		a{
 			display: block;
 			padding: 10px 30px;
@@ -179,12 +186,7 @@ a.user {
 			&.selected,&:hover{
 				background-color:#007597;
 			}
-			&.books{
-				background-position:244px -31px;
-			}
-			&.pens{
-				background-position:244px -31px * 2;
-			}
+			
 		}
 	}
 	#accordion{

@@ -24,11 +24,11 @@
 	}
 	.content{
 		h2{
-			padding-right: 28px;
+			padding:2px 28px;
 			margin: 20px 0;
 			}
 			p{
-				font-size: 14px;
+				font-size: 15px;
 				text-align:justify;
 			}
 			a.more{
@@ -48,25 +48,25 @@
 	position: absolute;
 	bottom: 10px;
 	a{
-		padding: 3px 22px 3px 8px;
+		padding: 5px 22px 5px 8px;
 		background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
 		border:$border-darker;
 		margin-left: 36px;
 		float: right;
 		font-size: 12px;
-		height: 23px;
+		height: 28px;
 		min-width: 50px;
 		&.like{
 			color:#157d00;
-			background-position: 98% -3px;
+			background-position: 98% -1px;
 		}
 		&.dislike{
 			color:$red;
-			background-position: 98% -31px;
+			background-position: 98% -29px;
 		}
 		&.retweet{
 			color: #1ca5cf;
-			background-position: 98% -59px;
+			background-position: 98% -56px;
 		}
 	}
 }
