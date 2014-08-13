@@ -1,5 +1,12 @@
 jQuery(document).ready(function($) {
-	var article = $(".center-article");
+	var article 	= $(".center-article"),
+		leftBar		= $(".left-side-bar")
+		maxHeight	= $(".side-bar").height()-20,
+		options 	= {
+		 	cursorcolor : "#b6b6b6",
+		 	railalign: "left",
+		 	horizrailenabled: false
+		 };;
 	$("#accordion").accordion();
 	 $( ".select" ).selectmenu();
 	 $( ".filter" ).menu({ 
@@ -7,6 +14,15 @@ jQuery(document).ready(function($) {
 	 	icons: {  submenu: "ui-icon-carat-1-s" }
 	 });
 	 $("section.result").append('<div class="divider"></div>');
-	 article.height($(".side-bar").height()-20);
-	 article.niceScroll();
+	 if (article.height() > maxHeight) {
+		 article.height(maxHeight);
+		 article.niceScroll(options);
+	 };
+	 if (leftBar.height() > maxHeight) {
+ 		 leftBar.height(maxHeight);
+ 		 leftBar.niceScroll(options);
+	 };
+	
+
+	 
 });

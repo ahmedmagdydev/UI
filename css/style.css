@@ -500,6 +500,21 @@ a.follow {
   font-size: 9px;
 }
 
+.nicescroll-rails > div {
+  width: 100%;
+  -webkit-transition: width .2s ease;
+  transition: width .2s ease;
+}
+.nicescroll-rails > div:hover {
+  width: 130% !important;
+  cursor: pointer;
+}
+
+a.more {
+  color: #ee0303;
+  margin: 0 5px;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -1213,10 +1228,6 @@ article {
 .home .content p {
   font-size: 15px;
   text-align: justify;
-}
-.home .content a.more {
-  color: #ee0303;
-  margin: 0 5px;
 }
 .home .content.book h2 {
   background: url(../img/article-title.png) no-repeat right;
