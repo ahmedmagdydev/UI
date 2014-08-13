@@ -1332,4 +1332,27 @@ article.store > div img {
   color: #c0bebe;
 }
 
+.search .filter li {
+  float: right;
+}
+.search .results .result {
+  background-color: whitesmoke;
+  padding: 13px;
+  margin-bottom: 23px;
+  position: relative;
+}
+.search .results .result img {
+  width: 60px;
+  float: right;
+  margin-left: 10px;
+}
+.search .results .result .divider {
+  position: absolute;
+  bottom: -12px;
+  right: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: whitesmoke;
+}
+
 /*# sourceMappingURL=style.css.map */

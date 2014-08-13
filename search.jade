@@ -1,0 +1,27 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.search
+					ul.filter.clearfix
+						li: a(href="#") الكل
+						-for(i=0;i<4;i++)
+							li متنوع
+								ul
+									li: a(href="#") متنوع
+									li: a(href="#") متنوع
+					.results
+						h2 نتائج البحث
+						-for(i=0;i<8;i++)
+							section.result.clearfix
+								img(src="img/book.jpg")
+								h3 صالح نفسك
+								p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
+									a(href="#").more اقرأ المزيد ....
+
+		include assets/jade/left-side-bar
+		include assets/jade/footer
