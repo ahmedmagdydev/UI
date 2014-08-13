@@ -699,16 +699,16 @@ a.follow {
 }
 .top-nav .main-search input {
   width: 700px;
-  background: white url(../img/search-placeholder.png) no-repeat 580px;
+  background: white url(../img/search-placeholder.png) no-repeat 680px;
   padding: 5px 22px 5px 38px;
   border: none;
   border-radius: 5px;
   height: 29px;
-  margin-right: 85px;
+  margin-right: 8%;
 }
 .top-nav .main-search button[type="submit"] {
   position: absolute;
-  left: 0;
+  left: -50px;
   top: 0;
   background: white url(../img/search.jpg) no-repeat right;
   border: none;
@@ -1345,6 +1345,9 @@ article.store > div img {
   width: 60px;
   float: right;
   margin-left: 10px;
+}
+.search .results .result h3 a {
+  color: #095e77;
 }
 .search .results .result .divider {
   position: absolute;

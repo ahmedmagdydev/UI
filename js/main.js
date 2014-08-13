@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+	var article = $(".center-article");
 	$("#accordion").accordion();
 	 $( ".select" ).selectmenu();
 	 $( ".filter" ).menu({ 
@@ -6,4 +7,6 @@ jQuery(document).ready(function($) {
 	 	icons: {  submenu: "ui-icon-carat-1-s" }
 	 });
 	 $("section.result").append('<div class="divider"></div>');
+	 article.height($(".side-bar").height()-20);
+	 article.niceScroll();
 });

@@ -88,16 +88,16 @@
 		position: relative;
 		input{
 			width: 700px;
-			background: #fff url(../img/search-placeholder.png) no-repeat 580px ;
+			background: #fff url(../img/search-placeholder.png) no-repeat 680px ;
 			padding: 5px 22px 5px 38px;
 			border:none;
 			border-radius:$small-radius;
 			height: 29px;
-			margin-right: 85px;
+			margin-right: 8%;
 		}
 		button[type="submit"]{
 			position: absolute;
-			left: 0;
+			left: -50px;
 			top: 0;
 			background: #fff url(../img/search.jpg) no-repeat right;
 			border: none;
