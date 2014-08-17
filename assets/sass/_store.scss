@@ -1,8 +1,30 @@
-article.store > div{
-	margin: 9px;
-	border: $border-dark;
-	background-color: #fff;
-	img{
-		margin: 8px;
+article.store {
+	background:#fff;
+	.books{
+		img.book-thumb{
+			width: 173px;
+			height: 250px;
+		}
+	}
+	.books>div, .pens>div{
+		background: $gray-light;
+		width: 190px;
+		height: 330px;
+		float: right;
+		padding: 12px 9px;
+		margin: 8px 12px;
+		.title{
+			margin: 0;
+			padding: 0 5px;
+			
+			border-bottom:1px solid #e6e6e6;
+			margin-bottom: 3px;
+			a{
+				color:#095e77;	
+			}
+		}
+		.views-count{
+			float: left;
+		}
 	}
 }

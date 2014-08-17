@@ -515,6 +515,11 @@ a.more {
   margin: 0 5px;
 }
 
+.panel {
+  border: 1px solid #f2f2f2;
+  padding: 5px;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -528,6 +533,7 @@ a.more {
   border-radius: 5px;
   border: 1px solid #cccccc;
   color: #2c2c2c;
+  padding: 6px;
 }
 .form-group .select {
   width: 260px;
@@ -551,6 +557,41 @@ a.more {
 
 .ui-menu-item {
   background: #fff;
+}
+
+.form-horizontal label {
+  width: 20%;
+  float: right;
+  margin-top: 6px;
+}
+.form-horizontal .control {
+  width: 80%;
+  float: right;
+  margin-bottom: 10px;
+}
+.form-horizontal textarea {
+  min-height: 200px;
+}
+.form-horizontal .button-group {
+  text-align: left;
+}
+.form-horizontal .button-group .btn {
+  margin-right: 5px;
+}
+
+.btn {
+  border-radius: 3px;
+  font-size: 120%;
+  padding: 5px 12px;
+}
+.btn.btn-default {
+  color: #fff;
+  background-color: #005b76;
+  border: none;
+}
+
+.flat input, .flat textarea {
+  border-radius: 0 !important;
 }
 
 .login {
@@ -623,9 +664,17 @@ a.more {
   border: none;
 }
 
+#register-form .magazine-name {
+  width: 55%;
+  margin-left: 10px;
+}
+
 .blackbar {
   background: #282828;
   min-width: 1246px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999999;
 }
 
 .top-nav {
@@ -736,6 +785,8 @@ aside {
   height: -webkit-calc(100% - 51px);
   height: calc(100% - 51px);
   float: right;
+  position: fixed;
+  margin-top: 51px;
 }
 
 .side-bar {
@@ -783,7 +834,7 @@ aside {
 .side-bar-footer li a.sign-out {
   background-image: url(../img/sign-out.png);
   background-repeat: no-repeat;
-  background-position: 99px center;
+  background-position: 103px center;
 }
 
 .user-info li {
@@ -939,7 +990,7 @@ a.user .domain {
 
 .left-side-bar {
   width: 260px;
-  margin: 9px 0 9px 9px;
+  margin: 62px 0 9px 9px;
   float: left;
   background: #fff;
   border: 1px solid #e8e8e8;
@@ -1034,10 +1085,67 @@ a.user .domain {
   background-position: right -48px;
 }
 
-article {
-  width: -webkit-calc(100% - 265px);
-  width: calc(100% - 265px);
+.search .filter {
+  padding: 0 39px;
+}
+.search .filter li {
   float: right;
+}
+.search .filter li.ui-menu-item {
+  background-color: #f2f2f2;
+  padding: 5px 35px;
+}
+.search .filter li, .search .filter li a {
+  color: #646464;
+}
+.search .filter li:first-child {
+  border-radius: 0 5px 5px 0;
+}
+.search .filter li:last-child {
+  border-radius: 5px 0 0 5px;
+}
+.search .filter > li.ui-menu-item {
+  padding: 15px 35px;
+  background-color: whitesmoke;
+}
+
+.result {
+  background-color: whitesmoke;
+  padding: 13px;
+  margin-bottom: 23px;
+  position: relative;
+}
+.result img {
+  width: 60px;
+  float: right;
+  margin-left: 10px;
+}
+.result h3 a {
+  color: #095e77;
+}
+.result .divider {
+  position: absolute;
+  bottom: -12px;
+  right: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: whitesmoke;
+}
+.result .writer-details {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 140px;
+}
+.result .writer-details .info {
+  margin-top: 10px;
+}
+
+article {
+  width: -webkit-calc(100% - 275px);
+  width: calc(100% - 275px);
+  float: right;
+  margin: 61px 275px 0 0 !important;
 }
 
 .profile-summary {
@@ -1102,12 +1210,14 @@ article {
   top: 0;
   padding-top: 8px;
   background: #0ba2ce;
+  z-index: 999999999;
 }
 
 .bottom {
   background: white url(../img/down-arrow.png) no-repeat top center;
   border-top: 1px solid #e8e8e8;
   padding: 20px 40px;
+  margin-left: 12px;
 }
 
 .user-data {
@@ -1265,13 +1375,32 @@ article {
   background-position: 98% -56px;
 }
 
-article.store > div {
-  margin: 9px;
-  border: 1px solid #e8e8e8;
-  background-color: #fff;
+article.store {
+  background: #fff;
 }
-article.store > div img {
-  margin: 8px;
+article.store .books img.book-thumb {
+  width: 173px;
+  height: 250px;
+}
+article.store .books > div, article.store .pens > div {
+  background: whitesmoke;
+  width: 190px;
+  height: 330px;
+  float: right;
+  padding: 12px 9px;
+  margin: 8px 12px;
+}
+article.store .books > div .title, article.store .pens > div .title {
+  margin: 0;
+  padding: 0 5px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 3px;
+}
+article.store .books > div .title a, article.store .pens > div .title a {
+  color: #095e77;
+}
+article.store .books > div .views-count, article.store .pens > div .views-count {
+  float: left;
 }
 
 .comment-area {
@@ -1334,6 +1463,9 @@ article.store > div img {
   color: #0ba2ce;
   font-weight: bold;
 }
+.comment .comment-body p {
+  width: 560px;
+}
 .comment .comment-date {
   position: absolute;
   top: 13px;
@@ -1343,30 +1475,25 @@ article.store > div img {
   color: #c0bebe;
 }
 
-.search .filter li {
-  float: right;
+.messages a, .messages th {
+  color: #878787;
 }
-.search .results .result {
-  background-color: whitesmoke;
-  padding: 13px;
-  margin-bottom: 23px;
-  position: relative;
+.messages .table-striped {
+  width: 100%;
 }
-.search .results .result img {
-  width: 60px;
-  float: right;
-  margin-left: 10px;
+.messages .table-striped td, .messages .table-striped th {
+  padding: 12px;
+  border: 1px solid whitesmoke;
 }
-.search .results .result h3 a {
-  color: #095e77;
+.messages .table-striped th {
+  text-align: right;
+  font-size: 110%;
 }
-.search .results .result .divider {
-  position: absolute;
-  bottom: -12px;
-  right: 10%;
-  width: 80%;
-  height: 1px;
-  background-color: whitesmoke;
+.messages .table-striped .delete-icon {
+  width: 11px;
+  height: 12px;
+  display: inline-block;
+  background: url(../img/delete-icon.png) no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

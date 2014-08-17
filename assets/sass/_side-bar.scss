@@ -2,6 +2,8 @@
 aside{
 	height: calc(100% - 51px);
 	float: right;
+	position: fixed;
+	margin-top: 51px;
 }
 .side-bar{
 	background:#3d3d3b;
@@ -45,7 +47,7 @@ aside{
 				&.sign-out{
 					background-image: url(../img/sign-out.png);
 					background-repeat:no-repeat;
-					background-position:99px center;
+					background-position:103px center;
 				}
 			}
 		}

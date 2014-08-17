@@ -9,7 +9,7 @@ html(dir="rtl")
 				.search
 					ul.filter.clearfix
 						li: a(href="#") الكل
-						-for(i=0;i<4;i++)
+						-for(i=0;i<6;i++)
 							li متنوع
 								ul
 									li: a(href="#") متنوع
@@ -22,6 +22,11 @@ html(dir="rtl")
 								h3: a(href="#") صالح نفسك
 								p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
 									a(href="#").more    .... المزيد
+								.writer-details
+									.user-pic: img(src="img/commenter.jpg")
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
 
 		include assets/jade/left-side-bar
 		include assets/jade/footer

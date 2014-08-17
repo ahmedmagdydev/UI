@@ -305,7 +305,6 @@
 }
 .ui-menu .ui-state-focus,
 .ui-menu .ui-state-active {
-	margin: -1px;
 }
 
 /* icon support */
@@ -448,7 +447,6 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	background: #fff ;
-	font-weight: bold;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,

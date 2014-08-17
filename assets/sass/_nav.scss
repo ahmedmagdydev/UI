@@ -1,6 +1,9 @@
 .blackbar{
 	background:#282828;
 	min-width: 1246px;
+	position: fixed;
+	width: 100%;
+	z-index: 99999999;
 }
 .top-nav{
 	padding: 9px 11px;

@@ -1,0 +1,27 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.messages
+					h2 الرسائل 
+						span (55)
+					table.table-striped
+						thead
+							tr
+								th(width="5%"): input(type="checkbox").selectAll
+								th(width="30%") المرسل
+								th(width="60%") عنوان الرسالة
+								th(width="5%")
+						tbody
+							-for(i=0;i<20;i++)
+								tr
+									td: input(type="checkbox")
+									td: a.sender(href="#") احمد مجدى
+									td: a.messageTitle(href="#") المقال الصحفي المتوازي الثنائي
+									td: a.delete-icon(href="#")
+		include assets/jade/left-side-bar
+		include assets/jade/footer

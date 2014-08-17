@@ -1,0 +1,26 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.compose
+					h2 رسالة جديدة
+
+				.panel
+					.form-horizontal.flat
+						.form-group
+							label الى
+							.control: input.form-control(type="text")
+						.form-group
+							label الموضوع
+							.control: input.form-control(type="text")
+						.form-group
+							textarea(placeholder="نص الرسالة").form-control
+						.button-group
+							button(type="button").btn.btn-default إرسال
+							button(type="button").btn.btn-default إلغاء
+		include assets/jade/left-side-bar
+		include assets/jade/footer

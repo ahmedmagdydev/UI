@@ -1,6 +1,7 @@
 article{
-	width: calc(100% - 265px);
+	width: calc(100% - 275px);
 	float: right;
+	margin: 61px 275px 0 0 !important;
 }
 .profile-summary{
 	padding: 40px;
@@ -60,6 +61,7 @@ article{
 			top: 0;
 			padding-top: 8px;
 			background:$blue;
+			z-index: 999999999;
 		}
 	}
 }
@@ -67,6 +69,7 @@ article{
 	background: #fff url(../img/down-arrow.png) no-repeat top center; 
 	border-top:$border-dark;
 	padding: 20px 40px;
+	margin-left: 12px;
 }
 .user-data{
 	width: 456px;
