@@ -21,8 +21,11 @@ aside
 
 		.user-actions
 			ul
-				li: a.my-books(href="#") إضافة كتبى
-				li: a.my-pens(href="#") إضافة مقالاتى
+				if page
+					if page.link3
+						li: a.writer-brief(href="#")= page.link3
+					li: a.my-books(href="#")= page.link1
+					li: a.my-pens(href="#")= page.link2
 		//.social
 			p تابعنى :
 			ul.hide-text

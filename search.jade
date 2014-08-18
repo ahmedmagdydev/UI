@@ -27,6 +27,11 @@ html(dir="rtl")
 									ul.clearfix.info
 										li.views-count 480
 										li.retweets-count  480
-
+					.pagination
+						ul.clearfix
+							li: a(href="#") السابق
+							-for(i=1;i<8;i++)
+								li: a(href="#")=i
+							li: a(href="#") التالى
 		include assets/jade/left-side-bar
 		include assets/jade/footer

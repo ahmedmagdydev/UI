@@ -520,6 +520,29 @@ a.more {
   padding: 5px;
 }
 
+.pagination {
+  margin: 10px 0;
+  text-align: center;
+}
+.pagination li {
+  display: inline;
+  margin: 5px;
+}
+.pagination li:first-child a, .pagination li:last-child a {
+  width: 50px;
+  background-color: #007597;
+}
+.pagination li a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 7px;
+  background-color: #3d3d3b;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -1210,7 +1233,7 @@ article {
   top: 0;
   padding-top: 8px;
   background: #0ba2ce;
-  z-index: 999999999;
+  z-index: 999;
 }
 
 .bottom {
@@ -1482,12 +1505,25 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
   width: 100%;
 }
 .messages .table-striped td, .messages .table-striped th {
-  padding: 12px;
+  padding: 3px 12px;
   border: 1px solid whitesmoke;
 }
 .messages .table-striped th {
   text-align: right;
+  padding: 12px;
   font-size: 110%;
+}
+.messages .table-striped tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+.messages .table-striped .sender {
+  vertical-align: top;
+  margin: 8px;
+  display: inline-block;
+  float: right;
+}
+.messages .table-striped img {
+  float: right;
 }
 .messages .table-striped .delete-icon {
   width: 11px;

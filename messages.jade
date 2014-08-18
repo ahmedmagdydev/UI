@@ -1,3 +1,4 @@
+-var page = {link1:'رسالة جديدة' , link2: 'الرسائل'}
 doctype html
 html(dir="rtl")
 	include assets/jade/head
@@ -20,8 +21,16 @@ html(dir="rtl")
 							-for(i=0;i<20;i++)
 								tr
 									td: input(type="checkbox")
-									td: a.sender(href="#") احمد مجدى
+									td
+										img(src="img/commenter.jpg")
+										a.sender(href="#") احمد مجدى
 									td: a.messageTitle(href="#") المقال الصحفي المتوازي الثنائي
 									td: a.delete-icon(href="#")
+					.pagination
+						ul.clearfix
+							li: a(href="#") السابق
+							-for(i=1;i<8;i++)
+								li: a(href="#")=i
+							li: a(href="#") التالى
 		include assets/jade/left-side-bar
 		include assets/jade/footer

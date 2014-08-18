@@ -5,13 +5,26 @@
 	.table-striped{
 		width: 100%;
 		td,th{
-			padding: 12px;
+			padding: 3px 12px;
 			border:1px solid $gray-light;
 		}
 		th{
 			text-align: right;
+			padding: 12px;
 			font-size: 110%;
 
+		}
+		tbody tr:nth-child(odd){
+			background:$light-gray;
+		}
+		.sender{
+			vertical-align: top;
+			margin: 8px;
+			display: inline-block;
+			float: right;
+		}
+		img{
+			float: right;
 		}
 		.delete-icon{
 			width: 11px;	
