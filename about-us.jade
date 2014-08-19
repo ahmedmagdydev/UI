@@ -1,0 +1,19 @@
+-var page = {link1:'رسالة جديدة' , link2: 'الرسائل'}
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.panel-page
+					.panel-header
+						h2 سياسة استخدام البيانات
+						span    آخر تحديث: 15 نوفمبر 2013
+					.panel-body
+						-for(i=0;i<7;i++)
+							h3.title المعلومات التي نتلقاها وكيفية استخدامها
+							p تعرف على المزيد حول المعلومات التي نتلقاها وكيفية استخدامها.
+
+		include assets/jade/footer

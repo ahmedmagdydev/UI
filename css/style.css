@@ -408,7 +408,7 @@ th {
   font-style: normal;
 }
 body {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 19px;
   font-family: "pens-arabic",tahoma;
   background-color: #f4f4f4;
@@ -541,6 +541,35 @@ a.more {
   text-align: center;
   border-radius: 5px;
   color: #fff;
+}
+
+.panel-page {
+  border: 1px solid whitesmoke;
+}
+.panel-page .panel-header {
+  background-color: #f7f7f7;
+  position: relative;
+  padding: 10px;
+}
+.panel-page .panel-header h2 {
+  padding: 0;
+  margin: 0;
+}
+.panel-page .panel-header span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.panel-page .panel-body {
+  padding: 8px;
+}
+.panel-page .panel-body .title {
+  background: url(../img/bullet-blue.png) no-repeat right;
+  padding-right: 14px;
+  color: #007597;
+}
+.panel-page .panel-body p {
+  padding: 0 14px 17px 0;
 }
 
 .form-group {

@@ -12,7 +12,7 @@
   font-style: normal; }
   
   body{
-	font-size:12px;
+	font-size:14px;
 	line-height: 19px;
 	font-family:"pens-arabic",tahoma;
 	background-color:#f4f4f4;
@@ -123,6 +123,36 @@ a.more{
 			text-align:center;
 			border-radius:$small-radius;
 			color: #fff;
+		}
+	}
+}
+.panel-page{
+	border:1px solid $gray-light;
+	
+	.panel-header{
+		background-color:$light-gray;
+		position: relative;
+		padding: 10px;
+		h2{
+			padding: 0;
+			margin: 0;
+
+		}
+		span{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+	}
+	.panel-body{
+		padding: 8px;
+		.title{
+			background:url(../img/bullet-blue.png) no-repeat right;
+			padding-right: 14px;
+			color: $blue-dark;
+		}
+		p{
+			padding: 0 14px 17px 0;
 		}
 	}
 }
