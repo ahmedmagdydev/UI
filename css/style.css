@@ -762,7 +762,7 @@ a.more {
   padding: 0;
   margin: 5px 0 5px 20px;
 }
-.top-nav .pageNav li {
+.top-nav .pageNav > li {
   display: inline;
   float: right;
   position: relative;
@@ -770,49 +770,49 @@ a.more {
   padding-right: 11px;
   border-right: 1px solid #cccccc;
 }
-.top-nav .pageNav li:first-child {
+.top-nav .pageNav > li:first-child {
   border: none;
 }
-.top-nav .pageNav li a {
+.top-nav .pageNav > li > a {
   background: url(../img/top-nav-items.png) no-repeat;
   height: 19px;
 }
-.top-nav .pageNav li.main-home a {
+.top-nav .pageNav > li.main-home a {
   background: url(../img/home-icon.png) no-repeat top;
   height: 29px;
   margin-top: -5px;
 }
-.top-nav .pageNav li.main-home a:hover {
+.top-nav .pageNav > li.main-home a:hover, .top-nav .pageNav > li.main-home a.active {
   background-position: bottom;
 }
-.top-nav .pageNav li.flag a {
+.top-nav .pageNav > li.flag > a {
   background-position: -66px 0;
   width: 21px;
 }
-.top-nav .pageNav li.flag a:hover {
+.top-nav .pageNav > li.flag > a:hover, .top-nav .pageNav > li.flag > a.active {
   background-position: -66px -20px;
 }
-.top-nav .pageNav li.messages a {
+.top-nav .pageNav > li.messages a {
   background-position: -43px 0;
   width: 23px;
 }
-.top-nav .pageNav li.messages a:hover {
+.top-nav .pageNav > li.messages a:hover, .top-nav .pageNav > li.messages a.active {
   background-position: -43px -20px;
 }
-.top-nav .pageNav li.archive a {
+.top-nav .pageNav > li.archive a {
   background-position: -24px 0;
   width: 20px;
 }
-.top-nav .pageNav li.archive a:hover {
+.top-nav .pageNav > li.archive a:hover, .top-nav .pageNav > li.archive a.active {
   background-position: -24px -20px;
 }
-.top-nav .pageNav li.profile a {
+.top-nav .pageNav > li.profile a {
   width: 24px;
 }
-.top-nav .pageNav li.profile a:hover {
+.top-nav .pageNav > li.profile a:hover, .top-nav .pageNav > li.profile a.active {
   background-position: 0 -20px;
 }
-.top-nav .pageNav li span.alert {
+.top-nav .pageNav > li span.alert {
   position: absolute;
   display: none;
   text-align: center;
@@ -824,7 +824,7 @@ a.more {
   bottom: -10px;
   left: 17px;
 }
-.top-nav .pageNav li span.alert.active {
+.top-nav .pageNav > li span.alert.active {
   display: block;
 }
 .top-nav .main-search {
@@ -850,12 +850,20 @@ a.more {
   border-radius: 5px 0 0 5px;
 }
 
+.notifications {
+  position: absolute;
+  background: rgba(40, 40, 40, 0.9);
+  width: 226px;
+  top: 37px;
+}
+
 aside {
   height: -webkit-calc(100% - 51px);
   height: calc(100% - 51px);
   float: right;
   position: fixed;
   margin-top: 51px;
+  z-index: 99;
 }
 
 .side-bar {
