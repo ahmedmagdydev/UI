@@ -156,3 +156,20 @@ a.more{
 		}
 	}
 }
+.footer{
+	margin:5px 0;
+	li {
+		display: inline-block;
+		font-size: 9px;
+		font-weight: normal;
+		&:first-child a{
+			border-right:none;
+		}
+		a{
+			color: #acacac;
+			border-right: 1px solid #acacac;
+			padding: 3px;
+			
+		}
+	}
+}

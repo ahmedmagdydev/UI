@@ -18,19 +18,25 @@ jQuery(document).ready(function($) {
 	 
 
 	 	 // niceScroll
-	var myNiceScroll = function  (element) {
-	 	var maxHeight	= $(".side-bar").height()-20;
-	 	if (element.height() > maxHeight) {
-		element.height(maxHeight);
-		element.niceScroll(options);
-	 	};
-	};
+	// var myNiceScroll = function  (element) {
+	//  	var maxHeight	= $(".side-bar").height()-20;
+	//  	if (element.height() > maxHeight) {
+	// 	element.height(maxHeight);
+	// 	element.niceScroll(options);
+	//  	};
+	// };
 	 // myNiceScroll(article);
 	 // myNiceScroll(leftBar);
 	 // myNiceScroll(store);
 	 // myNiceScroll(profile);
 
-
+ 	$('.left-side-bar').scrollToFixed({
+	    marginTop: function() {
+	        var marginTop = $(window).height() - $('.left-side-bar').outerHeight(true) - 20;
+	        if (marginTop >= 0) return 20;
+	        return marginTop;
+	    }
+    });
 	
 
 	 

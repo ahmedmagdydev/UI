@@ -572,6 +572,23 @@ a.more {
   padding: 0 14px 17px 0;
 }
 
+.footer {
+  margin: 5px 0;
+}
+.footer li {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: normal;
+}
+.footer li:first-child a {
+  border-right: none;
+}
+.footer li a {
+  color: #acacac;
+  border-right: 1px solid #acacac;
+  padding: 3px;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
