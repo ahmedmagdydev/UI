@@ -24,6 +24,10 @@
 		padding: 20px 60px;
 		color: #fff;
 		border-radius: $normal-radius;
+		span{
+				vertical-align: sub;
+				vertical-align: -webkit-baseline-middle;
+			}
 		.form-control{
 			background: white url(../img/edit-input.png) no-repeat;
 			padding-right: 38px;
@@ -33,6 +37,7 @@
 			&.user-pass{
 				background-position: 224px -31px;
 			}
+
 		}
 		.submit{
 			width: 100%;
@@ -69,7 +74,8 @@
 }
 #register-form{
 	.magazine-name {
-		width: 55%;
-		margin-left: 10px;
+		float: left;
+		width: 120px;
+		background: white !important;
 	}
 }

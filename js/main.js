@@ -33,8 +33,8 @@ jQuery(document).ready(function($) {
 
  	$('.left-side-bar').scrollToFixed({
 	    marginTop: function() {
-	        var marginTop = $(window).height() - $('.left-side-bar').outerHeight(true) - 20;
-	        if (marginTop >= 0) return 20;
+	        var marginTop = $(window).height() - $('.left-side-bar').outerHeight(true) ;
+	        if (marginTop >= 0) return 0;
 	        return marginTop;
 	    }
     });

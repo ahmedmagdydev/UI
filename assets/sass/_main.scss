@@ -146,16 +146,17 @@ a.more{
 	}
 	.panel-body{
 		padding: 8px;
-		.title{
-			background:url(../img/bullet-blue.png) no-repeat right;
-			padding-right: 14px;
-			color: $blue-dark;
-		}
+		
 		p{
 			padding: 0 14px 17px 0;
 		}
 	}
 }
+.title{
+			background:url(../img/bullet-blue.png) no-repeat right;
+			padding-right: 14px;
+			color: $blue-dark;
+		}
 .footer{
 	margin:5px 0;
 	li {
@@ -172,4 +173,7 @@ a.more{
 			
 		}
 	}
+}
+ol li{
+	list-style: initial;
 }

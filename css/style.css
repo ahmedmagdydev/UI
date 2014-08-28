@@ -563,13 +563,14 @@ a.more {
 .panel-page .panel-body {
   padding: 8px;
 }
-.panel-page .panel-body .title {
+.panel-page .panel-body p {
+  padding: 0 14px 17px 0;
+}
+
+.title {
   background: url(../img/bullet-blue.png) no-repeat right;
   padding-right: 14px;
   color: #007597;
-}
-.panel-page .panel-body p {
-  padding: 0 14px 17px 0;
 }
 
 .footer {
@@ -587,6 +588,10 @@ a.more {
   color: #acacac;
   border-right: 1px solid #acacac;
   padding: 3px;
+}
+
+ol li {
+  list-style: initial;
 }
 
 .form-group {
@@ -692,6 +697,10 @@ a.more {
   color: #fff;
   border-radius: 10px;
 }
+.login #login-form span, .login #register-form span {
+  vertical-align: sub;
+  vertical-align: -webkit-baseline-middle;
+}
 .login #login-form .form-control, .login #register-form .form-control {
   background: white url(../img/edit-input.png) no-repeat;
   padding-right: 38px;
@@ -734,8 +743,9 @@ a.more {
 }
 
 #register-form .magazine-name {
-  width: 55%;
-  margin-left: 10px;
+  float: left;
+  width: 120px;
+  background: white !important;
 }
 
 .blackbar {
@@ -1088,6 +1098,15 @@ a.user .domain {
   float: left;
   background: #fff;
   border: 1px solid #e8e8e8;
+}
+.left-side-bar.links {
+  background: #eeeeee;
+  border: 1px solid #dbdbdb;
+  padding: 0 11px;
+}
+.left-side-bar.links a {
+  font-weight: normal;
+  font-size: 11px;
 }
 .left-side-bar a {
   color: #3d3d3b;
@@ -1577,7 +1596,7 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
   width: 100%;
 }
 .messages .table-striped td, .messages .table-striped th {
-  padding: 3px 12px;
+  padding: 12px;
   border: 1px solid whitesmoke;
 }
 .messages .table-striped th {

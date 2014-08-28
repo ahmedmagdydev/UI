@@ -4,7 +4,15 @@
 	float: left;
 	background:#fff;
 	border:$border-dark;
-
+	&.links{
+		background:#eeeeee;
+		border:1px solid #dbdbdb;
+		padding: 0 11px;
+		a{
+			font-weight: normal;
+			font-size: 11px;
+		}
+	}
 	a{color:$black;font-weight: bold;}
 	
 
