@@ -3,7 +3,8 @@ jQuery(document).ready(function($) {
 		leftBar		= $(".left-side-bar"),
 		store 		= $("article.store"),
 		profile		= $("article.profile"),
-		options 	=  {cursorcolor : "#b6b6b6",railalign: "left",horizrailenabled: false};
+		options 	=  {cursorcolor : "#b6b6b6",railalign: "left",horizrailenabled: false},
+		notif		= $(".notifications");
 
 		 // jqueryUi
 	$("#accordion").accordion();
@@ -37,7 +38,23 @@ jQuery(document).ready(function($) {
 	        return marginTop;
 	    }
     });
-	
 
+    
+	notif.hide();
+	$('html').click(function() {
+		notif.hide(100);
+		$(".flag a").removeClass('active');
+	});
+	notif.on('click', function(event) {
+		 event.stopPropagation();
+		/* Act on the event */
+	});
+ 	$(".flag").on('click', 'a', function(event) {
+ 		event.stopPropagation();
+ 		/* Act on the event */
+ 		$(this).toggleClass('active');
+ 		notif.toggle(100);
+
+ 	});
 	 
 });

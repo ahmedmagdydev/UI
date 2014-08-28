@@ -8,7 +8,25 @@
 				li.flag
 					a.hide-text(href="#")
 						u flag
-					span.alert 5
+					span.alert.active 5
+					ul.notifications
+						li.notification.comment
+							.writer-info
+								.user-pic: img(src="img/profile-pic.jpg")
+								a.user-url(href="profile.html") Karim Farid
+								div
+									span.date 13-4-2014
+									span.time 12:22PM
+							p قام بكتابة تعليق لك
+						li.notification.retweet
+							.writer-info
+								.user-pic: img(src="img/profile-pic.jpg")
+								a.user-url(href="profile.html") Karim Farid
+								div
+									span.date 13-4-2014
+									span.time 12:22PM
+								p قام بعمل إعادة نشر مقال  لك 
+						li.seeAll: a(href="#") مشاهدة الكل...
 				li.messages
 					a.hide-text(href="messages.html")
 						u messages
@@ -20,7 +38,7 @@
 				li.profile
 					a.hide-text(href="profile.html")
 						u profile
-					span.alert.active 5
+					span.alert 5
 		
 		.main-search.pull-right
 			form

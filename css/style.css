@@ -856,6 +856,23 @@ a.more {
   width: 226px;
   top: 37px;
 }
+.notifications .notification {
+  padding: 7px;
+  color: #fff;
+  font-size: 90%;
+  border-bottom: 1px solid #494743;
+  padding-left: 32px;
+}
+.notifications .notification.comment {
+  background: url(../img/comment-icon.png) no-repeat 10px 10px;
+}
+.notifications .notification.retweet {
+  background: url(../img/retweet.png) no-repeat 10px 10px;
+}
+.notifications .seeAll {
+  padding: 7px;
+  text-align: center;
+}
 
 aside {
   height: -webkit-calc(100% - 51px);
@@ -1404,10 +1421,6 @@ article {
   font-weight: bold;
   font-size: 15px;
 }
-.home .writer-info .date {
-  margin: 0 4px;
-  color: #095e77;
-}
 .home .content h2 {
   padding: 2px 28px;
   margin: 20px 0;
@@ -1450,6 +1463,11 @@ article {
 .article-actions a.retweet {
   color: #1ca5cf;
   background-position: 98% -56px;
+}
+
+.date {
+  margin: 0 4px;
+  color: #095e77;
 }
 
 article.store {

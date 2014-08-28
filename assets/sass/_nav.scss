@@ -21,7 +21,7 @@
 		padding: 0;
 		margin: 5px 0 5px 20px;
 	}
-	.pageNav li{
+	.pageNav>li{
 		display: inline;
 		float: right;
 		position: relative;
@@ -31,7 +31,7 @@
 		&:first-child{
 			border:none;
 		}
-		a{
+		&>a{
 			background:url(../img/top-nav-items.png) no-repeat ;
 			height: 19px;
 			// transition:all .1s linear;
@@ -40,34 +40,34 @@
 			background:url(../img/home-icon.png) no-repeat  top;
 			height: 29px;
 			margin-top: -5px;
-			&:hover{
+			&:hover,&.active{
 				background-position: bottom;
 			}
 		}
-		&.flag a{
+		&.flag>a{
 			background-position:-66px 0;
 			width: 21px;
-			&:hover{
+			&:hover,&.active{
 				background-position:-66px -20px;
 			}
 		}
 		&.messages a{
 			background-position: -43px 0;
 			width: 23px;
-			&:hover{
+			&:hover,&.active{
 				background-position: -43px -20px;
 			}
 		}
 		&.archive a{
 			background-position: -24px 0;
 			width: 20px;
-			&:hover{
+			&:hover,&.active{
 				background-position: -24px -20px;
 			}
 		}
 		&.profile a{
 			width: 24px;
-			&:hover{
+			&:hover,&.active{
 				background-position:  0 -20px;
 			}
 		}
@@ -110,4 +110,28 @@
 		}
 	}
 	
+}
+.notifications{
+	position: absolute;
+	background:rgba(40,40,40,.9);
+	width: 226px;
+	top: 37px;
+
+	.notification{
+			padding: 7px;
+			color: #fff;
+			font-size: 90%;
+			border-bottom:1px solid #494743;
+			padding-left: 32px;
+			&.comment{
+				background: url(../img/comment-icon.png) no-repeat 10px 10px;
+			}
+			&.retweet{
+				background: url(../img/retweet.png) no-repeat 10px 10px;
+			}
+	}
+	.seeAll{
+		padding: 7px;
+		text-align: center;
+	}
 }

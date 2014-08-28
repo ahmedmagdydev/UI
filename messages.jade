@@ -5,7 +5,7 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
-		article.center-article
+		article
 			.top.clearfix
 				.messages
 					h2 الرسائل 
@@ -32,5 +32,4 @@ html(dir="rtl")
 							-for(i=1;i<8;i++)
 								li: a(href="#")=i
 							li: a(href="#") التالى
-		include assets/jade/left-side-bar
 		include assets/jade/footer
