@@ -19,7 +19,7 @@
 	min-width: 1200px;
 	color:$black;
 }
-.clearfix:after {
+.clearfix:after ,.form-group:after{
 	content: ".";
 	display: block;
 	clear: both;
@@ -28,7 +28,7 @@
 	height: 0;
 }
   
-* html .clearfix {
+* html .clearfix,.form-group {
 	height: 1%;
 }
 a{
@@ -151,12 +151,13 @@ a.more{
 			padding: 0 14px 17px 0;
 		}
 	}
-}
-.title{
+	.title{
 			background:url(../img/bullet-blue.png) no-repeat right;
 			padding-right: 14px;
 			color: $blue-dark;
 		}
+}
+
 .footer{
 	margin:5px 0;
 	li {

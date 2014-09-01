@@ -12,6 +12,11 @@
 			font-weight: normal;
 			font-size: 11px;
 		}
+		.title{
+			background:url(../img/bullet-blue.png) no-repeat right;
+			padding-right: 14px;
+			color: $blue-dark;
+		}
 	}
 	a{color:$black;font-weight: bold;}
 	

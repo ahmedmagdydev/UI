@@ -72,3 +72,10 @@
 		border-radius:0 !important;
 	}
 }
+.radio label {
+	float: none;
+	width: initial;
+	margin: 0 5px 0 28px;
+	vertical-align: middle;
+	display: inline;
+}

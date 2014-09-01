@@ -416,7 +416,7 @@ body {
   color: #3d3d3b;
 }
 
-.clearfix:after {
+.clearfix:after, .form-group:after {
   content: ".";
   display: block;
   clear: both;
@@ -425,7 +425,7 @@ body {
   height: 0;
 }
 
-* html .clearfix {
+* html .clearfix, .form-group {
   height: 1%;
 }
 
@@ -566,8 +566,7 @@ a.more {
 .panel-page .panel-body p {
   padding: 0 14px 17px 0;
 }
-
-.title {
+.panel-page .title {
   background: url(../img/bullet-blue.png) no-repeat right;
   padding-right: 14px;
   color: #007597;
@@ -666,6 +665,14 @@ ol li {
 
 .flat input, .flat textarea {
   border-radius: 0 !important;
+}
+
+.radio label {
+  float: none;
+  width: initial;
+  margin: 0 5px 0 28px;
+  vertical-align: middle;
+  display: inline;
 }
 
 .login {
@@ -1107,6 +1114,11 @@ a.user .domain {
 .left-side-bar.links a {
   font-weight: normal;
   font-size: 11px;
+}
+.left-side-bar.links .title {
+  background: url(../img/bullet-blue.png) no-repeat right;
+  padding-right: 14px;
+  color: #007597;
 }
 .left-side-bar a {
   color: #3d3d3b;
