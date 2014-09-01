@@ -68,7 +68,7 @@ article{
 .bottom{
 	background: #fff url(../img/down-arrow.png) no-repeat top center; 
 	border-top:$border-dark;
-	padding: 20px 40px;
+	padding: 10px 40px;
 	margin-left: 12px;
 }
 .user-data{
@@ -77,6 +77,7 @@ article{
 	padding: 0 18px;
 	border-right:8px solid $blue;
 	background:$light-gray;
+	margin-top: 10px;
 	.data{
 		padding: 10px 0;
 		border-bottom:$border-dark;

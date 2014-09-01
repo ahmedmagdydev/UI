@@ -1341,7 +1341,7 @@ article {
 .bottom {
   background: white url(../img/down-arrow.png) no-repeat top center;
   border-top: 1px solid #e8e8e8;
-  padding: 20px 40px;
+  padding: 10px 40px;
   margin-left: 12px;
 }
 
@@ -1351,6 +1351,7 @@ article {
   padding: 0 18px;
   border-right: 8px solid #0ba2ce;
   background: #f7f7f7;
+  margin-top: 10px;
 }
 .user-data .data {
   padding: 10px 0;
