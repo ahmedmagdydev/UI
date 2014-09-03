@@ -79,3 +79,32 @@
 	vertical-align: middle;
 	display: inline;
 }
+
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+.table-striped{
+	 input { display: none; }
+	label {
+		display: block;
+	      cursor: pointer;
+	      position: relative;
+	      width: 15px; height: 15px;
+	      margin: 10px;
+	      background: $accent;
+	      transition: all $speed $ease;
+	      font-size: 12pt;
+	      color: #FFF;
+	      font-smoothing: antialiased;
+	      .fa {
+	        position: absolute;
+	        top: 0; left: 0; right: 0; bottom: 0;
+	        opacity: 0;
+	        transform: scale(0);
+	        transition: all $speed $ease;
+	        line-height: 15px;
+	        text-align: center;
+	      }
+	    }
+	    input:checked + label { background: shade($accent,25%);
+	      .fa { opacity: 1; transform: scale(.8); }
+	    }
+	  }

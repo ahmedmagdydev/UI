@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -673,6 +674,48 @@ ol li {
   margin: 0 5px 0 28px;
   vertical-align: middle;
   display: inline;
+}
+
+.table-striped input {
+  display: none;
+}
+.table-striped label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  background: #005b76;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 12pt;
+  color: #FFF;
+  font-smoothing: antialiased;
+}
+.table-striped label .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  line-height: 15px;
+  text-align: center;
+}
+.table-striped input:checked + label {
+  background: shade(#005b76, 25%);
+}
+.table-striped input:checked + label .fa {
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .login {
@@ -1351,7 +1394,7 @@ article {
   padding: 0 18px;
   border-right: 8px solid #0ba2ce;
   background: #f7f7f7;
-  margin-top: 10px;
+  margin-top: 17px;
 }
 .user-data .data {
   padding: 10px 0;
