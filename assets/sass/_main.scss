@@ -178,3 +178,12 @@ a.more{
 ol li{
 	list-style: initial;
 }
+input,textarea{
+	font-family:tahoma;
+}
+.contact-us{
+	background:url(../img/contact-us.jpg) bottom left no-repeat;
+	.panel-body{
+		width: 600px;
+	} 
+}

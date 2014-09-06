@@ -6,14 +6,13 @@ html(dir="rtl")
 		include assets/jade/side-bar
 		article
 			.top.clearfix
-				.search
-					ul.filter.clearfix
-						li: a(href="#") الكل
-						-for(i=0;i<6;i++)
-							li متنوع
-								ul
-									li: a(href="#") متنوع
-									li: a(href="#") متنوع
+				.search#search
+					.filter
+						ul.clearfix
+							li.selected: a(href="#") الكل
+							li: a(href="#") كتب
+							li: a(href="#") مقالات
+							li: a(href="#") اشخاص
 					.results
 						h2 نتائج البحث
 						-for(i=0;i<8;i++)

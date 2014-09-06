@@ -7,8 +7,8 @@ html(dir="rtl")
 		include assets/jade/side-bar
 		article.center-article
 			.top.clearfix
-				.panel-page
-					.panel-header: h2 رسالة جديدة
+				.panel-page.contact-us
+					.panel-header: h2 اتصل بنا
 					.panel-body
 						.form-horizontal.flat
 							.form-group
@@ -27,10 +27,10 @@ html(dir="rtl")
 									label(for="no") لا
 							.form-group
 								label مجهول
-								.control: textarea(placeholder="نص الرسالة")
+								.control: textarea.form-control(placeholder="نص الرسالة")
 							.form-control
 								.button-group
 									button(type="button").btn.btn-default إرسال
 									button(type="button").btn.btn-default إلغاء
-		include assets/jade/left-side-bar
+		include assets/jade/links-side-bar
 		include assets/jade/footer

@@ -9,15 +9,12 @@ jQuery(document).ready(function($) {
 		 // jqueryUi
 	$("#accordion").accordion();
 	$( ".select" ).selectmenu();
-	$( ".filter" ).menu({ 
-		position: { my: "center top", at: "right-40 top+45" } ,
-		icons: {  submenu: "ui-icon-carat-1-s" }
-	});
+	
 
 	 // divider
 	$("section.result").append('<div class="divider"></div>');
 	 
-
+	$("#search").parents(article).css('background-color', '#fff');
 	 	 // niceScroll
 	// var myNiceScroll = function  (element) {
 	//  	var maxHeight	= $(".side-bar").height()-20;

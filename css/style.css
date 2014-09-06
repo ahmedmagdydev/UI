@@ -594,6 +594,17 @@ ol li {
   list-style: initial;
 }
 
+input, textarea {
+  font-family: tahoma;
+}
+
+.contact-us {
+  background: url(../img/contact-us.jpg) bottom left no-repeat;
+}
+.contact-us .panel-body {
+  width: 600px;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -1254,27 +1265,35 @@ a.user .domain {
 }
 
 .search .filter {
+  text-align: center;
+}
+.search .filter ul {
   padding: 0 39px;
+  display: inline-block;
 }
-.search .filter li {
+.search .filter ul li {
   float: right;
+  background-color: whitesmoke;
+  border: 1px solid gainsboro;
 }
-.search .filter li.ui-menu-item {
-  background-color: #f2f2f2;
-  padding: 5px 35px;
+.search .filter ul li.selected, .search .filter ul li:hover {
+  background-color: #007597;
 }
-.search .filter li, .search .filter li a {
+.search .filter ul li.selected a, .search .filter ul li:hover a {
+  color: #fff;
+}
+.search .filter ul li, .search .filter ul li a {
   color: #646464;
 }
-.search .filter li:first-child {
+.search .filter ul li a {
+  padding: 9px 25px;
+  display: inline-block;
+}
+.search .filter ul li:first-child {
   border-radius: 0 5px 5px 0;
 }
-.search .filter li:last-child {
+.search .filter ul li:last-child {
   border-radius: 5px 0 0 5px;
-}
-.search .filter > li.ui-menu-item {
-  padding: 15px 35px;
-  background-color: whitesmoke;
 }
 
 .result {
@@ -1282,6 +1301,7 @@ a.user .domain {
   padding: 13px;
   margin-bottom: 23px;
   position: relative;
+  border: 1px solid  #e5e5e5;
 }
 .result img {
   width: 60px;
