@@ -91,8 +91,8 @@
 		position: relative;
 		input{
 			width: 700px;
-			background: #fff url(../img/search-placeholder.png) no-repeat 680px ;
-			padding: 5px 22px 5px 38px;
+			background: #fff ;
+			padding: 5px 5px 5px 38px;
 			border:none;
 			border-radius:$small-radius;
 			height: 29px;
@@ -100,7 +100,7 @@
 		}
 		button[type="submit"]{
 			position: absolute;
-			left: -50px;
+			left: -57px;
 			top: 0;
 			background: #fff url(../img/search.jpg) no-repeat right;
 			border: none;
@@ -116,7 +116,8 @@
 	background:rgba(40,40,40,.9);
 	width: 226px;
 	top: 37px;
-
+	display: none;
+	max-height: 300px;
 	.notification{
 			padding: 7px;
 			color: #fff;

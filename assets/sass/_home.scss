@@ -6,7 +6,7 @@
 .top{position: relative;margin: 7px;}
 .home{
 	width: calc(100% - 235px);
-	float: right;
+	float: left;
 	.writer-info{
 		display: inline-block;
 		min-width: 160px;
@@ -36,7 +36,7 @@
 }
 .cover{
 	max-width: 215px;
-	float: left;
+	float:right;
 }
 .article-actions{
 	position: absolute;

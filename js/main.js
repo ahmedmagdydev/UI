@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 	 // myNiceScroll(leftBar);
 	 // myNiceScroll(store);
 	 // myNiceScroll(profile);
-
+ 	$(".notifications").niceScroll(options);
  	$('.left-side-bar').scrollToFixed({
 	    marginTop: function() {
 	        var marginTop = $(window).height() - $('.left-side-bar').outerHeight(true) ;

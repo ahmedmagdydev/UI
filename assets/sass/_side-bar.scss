@@ -28,7 +28,6 @@ aside{
 }
 .side-bar-footer{
 		height: 37px; 
-		background:#3d3d3b;
 		li {
 			float: right;
 			width: 50%;
@@ -36,14 +35,13 @@ aside{
 				
 				height: 37px;
 				display: block;
-				background-color:#1b1b1b;
 				padding: 13px 42px 0 0;
-				font-size: 13px;
+				font-size: 10px;
 				&.settings{
 					background-image: url(../img/settings.png);
 					background-repeat:no-repeat;
 					background-position:99px center;
-					border-left:$border;
+					// border-left:$border;
 				}
 				&.sign-out{
 					background-image: url(../img/sign-out.png);
@@ -53,6 +51,11 @@ aside{
 			}
 		}
 	}
+.user-info{
+	border-bottom:1px solid darken(#fff,70%);
+	padding-bottom: 5px;
+	margin-bottom:10px;
+}
 .user-info li{
 	float: right;
 
