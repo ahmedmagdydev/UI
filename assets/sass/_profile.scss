@@ -1,5 +1,5 @@
 article{
-	width: calc(100% - 275px);
+	width: calc(100% - 282px);
 	float: right;
 	margin: 61px 275px 0 0 !important;
 }
@@ -110,33 +110,7 @@ article{
 				background-position:right -84px;
 			}
 		}
-		.social{
-			display: inline-block;
-			vertical-align: middle;
-			li{
-				margin-left: 4px;
-				float: right;
-				a{
-					width: 25px;
-					height: 25px;
-					display: inline-block;
-					background:url(../img/social-icons.jpg) no-repeat top right;
-					&:hover{
-						background-position-y:bottom !important;
-						transition: all .2s linear;
-					}
-				}
-				&.facebook a{
-					background-position: -24px top;
-				}
-				&.twitter a{
-					background-position: -49px top;
-				}
-				&.blogger a{
-					background-position: 1px top;
-				}
-			}
-		}
+		
 	}
 }
 .new-panel{

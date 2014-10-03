@@ -4,6 +4,14 @@
 	float: left;
 	background:#fff;
 	border:$border-dark;
+	&>h3{
+		background:$blue-dark;
+		color: #fff;
+		margin: 0;
+		padding: 10px 13px;
+		font-weight: normal;
+		font-size: 1em;
+	}
 	&.links{
 		background:#eeeeee;
 		border:1px solid #dbdbdb;

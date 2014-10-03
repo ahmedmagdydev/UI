@@ -1,0 +1,39 @@
+-var page = {link1:'رسالة جديدة' , link2: 'الرسائل'}
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.store
+			.top.clearfix
+				.panel-page
+					.panel-header: h2 الاعدادات
+					.panel-body.settings
+						.form-horizontal.flat
+							.form-group
+								label الاسم
+								.control: input.form-control(type="text")
+							.form-group
+								label البريد الالكترونى
+								.control: input.form-control(type="text")
+							.form-group
+								label مجهول
+								span.radio
+									input(type="radio", name="unkown", id="yes")
+									label(for="yes") نعم
+								span.radio
+									input(type="radio", name="unkown", id="no")
+									label(for="no") لا
+							.form-group
+								label مجهول
+								.control
+									select.select
+										option 
+										option
+							.form-control
+								.button-group
+									button(type="button").btn.btn-default حفظ
+									button(type="button").btn.btn-default إلغاء
+
+		include assets/jade/footer

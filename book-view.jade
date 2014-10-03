@@ -7,22 +7,40 @@ html(dir="rtl")
 		include assets/jade/side-bar
 		article.center-article
 			.top.clearfix
-				.home
-					.writer-info
-						.user-pic: img(src="img/profile-pic.jpg")
-						a.user-url(href="profile.html") Karim Farid
-						div
-							span.date 13-4-2014
-							span.time 12:22PM
-					.book.content
-						h2: a(href="book-view.html") الفريد
-						p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل
-							a.more(href="#")    .... المزيد
-				img.cover(src="img/book.jpg")
-				.article-actions
-					a.like(href="#") 598
-					a.dislike(href="#") 3
-					a.retweet(href="#") 255
+				.panel-header
+					h2 الشبيه
+					span
+						span انشر بواسطة :  
+						ul.social
+							li.facebook: a(href="#")
+							li.twitter: a(href="#")
+							li.blogger: a(href="#")
+						ul.info
+							li.views-count 20
+						span.date 2:28pm
+				.panel-body
+					.clearfix
+						.home
+							.book-view
+								.clearfix
+									label الكاتب:
+									p  أحمد فؤاد قامش
+								.clearfix
+									label وصف:
+									p الكتاب يحتوى على مجموعة من القصص القصيرة للكاتب فى الفترة من 2011 حتى 2013, صدرتالمجموعة عن دار روعة للنشر والتوزيع فى أكتوبر 2012 .
+						img.cover(src="img/book.jpg")
+					table.table-details
+						thead
+							tr
+								th المكان
+								th العنوان
+								th التليفون
+						tbody
+							-for(i=0;i<5;i++)
+								tr
+									td مكتبة عمر بوك ستور	
+									td مكتبة عمر بوك ستور	
+									td 01003361217
 			.comment-area
 				form
 					.write-comment
@@ -31,7 +49,9 @@ html(dir="rtl")
 				.comments
 					.title.clearfix
 						h3 التعليقات
-						span.comments-count 56 تعليقات
+						span.comments-count 
+							sapn.red 56 
+							| تعليقات 
 					.comment
 						.comment-thumb: img(src="img/commenter.jpg")
 						.comment-body
@@ -86,6 +106,7 @@ html(dir="rtl")
 							a.commenter-name(href="#") Ahmed Magdy
 							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
 						.comment-date 26 مارس 2014   في   PM 12:5
-		include assets/jade/left-side-bar
+
+		include assets/jade/my-left-side-bar
 		include assets/jade/footer
 				

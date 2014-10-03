@@ -23,6 +23,9 @@
 		h2{
 			padding:2px 28px;
 			margin: 20px 0;
+			a{
+				color: inherit;
+			}
 			}
 			p{
 				font-size: 15px;
@@ -33,6 +36,19 @@
 			background:url(../img/article-title.png) no-repeat right;
 		}
 	}
+	.book-view{
+		label{
+			width: 12%;
+			display: inline-block;
+			float: right;
+			padding-top: 5px;
+		}
+		p{
+			width: 80%;
+			float: right;
+		}
+	}
+
 }
 .cover{
 	max-width: 215px;
@@ -41,6 +57,7 @@
 .article-actions{
 	position: absolute;
 	bottom: 10px;
+	left: 0px;
 	a{
 		padding: 5px 22px 5px 8px;
 		background: #f4f4f4 url(../img/article-actions.png) no-repeat right;

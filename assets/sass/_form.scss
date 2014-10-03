@@ -13,6 +13,10 @@
 		padding:  6px;
 
 	}
+	.ui-selectmenu-button{
+		border:$border;
+		border-radius: 0;
+	}
 	.select{
 		width: 260px;
 	}
@@ -108,3 +112,6 @@
 	      .fa { opacity: 1; transform: scale(.8); }
 	    }
 	  }
+.settings {
+	width: 70%;
+}

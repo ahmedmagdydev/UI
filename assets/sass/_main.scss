@@ -126,11 +126,8 @@ a.more{
 		}
 	}
 }
-.panel-page{
-	border:1px solid $gray-light;
-	
-	.panel-header{
-		background-color:$light-gray;
+.panel-header{
+		background-color:$gray-light;
 		position: relative;
 		padding: 10px;
 		h2{
@@ -138,10 +135,27 @@ a.more{
 			margin: 0;
 
 		}
-		span{
+		&>span{
 			position: absolute;
-			top: 10px;
+			top: 7px;
 			left: 10px;
+			font-weight: normal;
+			*{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			ul{
+				background:url(../img/gray-border.jpg) no-repeat left;
+				padding-left: 8px;
+				margin-left: 5px;
+				.views-count {
+					background-position: left -36px;
+					padding: 0 0 0 10px;
+					line-height: 15px;
+					margin-left: 0;
+				}
+			}
+
 		}
 	}
 	.panel-body{
@@ -151,6 +165,11 @@ a.more{
 			padding: 0 14px 17px 0;
 		}
 	}
+.panel-page{
+	border:1px solid $gray-light;
+	
+	
+	
 	.title{
 			background:url(../img/bullet-blue.png) no-repeat right;
 			padding-right: 14px;
@@ -186,4 +205,54 @@ input,textarea{
 	.panel-body{
 		width: 600px;
 	} 
+}
+h3{
+	margin-bottom: 4px;
+}
+.table-details{
+	width: 100%;
+	margin-top: 10px;
+	
+	th,td{
+		padding: 6px 22px;
+		border:$border;
+		background:$light-gray;
+		font-weight: normal;
+	}	
+	th{
+		background:$blue-dark;
+		color: #fff;
+		text-align: right;
+		border: 0;
+	}
+}
+.social{
+	display: inline-block;
+	vertical-align: middle;
+	li{
+		margin-left: 4px;
+		float: right;
+		a{
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			background:url(../img/social-icons.jpg) no-repeat top right;
+			&:hover{
+				background-position-y:bottom !important;
+				transition: all .2s linear;
+			}
+		}
+		&.twitter a{
+			background-position: -24px top;
+		}
+		&.facebook a{
+			background-position: -49px top;
+		}
+		&.blogger a{
+			background-position: 1px top;
+		}
+	}
+}
+.red{
+	color:#ef2929;
 }
