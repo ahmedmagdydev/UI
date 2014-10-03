@@ -14,22 +14,17 @@ html(dir="rtl")
 							li: a(href="#") مقالات
 							li: a(href="#") اشخاص
 					.results
-						h2 نتائج البحث
-						-for(i=0;i<8;i++)
+						h2 نتائج البحث (65)
+						-for(i=0;i<3;i++)
 							section.result.clearfix
-								img(src="img/book.jpg")
+								img(src="img/book.jpg").result-img
+								.writer-details
+									.user-pic: img(src="img/commenter.jpg")
+									.user-name: a(href="profile.html") Karim Farid
 								h3: a(href="#") صالح نفسك
 								p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
 									a(href="#").more    .... المزيد
-								.writer-details
-									.user-pic: img(src="img/commenter.jpg")
-									ul.clearfix.info
-										li.views-count 480
-										li.retweets-count  480
+								
 					.pagination
-						ul.clearfix
-							li: a(href="#") السابق
-							-for(i=1;i<8;i++)
-								li: a(href="#")=i
-							li: a(href="#") التالى
+						button(type="button").btn.btn-default المزيد...
 		include assets/jade/footer

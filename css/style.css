@@ -683,6 +683,11 @@ input, textarea {
   width: 600px;
 }
 
+/* line 190, ../assets/sass/_main.scss */
+h3 {
+  margin-bottom: 4px;
+}
+
 /* line 1, ../assets/sass/_form.scss */
 .form-group {
   margin-bottom: 24px;
@@ -1522,24 +1527,43 @@ a.user .domain {
 }
 
 /* line 39, ../assets/sass/_search.scss */
+.results {
+  position: relative;
+  margin-top: 28px;
+}
+/* line 42, ../assets/sass/_search.scss */
+.results h2 {
+  color: #878787;
+  font-size: 15px;
+  position: absolute;
+  top: -73px;
+}
+
+/* line 49, ../assets/sass/_search.scss */
 .result {
   background-color: whitesmoke;
   padding: 13px;
   margin-bottom: 23px;
   position: relative;
+  height: 135px;
   border: 1px solid  #e5e5e5;
+  padding-right: 94px;
 }
-/* line 45, ../assets/sass/_search.scss */
-.result img {
+/* line 57, ../assets/sass/_search.scss */
+.result img.result-img {
   width: 60px;
   float: right;
   margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
 }
-/* line 50, ../assets/sass/_search.scss */
+/* line 66, ../assets/sass/_search.scss */
 .result h3 a {
   color: #095e77;
 }
-/* line 53, ../assets/sass/_search.scss */
+/* line 69, ../assets/sass/_search.scss */
 .result .divider {
   position: absolute;
   bottom: -12px;
@@ -1548,16 +1572,13 @@ a.user .domain {
   height: 1px;
   background-color: whitesmoke;
 }
-/* line 61, ../assets/sass/_search.scss */
-.result .writer-details {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  width: 140px;
+/* line 80, ../assets/sass/_search.scss */
+.result .writer-details .user-name {
+  padding-top: 10px;
 }
-/* line 66, ../assets/sass/_search.scss */
-.result .writer-details .info {
-  margin-top: 10px;
+/* line 84, ../assets/sass/_search.scss */
+.result .writer-details a {
+  color: #095e77;
 }
 
 /* line 1, ../assets/sass/_profile.scss */
@@ -2004,3 +2025,5 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
   display: inline-block;
   background: url(../img/delete-icon.png) no-repeat;
 }
+
+/*# sourceMappingURL=style.css.map */
