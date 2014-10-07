@@ -151,7 +151,7 @@ a.more{
 				margin-left: 5px;
 				.views-count {
 					background-position: left -36px;
-					padding: 0 0 0 10px;
+					padding: 0 0 0 20px;
 					line-height: 15px;
 					margin-left: 0;
 				}
@@ -262,4 +262,9 @@ h3{
 	border-bottom:$border;
 	padding-bottom: 8px;
 	margin: 30px 14px 14px;
+}
+.article-view{
+	a{
+		color: $blue;
+	}
 }

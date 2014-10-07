@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 	 // divider
 	$("section.result").append('<div class="divider"></div>');
 	 
-	$("#search").parents(article).css('background-color', '#fff');
+	$("#search,.messages").parents("article").css('background-color', '#fff');
 	 	 // niceScroll
 	// var myNiceScroll = function  (element) {
 	//  	var maxHeight	= $(".side-bar").height()-20;
@@ -28,6 +28,8 @@ jQuery(document).ready(function($) {
 	 // myNiceScroll(store);
 	 // myNiceScroll(profile);
  	$(".notifications").niceScroll(options);
+ 	// $(".side-bar.store").niceScroll(options);
+
  	$('.left-side-bar').scrollToFixed({
 	    marginTop: function() {
 	        var marginTop = $(window).height() - $('.left-side-bar').outerHeight(true) ;

@@ -110,7 +110,9 @@ article{
 				background-position:right -84px;
 			}
 		}
-		
+		&:last-child{
+			border-bottom:0;
+		}
 	}
 }
 .new-panel{
