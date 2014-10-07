@@ -1,0 +1,31 @@
+.panel-notifications{
+	p{
+		clear: both;
+		display: inline-block;
+	}
+	a{
+		color: $blue;
+		padding: 0 5px;
+	}
+	.comment,.up,.down,.retweet{
+		border-bottom:$border-dark;
+		padding-bottom: 4px;
+		&:before{
+			font-family: "FontAwesome";
+			color: $blue;
+			margin-left: 5px;
+		}
+	}
+	.comment:before{
+		content: "\f075";
+	}
+	.up:before{
+		content: "\f062";
+	}
+	.down:before{
+		content: "\f063";
+	}
+	.retweet:before{
+		content: "\f079";
+	}
+}

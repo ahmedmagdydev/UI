@@ -9,6 +9,7 @@ html(dir="rtl")
 			.top.clearfix
 				.panel-page
 					.panel-header: h2 الاعدادات
+					.page-header لوريم ايبسوم
 					.panel-body.settings
 						.form-horizontal.flat
 							.form-group
@@ -17,6 +18,14 @@ html(dir="rtl")
 							.form-group
 								label البريد الالكترونى
 								.control: input.form-control(type="text")
+							.form-group
+								label رفع ملف
+								.control: input.form-control(type="file")
+							.form-group
+								label لوريم ايبسوم
+								.control.table-striped
+									input(type="checkbox",id="check").check
+									<label class='check' for='check'><i class="fa fa-check"></i></label>
 							.form-group
 								label مجهول
 								span.radio
@@ -29,11 +38,10 @@ html(dir="rtl")
 								label مجهول
 								.control
 									select.select
-										option 
-										option
+										option option 
+										option option 
 							.form-control
 								.button-group
 									button(type="button").btn.btn-default حفظ
 									button(type="button").btn.btn-default إلغاء
-
 		include assets/jade/footer

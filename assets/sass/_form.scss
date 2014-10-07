@@ -115,3 +115,34 @@
 .settings {
 	width: 70%;
 }
+input[type="file"]{
+	border:0 !important;
+	color: transparent !important;
+}
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+input[type="file"]::before {
+  content: 'upload files';
+  display: inline-block;
+
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  color: #fff;
+	background-color: #005b76;
+	border: none;
+}
+input[type="file"]:hover::before {
+  border-color: black;
+}
+input[type="file"]:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.ui-selectmenu-menu .ui-menu{
+	border: 1px solid #cccccc;
+}

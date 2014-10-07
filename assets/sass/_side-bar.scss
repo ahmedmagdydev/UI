@@ -28,6 +28,7 @@ aside{
 }
 .side-bar-footer{
 		height: 37px; 
+		border-top:1px solid darken(#fff,70%);
 		li {
 			float: right;
 			width: 50%;
@@ -40,13 +41,13 @@ aside{
 				&.settings{
 					background-image: url(../img/settings.png);
 					background-repeat:no-repeat;
-					background-position:62px center;
+					background-position:62px 16px;
 					// border-left:$border;
 				}
 				&.sign-out{
 					background-image: url(../img/sign-out.png);
 					background-repeat:no-repeat;
-					background-position:103px center;
+					background-position:103px 17px;
 				}
 			}
 		}

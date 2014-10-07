@@ -1,41 +1,39 @@
-.search{
-	.filter{
-		text-align: center;
-		ul{
-			padding: 0 39px;
-			display: inline-block;
-			li{
-				float: right;
-				
-				background-color:$gray-light;
-				border: 1px solid darken($gray-light, 10%);
-				&.selected,&:hover{
-					background-color:$blue-dark;
-					a{
-						color: #fff;
-					}
-				}
-				&,a{
-					color: $gray;
-				}
+.filter{
+	text-align: center;
+	ul{
+		padding: 0 39px;
+		display: inline-block;
+		li{
+			float: right;
+			
+			background-color:$gray-light;
+			border: 1px solid darken($gray-light, 10%);
+			&.selected,&:hover{
+				background-color:$blue-dark;
 				a{
-					padding: 9px 25px;
-			display: inline-block;
-					
-				}
-				&:first-child{
-					border-radius:0 5px 5px 0;
-				}
-				&:last-child{
-					border-radius:5px 0 0 5px;
-
+					color: #fff;
 				}
 			}
-			
-		}
+			&,a{
+				color: $gray;
+			}
+			a{
+				padding: 9px 25px;
+		display: inline-block;
+				
+			}
+			&:first-child{
+				border-radius:0 5px 5px 0;
+			}
+			&:last-child{
+				border-radius:5px 0 0 5px;
 
+			}
+		}
+		
 	}
-} 
+
+}
 .results{
 	position: relative;
 	margin-top: 28px;

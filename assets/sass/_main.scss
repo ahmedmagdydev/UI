@@ -130,7 +130,8 @@ a.more{
 		background-color:$gray-light;
 		position: relative;
 		padding: 10px;
-		h2{
+		margin-bottom: 16px;
+		h2,p{
 			padding: 0;
 			margin: 0;
 
@@ -255,4 +256,10 @@ h3{
 }
 .red{
 	color:#ef2929;
+}
+.page-header{
+	color:#898988;
+	border-bottom:$border;
+	padding-bottom: 8px;
+	margin: 30px 14px 14px;
 }

@@ -1,0 +1,18 @@
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/store-side-bar
+		article.store
+			.filter
+				ul.clearfix
+					li.selected: a(href="#") التابعين
+					li: a(href="#") المتابعين
+			.followers
+				- for(i=0;i<30;i++)
+					.follower
+						img.follower-thumb(src="img/follower.jpg")
+						h4.user-name: a(href="book-view.html") ‎Tarek Hamdoun ‎
+						a(href="#").follow-me: img(src="img/follow.jpg")
+		include assets/jade/footer
