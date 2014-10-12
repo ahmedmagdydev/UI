@@ -1,0 +1,66 @@
+-var page = {link1:'إضافة كتاب' , link2: 'إضافة مقال'}
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.panel-header
+					h2 إضافة كتاب
+					
+				.panel-body
+					.clearfix
+						.home
+							.book-add
+								.form-horizontal.flat
+									.form-group
+										label الكتاب
+										.control: input.form-control(type="text")
+									.form-group
+										label الكاتب
+										.control: input.form-control(type="text")
+									.form-group
+										label نشر الآن
+										span.radio
+											input(type="radio", name="unkown", id="yes")
+											label(for="yes") نعم
+										span.radio
+											input(type="radio", name="unkown", id="no")
+											label(for="no") لا
+									.form-group
+										label وصف
+										.control: textarea.form-control(placeholder="نص الرسالة")
+									.form-group
+										label القسم
+										.control
+											select.select
+												option option 
+												option option 
+									
+						.cover#croppic
+						.form-group
+							table.table-details
+								thead
+									tr
+										th المكان
+										th العنوان
+										th التليفون
+										th: a(href="#").add-row 
+								tbody
+									-for(i=0;i<5;i++)
+										tr
+											td: input(type="text")
+											td: input(type="text")
+											td: input(type="text")
+											td: a(href="#").delete-row 
+						.form-control
+											.button-group
+												button(type="button").btn.btn-default نشر
+												button(type="button").btn.btn-default إلغاء
+			
+
+		include assets/jade/my-left-side-bar
+		include assets/jade/footer
+				

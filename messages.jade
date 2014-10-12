@@ -16,8 +16,9 @@ html(dir="rtl")
 								th(width="5%")
 									input(type="checkbox",id="check_all").check
 									<label class='check' for='check_all'><i class="fa fa-check"></i></label>
-								th(width="30%") المرسل
-								th(width="60%") عنوان الرسالة
+								th(width="20%") المرسل
+								th(width="40%") عنوان الرسالة
+								th(width="20%") تاريخ الرسالة
 								th(width="5%"): a.delete-icon(href="#")
 						tbody
 							-for(i=1;i<21;i++)
@@ -29,6 +30,7 @@ html(dir="rtl")
 										img(src="img/commenter.jpg")
 										a.sender(href="#") احمد مجدى
 									td: a.messageTitle(href="#") المقال الصحفي المتوازي الثنائي
+									td: a(href="#") 25 ابريل 2014
 									td: a.delete-icon(href="#")
 					.pagination
 						ul.clearfix

@@ -11,7 +11,7 @@
 		border: $border;
 		color: #2c2c2c;
 		padding:  6px;
-
+		
 	}
 	.ui-selectmenu-button{
 		border:$border;
@@ -52,14 +52,14 @@
 	textarea{
 		min-height: 200px;
 	}
-	.button-group{
+	
+}
+.button-group{
 		text-align: left;
 	.btn{
 		margin-right: 5px;
 		}
 	}
-}
-
 .btn{
 	border-radius:3px;
 	font-size:120%;
@@ -146,3 +146,25 @@ input[type="file"]:active::before {
 .ui-selectmenu-menu .ui-menu{
 	border: 1px solid #cccccc;
 }
+#croppic{
+	width: 215px;
+	height: 360px;	
+	background:url(../img/croppic.jpg);
+}
+
+.delete-row{
+	font-family:"FontAwesome";
+	color: red;
+	font-size: 19px;
+}
+.add-row{
+	font-family:"FontAwesome";
+	font-size: 19px;
+}
+
+
+
+
+
+
+
