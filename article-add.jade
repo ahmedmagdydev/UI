@@ -5,30 +5,18 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
-		article.center-article
+		article
 			.top.clearfix
 				.panel-header
 					h2 إضافة مقال
-					
 				.panel-body
 					.clearfix
 						.home
-							.book-add
+							.article-add
 								.form-horizontal.flat
 									.form-group
 										label اسم المقال
 										.control: input.form-control(type="text")
-									.form-group
-										label الكاتب
-										.control: input.form-control(type="text")
-									.form-group
-										label نشر الآن
-										span.radio
-											input(type="radio", name="unkown", id="yes")
-											label(for="yes") نعم
-										span.radio
-											input(type="radio", name="unkown", id="no")
-											label(for="no") لا
 									.form-group
 										label موضوع المقال
 										.control: textarea.form-control(placeholder="نص الرسالة")
@@ -44,9 +32,5 @@ html(dir="rtl")
 											button(type="button").btn.btn-default إلغاء
 						
 						.cover#croppic.article-cover
-						
-			
-
-		include assets/jade/my-left-side-bar
 		include assets/jade/footer
 				

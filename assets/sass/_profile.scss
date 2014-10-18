@@ -4,12 +4,26 @@ article{
 	margin: 61px 275px 0 0 !important;
 }
 .profile-summary{
-	padding: 40px;
 	padding-bottom: 0;
+	.profile-right{
+		float: right;
+		margin-left: 20px;
+		.inline-buttons{
+			text-align: center;
+			button{
+				margin-top: 18px;
+				background:$blue;
+				font-size: 14px;
+				color: #fff;
+				border:0;
+				outline: none;
+				padding: 4px 12px;
+			}
+		}
+	}
 	.profile-pic{
 		float: right;
 		position: relative;
-		margin-left: 20px;
 		.profile-details{
 			position: absolute;
 			bottom: 0;
@@ -42,10 +56,12 @@ article{
 	.profile-info{
 		overflow: hidden;
 		position: relative;
+		width: 390px;
+float: right;
 		.domain{
 			color: $black;
 			font-family: "pens-english";
-			h1{margin: 0;}
+			h2{margin: 0;}
 		}
 		.title{
 			background:url(../img/profile-title.png) no-repeat right;
@@ -54,26 +70,24 @@ article{
 			border-bottom:$border-blue;
 			display: inline-block;
 		}
-		a.follow{
-			width: 100px;
-			height: 30px;
-			font-size: 14px;
-			top: 0;
-			padding-top: 8px;
-			background:$blue;
-			z-index: 999;
-		}
+		// a.follow{
+		// 	width: 100px;
+		// 	height: 30px;
+		// 	font-size: 14px;
+		// 	top: 0;
+		// 	padding-top: 8px;
+		// 	background:$blue;
+		// 	z-index: 999;
+		// }
 	}
 }
 .bottom{
 	background: #fff url(../img/down-arrow.png) no-repeat top center; 
 	border-top:$border-dark;
 	padding: 10px 40px;
-	margin-left: 12px;
+	margin-left: 4px;
 }
 .user-data{
-	width: 456px;
-	float: right;
 	padding: 0 18px;
 	border-right:8px solid $blue;
 	background:$light-gray;
@@ -81,6 +95,9 @@ article{
 	.data{
 		padding: 10px 0;
 		border-bottom:$border-dark;
+		width: 50%;
+		float: right;
+		height: 43px;
 		label{
 			width: 72px;
 			display: inline-block;
@@ -116,15 +133,24 @@ article{
 	}
 }
 .new-panel{
-	width: calc(100% - 456px);
+	width: calc(100% - 675px);
 	float: right;
 	&>div{
 		float: right;
-		width: 240px;
-		padding-right: 100px;
+		width: 50%;
 		border-bottom: none;
 		&.choosen-pens, &.choosen-books{
 			background-position: 72px 45px;
+		}
+	}
+}
+
+article.profile{
+	 background: transparent !important; 
+	.articles,.books{
+		margin: 0 -0.5%;
+		&>div{
+			margin: 8px 0.3% !important;
 		}
 	}
 }

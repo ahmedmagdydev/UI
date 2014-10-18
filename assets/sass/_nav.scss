@@ -27,7 +27,6 @@
 		position: relative;
 		padding-left: 11px;
 		padding-right: 11px;
-		border-right:$border;
 		&:first-child{
 			border:none;
 		}
@@ -85,6 +84,15 @@
 			&.active{
 				display: block;
 			}
+		}
+		&:after{
+			content: "";
+			height: 10px;
+			background: #cccccc;
+			width: 1px;
+			position: absolute;
+			top: 4px;
+			left: -3px;
 		}
 	}
 	.main-search {

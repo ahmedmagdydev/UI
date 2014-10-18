@@ -8,21 +8,46 @@ html(dir="rtl")
 		article.profile
 			.top.clearfix
 				.profile-summary
-					.profile-pic
-						img(src="img/profile-pic.jpg")
-						.profile-details
-							ul
-								li.following 890
-								li.followers 890
-								li.views 890
+					.profile-right
+						.profile-pic
+							img(src="img/profile-pic.jpg")
+							.profile-details
+								ul
+									li.following 890
+									li.followers 890
+									li.views 890
+						.inline-buttons
+							button.follow(href="#") متابعة
+							button.share(href="#") مشاركة
+							button.sendMessage(href="#") ارسال رسالة
 					.profile-info
 						a.domain(href="#")
-							h1 karimfarid.pensandbooks.com
+							h2 karimfarid.pensandbooks.com
 						h2.title نبذه عن الكاتب أو الكاتبة
-						a.follow(href="#") متابعة
+						
 						p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوالمقروءستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء   .
+					.new-panel
+						.choosen-pens
+							a.title(href="#") أحدث المقالات
+							- for (var x = 0; x < 7; x++)
+								.pen
+									img(src="img/pen.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
+							
+						.choosen-books
+							a.title(href="#") أحدث الكتب
+							- for (var x = 0; x < 6; x++)
+								.book
+									img(src="img/book-thumb.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
 			.bottom.clearfix
-				.user-data
+				.user-data.clearfix
 					.data
 						label الاسم
 						span كريم فريد
@@ -58,24 +83,26 @@ html(dir="rtl")
 								li.facebook: a(href="#")
 								li.twitter: a(href="#")
 								li.blogger: a(href="#")
-				.new-panel
-					.choosen-pens
-						a.title(href="#") أحدث المقالات
-						- for (var x = 0; x < 7; x++)
-							.pen
-								img(src="img/pen.jpg")
-								a.title(href="#") قيامة
+				.articles.clearfix
+					h2 مقالاتى
+					- for(i=0;i<10;i++)
+						div
+							img.article-thumb(src="img/article.jpg")
+							h3.title: a(href="article-view.html") الفريد
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name كريم فريد
 								ul.clearfix.info
 									li.views-count 480
-									li.retweets-count  480
-						
-					.choosen-books
-						a.title(href="#") أحدث الكتب
-						- for (var x = 0; x < 6; x++)
-							.book
-								img(src="img/book-thumb.jpg")
-								a.title(href="#") قيامة
+				.books.clearfix
+					h2 كتبى
+					- for(i=0;i<10;i++)
+						div
+							img.book-thumb(src="img/book.jpg")
+							h3.title: a(href="book-view.html") الفريد
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name كريم فريد
 								ul.clearfix.info
 									li.views-count 480
-									li.retweets-count  480
 		include assets/jade/footer

@@ -518,6 +518,13 @@ a.more {
   margin: 10px 0;
   text-align: center;
 }
+.pagination .btn {
+  width: 100%;
+  font-size: 28px;
+  outline: none;
+  background-color: whitesmoke;
+  border: 1px solid  #e5e5e5;
+}
 .pagination li {
   display: inline;
   margin: 5px;
@@ -569,9 +576,6 @@ a.more {
   margin-left: 0;
 }
 
-.panel-body {
-  padding: 8px;
-}
 .panel-body p {
   padding: 0 14px 17px 0;
 }
@@ -967,7 +971,6 @@ input[type="file"]:active::before {
   position: relative;
   padding-left: 11px;
   padding-right: 11px;
-  border-right: 1px solid #cccccc;
 }
 .top-nav .pageNav > li:first-child {
   border: none;
@@ -1025,6 +1028,15 @@ input[type="file"]:active::before {
 }
 .top-nav .pageNav > li span.alert.active {
   display: block;
+}
+.top-nav .pageNav > li:after {
+  content: "";
+  height: 10px;
+  background: #cccccc;
+  width: 1px;
+  position: absolute;
+  top: 4px;
+  left: -3px;
 }
 .top-nav .main-search {
   position: relative;
@@ -1485,13 +1497,27 @@ article {
 }
 
 .profile-summary {
-  padding: 40px;
   padding-bottom: 0;
+}
+.profile-summary .profile-right {
+  float: right;
+  margin-left: 20px;
+}
+.profile-summary .profile-right .inline-buttons {
+  text-align: center;
+}
+.profile-summary .profile-right .inline-buttons button {
+  margin-top: 18px;
+  background: #0ba2ce;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  padding: 4px 12px;
 }
 .profile-summary .profile-pic {
   float: right;
   position: relative;
-  margin-left: 20px;
 }
 .profile-summary .profile-pic .profile-details {
   position: absolute;
@@ -1523,12 +1549,14 @@ article {
 .profile-summary .profile-info {
   overflow: hidden;
   position: relative;
+  width: 390px;
+  float: right;
 }
 .profile-summary .profile-info .domain {
   color: #3d3d3b;
   font-family: "pens-english";
 }
-.profile-summary .profile-info .domain h1 {
+.profile-summary .profile-info .domain h2 {
   margin: 0;
 }
 .profile-summary .profile-info .title {
@@ -1538,26 +1566,15 @@ article {
   border-bottom: 2px solid #0099c6;
   display: inline-block;
 }
-.profile-summary .profile-info a.follow {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  top: 0;
-  padding-top: 8px;
-  background: #0ba2ce;
-  z-index: 999;
-}
 
 .bottom {
   background: white url(../img/down-arrow.png) no-repeat top center;
   border-top: 1px solid #e8e8e8;
   padding: 10px 40px;
-  margin-left: 12px;
+  margin-left: 4px;
 }
 
 .user-data {
-  width: 456px;
-  float: right;
   padding: 0 18px;
   border-right: 8px solid #0ba2ce;
   background: #f7f7f7;
@@ -1566,6 +1583,9 @@ article {
 .user-data .data {
   padding: 10px 0;
   border-bottom: 1px solid #e8e8e8;
+  width: 50%;
+  float: right;
+  height: 43px;
 }
 .user-data .data label {
   width: 72px;
@@ -1598,17 +1618,26 @@ article {
 }
 
 .new-panel {
-  width: calc(100% - 456px);
+  width: calc(100% - 675px);
   float: right;
 }
 .new-panel > div {
   float: right;
-  width: 240px;
-  padding-right: 100px;
+  width: 50%;
   border-bottom: none;
 }
 .new-panel > div.choosen-pens, .new-panel > div.choosen-books {
   background-position: 72px 45px;
+}
+
+article.profile {
+  background: transparent !important;
+}
+article.profile .articles, article.profile .books {
+  margin: 0 -0.5%;
+}
+article.profile .articles > div, article.profile .books > div {
+  margin: 8px 0.3% !important;
 }
 
 .user-pic img {
@@ -1699,15 +1728,19 @@ article {
   color: #095e77;
 }
 
-article.store {
+article.store, article.profile {
   background: #fff;
   padding: 6px 0;
 }
-article.store .books img.book-thumb {
+article.store .books img.book-thumb, article.profile .books img.book-thumb {
   width: 173px;
   height: 250px;
 }
-article.store .books > div, article.store .pens > div {
+article.store .articles img.article-thumb, article.profile .articles img.article-thumb {
+  width: 173px;
+  height: 125px;
+}
+article.store .books > div, article.store .articles > div, article.profile .books > div, article.profile .articles > div {
   background: whitesmoke;
   width: 190px;
   height: 330px;
@@ -1715,17 +1748,24 @@ article.store .books > div, article.store .pens > div {
   padding: 12px 9px;
   margin: 8px 11.6px;
 }
-article.store .books > div .title, article.store .pens > div .title {
+article.store .books > div .title, article.store .articles > div .title, article.profile .books > div .title, article.profile .articles > div .title {
   margin: 0;
   padding: 0 5px;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 3px;
 }
-article.store .books > div .title a, article.store .pens > div .title a {
+article.store .books > div .title a, article.store .articles > div .title a, article.profile .books > div .title a, article.profile .articles > div .title a {
   color: #095e77;
 }
-article.store .books > div .views-count, article.store .pens > div .views-count {
+article.store .books > div .views-count, article.store .articles > div .views-count, article.profile .books > div .views-count, article.profile .articles > div .views-count {
   float: left;
+}
+article.store .articles > div, article.profile .articles > div {
+  height: 210px;
+}
+
+.followers .pagination {
+  margin: 0 10px;
 }
 
 .follower {
@@ -1818,6 +1858,7 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
   background: url(../img/comment-date.png) no-repeat;
   padding-left: 20px;
   color: #c0bebe;
+  font-size: 0.8em;
 }
 
 .messages a, .messages th {
@@ -1830,10 +1871,16 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
   padding: 12px;
   border: 1px solid whitesmoke;
 }
+.messages .table-striped td:last-child, .messages .table-striped th:last-child {
+  text-align: center;
+}
 .messages .table-striped th {
   text-align: right;
   padding: 12px;
   font-size: 110%;
+}
+.messages .table-striped th:last-child {
+  text-align: center;
 }
 .messages .table-striped tbody tr:nth-child(odd) {
   background: #f7f7f7;
@@ -1876,10 +1923,14 @@ article.store .books > div .views-count, article.store .pens > div .views-count 
 }
 .panel-notifications .up:before {
   content: "\f062";
+  color: #157d00;
 }
 .panel-notifications .down:before {
+  color: #ff0101;
   content: "\f063";
 }
 .panel-notifications .retweet:before {
   content: "\f079";
 }
+
+/*# sourceMappingURL=style.css.map */

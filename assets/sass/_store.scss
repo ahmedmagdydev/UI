@@ -1,4 +1,4 @@
-article.store {
+article.store , article.profile {
 	background:#fff;
 	padding: 6px 0;
 	.books{
@@ -7,7 +7,13 @@ article.store {
 			height: 250px;
 		}
 	}
-	.books>div, .pens>div{
+	.articles{
+		img.article-thumb{
+			width: 173px;
+			height: 125px;
+		}
+	}
+	.books>div, .articles>div{
 		background: $gray-light;
 		width: 190px;
 		height: 330px;
@@ -27,6 +33,14 @@ article.store {
 		.views-count{
 			float: left;
 		}
+	}
+	.articles>div{
+		height: 210px;
+	}
+}
+.followers{
+	.pagination{
+		margin: 0 10px;
 	}
 }
 .follower{

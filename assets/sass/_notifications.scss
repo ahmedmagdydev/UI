@@ -21,9 +21,12 @@
 	}
 	.up:before{
 		content: "\f062";
+		color: #157d00;
 	}
 	.down:before{
+		color: #ff0101;
 		content: "\f063";
+		
 	}
 	.retweet:before{
 		content: "\f079";

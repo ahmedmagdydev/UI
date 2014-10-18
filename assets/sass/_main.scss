@@ -107,6 +107,14 @@ a.more{
 .pagination{
 	margin:10px 0;
 	text-align:center;
+	.btn{
+		width: 100%;
+		font-size: 28px;
+		outline: none;
+		background-color: $gray-light;
+		border: 1px solid  #e5e5e5;
+		
+	}
 	li{
 		display: inline;
 		margin: 5px;
@@ -160,7 +168,7 @@ a.more{
 		}
 	}
 	.panel-body{
-		padding: 8px;
+		// padding: 8px;
 		
 		p{
 			padding: 0 14px 17px 0;
