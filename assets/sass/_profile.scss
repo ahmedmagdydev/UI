@@ -56,8 +56,8 @@ article{
 	.profile-info{
 		overflow: hidden;
 		position: relative;
-		width: 390px;
-float: right;
+		width: calc(100% - 288px);
+		float: right;
 		.domain{
 			color: $black;
 			font-family: "pens-english";
@@ -92,6 +92,10 @@ float: right;
 	border-right:8px solid $blue;
 	background:$light-gray;
 	margin-top: 17px;
+	label.fa {
+		padding-right: 2px;
+		color: #095d77;
+	}
 	.data{
 		padding: 10px 0;
 		border-bottom:$border-dark;
@@ -148,8 +152,10 @@ float: right;
 article.profile{
 	 background: transparent !important; 
 	.articles,.books{
-		margin: 0 -0.5%;
-		&>div{
+		.panel-header{
+			text-align: center;
+		}
+			&>div{
 			margin: 8px 0.3% !important;
 		}
 	}
