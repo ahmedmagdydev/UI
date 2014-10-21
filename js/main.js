@@ -56,4 +56,17 @@ jQuery(document).ready(function($) {
 
  	});
 
+ 	// when like or dislike or retweet add class active and increase the number
+
+ 	$('.article-actions').on('click', 'a', function(event) {
+ 		event.preventDefault();
+ 		var pop = $(this),
+ 		popNumber = parseInt(pop.find('span').text(),10);
+
+ 		if (! pop.hasClass('active')) {
+ 			pop.addClass('active').find('span').html(++popNumber);
+ 		}else{
+ 			pop.removeClass('active').find('span').html(--popNumber);
+ 		};
+ 	});
 });

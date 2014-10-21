@@ -20,9 +20,15 @@ html(dir="rtl")
 							a.more(href="#")    .... المزيد
 				img.cover(src="img/book.jpg")
 				.article-actions
-					a.like(href="#") 598
-					a.dislike(href="#") 3
-					a.retweet(href="#") 255
+					a.like(href="#")
+						i.fa.fa-arrow-up 
+						span 598
+					a.dislike(href="#")
+						i.fa.fa-arrow-down
+						span 3
+					a.retweet(href="#")
+						i.fa.fa-retweet
+						span 255
 			.comment-area
 				form
 					.write-comment

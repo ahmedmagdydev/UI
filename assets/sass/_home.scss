@@ -59,25 +59,34 @@
 	bottom: 10px;
 	left: 0px;
 	a{
-		padding: 5px 22px 5px 8px;
-		background: #f4f4f4 url(../img/article-actions.png) no-repeat right;
+		padding: 5px 8px;
+		background: #f4f4f4;
 		border:$border-darker;
 		margin-left: 36px;
 		float: right;
 		font-size: 12px;
 		height: 28px;
 		min-width: 50px;
+		text-align: center;
+		&.active{
+			border-color:$blue;
+			i{
+				color:inherit;
+			}
+		}
+		i{
+			margin-left: 5px;
+			font-size: 14px;
+			color:#696969;
+		}
 		&.like{
 			color:#157d00;
-			background-position: 98% -1px;
 		}
 		&.dislike{
 			color:$red;
-			background-position: 98% -29px;
 		}
 		&.retweet{
 			color: #1ca5cf;
-			background-position: 98% -56px;
 		}
 	}
 }
