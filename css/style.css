@@ -1100,7 +1100,7 @@ input[type="file"]:active::before {
 }
 .top-nav ul.pageNav {
   padding: 0;
-  margin: 5px 0 5px 20px;
+  margin: 5px 0 5px 100px;
 }
 .top-nav .pageNav > li {
   display: inline;
@@ -1109,8 +1109,8 @@ input[type="file"]:active::before {
   padding-left: 11px;
   padding-right: 11px;
 }
-.top-nav .pageNav > li:first-child {
-  border: none;
+.top-nav .pageNav > li:last-child:after {
+  width: 0;
 }
 .top-nav .pageNav > li > a {
   background: url(../img/top-nav-items.png) no-repeat;
@@ -1225,7 +1225,6 @@ input[type="file"]:active::before {
 
 .main-nav {
   margin: 0 20px;
-  background: #3d3d3b;
   border-radius: 6px;
 }
 .main-nav li {

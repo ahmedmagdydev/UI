@@ -19,7 +19,7 @@
 	}
 	ul.pageNav{
 		padding: 0;
-		margin: 5px 0 5px 20px;
+		margin: 5px 0 5px 100px;	
 	}
 	.pageNav>li{
 		display: inline;
@@ -27,8 +27,8 @@
 		position: relative;
 		padding-left: 11px;
 		padding-right: 11px;
-		&:first-child{
-			border:none;
+		&:last-child:after{
+			width: 0;
 		}
 		&>a{
 			background:url(../img/top-nav-items.png) no-repeat ;
@@ -145,7 +145,6 @@
 }
 .main-nav{
 	margin: 0 20px;
-	background:#3d3d3b;
 	border-radius: 6px;
 	li{
 		display: inline;
