@@ -10,35 +10,43 @@ article.store , article.profile {
 	.articles{
 		img.article-thumb{
 			width: 173px;
-			height: 125px;
+			height: 156px;
 		}
 	}
 	.books>div, .articles>div{
 		background: $gray-light;
-		width: 190px;
+		width: 17.8%;
 		height: 330px;
 		float: right;
 		padding: 12px 9px;
-		margin: 8px 11.6px;
+		margin: 8px 1.1%;
+		text-align: center;
+		min-width: 189px;
 		.title{
 			margin: 0;
 			padding: 0 5px;
-			
+			text-align: right;
 			border-bottom:1px solid #e6e6e6;
 			margin-bottom: 3px;
 			a{
 				color:#095e77;	
 			}
+			
+		}
+		.writer-details{
+			text-align: right;
 		}
 		.views-count{
 			float: left;
 		}
 	}
 	.articles>div{
-		height: 210px;
+		height: 240px;
 	}
 }
 .followers{
+	max-width: 992px;
+	margin: 0 auto;
 	.pagination{
 		margin: 0 10px;
 	}
@@ -47,7 +55,7 @@ article.store , article.profile {
 	position: relative;
 	width: 188px;
 	height: 188px;
-	margin: 11px;
+	margin: 4px;
 	overflow: hidden;
 	display: inline-block;
 	.user-name{

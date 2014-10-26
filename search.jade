@@ -15,15 +15,30 @@ html(dir="rtl")
 							li: a(href="#") اشخاص
 					.results
 						h2 نتائج البحث (65)
-						-for(i=0;i<3;i++)
-							section.result.clearfix
-								img(src="img/book.jpg").result-img
-								.writer-details
-									.user-pic: img(src="img/commenter.jpg")
-									.user-name: a(href="profile.html") Karim Farid
-								h3: a(href="#") صالح نفسك
-								p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
-									a(href="#").more    .... المزيد
+						section.result.book.clearfix
+							img(src="img/book.jpg").result-img
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") صالح نفسك
+							p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
+								a(href="#").more    .... المزيد
+						section.result.article.clearfix
+							img(src="img/article.jpg").result-img
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") صالح نفسك
+							p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
+								a(href="#").more    .... المزيد
+						section.result.person.clearfix
+							img(src="img/profile-pic.jpg").result-img
+							//- .writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") كريم فريد
+							p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ اَ 
+								a(href="#").more    .... المزيد
 								
 					.pagination
 						button(type="button").btn: i.fa.fa-angle-down

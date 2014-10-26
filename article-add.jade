@@ -1,4 +1,4 @@
--var page = {link1:'إضافة كتاب' , link2: 'إضافة مقال'}
+-var page = {link1:'إضافة مقال' , link2: 'إضافة كتاب'}
 doctype html
 html(dir="rtl")
 	include assets/jade/head
@@ -18,18 +18,19 @@ html(dir="rtl")
 										label اسم المقال
 										.control: input.form-control(type="text")
 									.form-group
-										label موضوع المقال
-										.control: textarea.form-control(placeholder="نص المقال")
-									.form-group
 										label القسم
 										.control
 											select.select
 												option option 
 												option option 
+									.form-group
+										label موضوع المقال
+										.control: textarea.form-control(placeholder="نص المقال")
+									
 									.form-control
 										.button-group
 											button(type="button").btn.btn-default نشر
-											button(type="button").btn.btn-default إلغاء
+											button(type="button").btn.btn-danger إلغاء
 						
 						.cover#croppic.article-cover
 		include assets/jade/footer

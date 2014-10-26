@@ -3,6 +3,8 @@
 	label{
 		display: block;
 		margin-bottom: 3px;
+		text-align:left;
+		padding-left:10px;
 	}
 	.form-control{
 		width: 100%;
@@ -48,9 +50,13 @@
 		width: 80%;
 		float: right;
 		margin-bottom: 10px;
+		a{
+			color:$blue;
+		}
 	}
 	textarea{
-		min-height: 200px;
+		// min-height: 200px;
+		resize: none;
 	}
 	
 }
@@ -64,10 +70,21 @@
 	border-radius:3px;
 	font-size:120%;
 	padding: 5px 12px;
+	border:none;
+	color: #fff;
 	&.btn-default{
-		color: #fff;
 		background-color: #005b76;
-		border:none;
+		transition:background-color .2s linear;
+		&:hover{
+			background-color:darken(#005b76,8%);
+		}
+	}
+	&.btn-danger{
+		background-color:#BD2727;
+		transition:background-color .2s linear;
+		&:hover{
+			background-color:darken(#bd2727,8%);
+		}
 	}
 }
 
@@ -94,7 +111,6 @@
 	      width: 15px; height: 15px;
 	      margin: 10px;
 	      background: $accent;
-	      transition: all $speed $ease;
 	      font-size: 12pt;
 	      color: #FFF;
 	      font-smoothing: antialiased;
@@ -168,3 +184,79 @@ input[type="file"]:active::before {
 
 
 
+.Switch {
+	position: relative;
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #ccc;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+	height: 18px;
+	padding: 6px 6px 5px 6px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 4px;
+	background: #ececec;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.1), inset 0px 1px 3px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	font-size: 16px;
+	.Round {
+		padding: 0px 20px;
+		border-radius: 40px;
+	}
+}
+
+.Switch.Round .Toggle {
+border-radius: 40px;
+width: 14px;
+height: 14px;
+}
+
+.Switch .Toggle {
+position: absolute;
+top: 1px;
+width: 37px;
+height: 25px;
+border: 1px solid #ccc;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius: 4px;
+background: #fff;
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, #ffffff));
+background: -webkit-linear-gradient(top, #ececec 0%, #ffffff 100%);
+background: -o-linear-gradient(top, #ececec 0%, #ffffff 100%);
+background: -ms-linear-gradient(top, #ececec 0%, #ffffff 100%);
+background: linear-gradient(top, #ececec 0%, #ffffff 100%);
+box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.5);
+z-index: 999;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+-ms-transition: all 0.15s ease-in-out;
+}
+.Switch.Round.Off .Toggle {
+left: 58%;
+}
+
+.Switch.Round.On .Toggle {
+left: 3%;
+background: #33d2da;
+}
+.Switch.Round {
+padding: 0px 20px;
+border-radius: 40px;
+}
+.form-info{
+border: 1px solid ;
+padding: 8px;
+border-radius: 9px;
+}
+.error{
+	@extend .form-info;
+	border-color: red;
+	color: rgb(255, 165, 165);
+}
+.success{
+	@extend .form-info;
+
+}

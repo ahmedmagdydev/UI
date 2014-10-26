@@ -1,4 +1,4 @@
--var page = {  link1:'كتبي' , link2:'مقالتي',link3:'نبذه عن الكاتب'}
+-var page = {  link1:'مقالتي' , link2:'كتبي',link3:'نبذه عن الكاتب'}
 doctype html
 html(dir="rtl")
 	include assets/jade/head
@@ -17,15 +17,19 @@ html(dir="rtl")
 									li.followers 890
 									li.views 890
 						.inline-buttons
-							button.follow(href="#") متابعة
-							button.share(href="#") مشاركة
-							button.sendMessage(href="#") ارسال رسالة
+							button.follow(href="#")
+								i.fa.fa-rss
+								|  متابعة   
+
+							button.share(href="#"): i.fa.fa-share-alt
+							button.sendMessage(href="#"): i.fa.fa-envelope
 					.profile-info
 						a.domain(href="#")
 							h2 karimfarid.pensandbooks.com
-						h2.title نبذه عن الكاتب أو الكاتبة
+						h2.title نبذه عن الكاتب
 						
 						p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوالمقروءستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء   .
+							a(href="#").more ..... المزيد
 					//- .new-panel
 						.choosen-pens
 							a.title(href="#") أحدث المقالات
@@ -98,8 +102,11 @@ html(dir="rtl")
 							.writer-details
 								.user-pic: img(src="img/commenter.jpg")
 								.user-name كريم فريد
-								ul.clearfix.info
+								.category أدب
+								ul.pull-left.info
 									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
 				.books.clearfix
 					h2.panel-header كتبى
 					- for(i=0;i<10;i++)
@@ -109,6 +116,9 @@ html(dir="rtl")
 							.writer-details
 								.user-pic: img(src="img/commenter.jpg")
 								.user-name كريم فريد
-								ul.clearfix.info
+								.category شعر
+								ul.pull-left.info
 									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
 		include assets/jade/footer

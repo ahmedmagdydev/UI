@@ -3,7 +3,7 @@ html(dir="rtl")
 	include assets/jade/head
 	body
 		include assets/jade/top-nav
-		include assets/jade/store-side-bar
+		include assets/jade/side-bar
 		article.store
 			.filter
 				ul.clearfix
@@ -14,7 +14,9 @@ html(dir="rtl")
 					.follower
 						img.follower-thumb(src="img/follower.jpg")
 						h4.user-name: a(href="book-view.html") ‎Tarek Hamdoun ‎
-						a(href="#").follow-me: img(src="img/follow.jpg")
+						a(href="#").follow-me
+							i.fa.fa-rss
+							|  متابعة
 				.pagination
 					button(type="button").btn: i.fa.fa-angle-down
 		include assets/jade/footer

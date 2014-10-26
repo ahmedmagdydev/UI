@@ -2,8 +2,9 @@
 <html dir="rtl">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pens & Books</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Pens and books</title>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -11,10 +12,20 @@
   <body>
     <div class="blackbar">
       <div class="top-nav clearfix">
+        <h1 class="pageLogo hide-text pull-left"><a href="http://www.pensandbooks.com"><i class="imgLogo">Pens and Books </i></a></h1>
+        <ul class="pull-left main-nav">
+          <li class="main-home"><a href="index.html"><i class="fa fa-home"></i></a></li>
+          <li class="archive"><a href="store.html"><i class="fa fa-archive"></i></a></li>
+          <li class="profile"><a href="profile.html"><i class="fa profil-icon"></i></a></li>
+        </ul>
+        <div class="main-search pull-left">
+          <form>
+            <input type="search" placeholder="ابحث هنا ...">
+            <button type="submit"></button>
+          </form>
+        </div>
         <div id="headNav" class="pull-right">
           <ul class="pageNav">
-            <li class="main-home"><a href="index.html" class="hide-text">
-                <u> الرئيسية</u></a></li>
             <li class="flag"><a href="#" class="hide-text">
                 <u>flag</u></a><span class="alert active">5</span>
               <ul class="notifications">
@@ -79,19 +90,8 @@
             </li>
             <li class="messages"><a href="messages.html" class="hide-text">
                 <u>messages</u></a><span class="alert">5</span></li>
-            <li class="archive"><a href="store.html" class="hide-text">
-                <u>archive</u></a><span class="alert">5</span></li>
-            <li class="profile"><a href="profile.html" class="hide-text">
-                <u>profile</u></a><span class="alert">5</span></li>
           </ul>
         </div>
-        <div class="main-search pull-right">
-          <form>
-            <input type="search" placeholder="ابحث هنا ...">
-            <button type="submit"></button>
-          </form>
-        </div>
-        <h1 class="pageLogo hide-text pull-left"><a href="http://www.pensandbooks.com"><i class="imgLogo">Pens and Books </i></a></h1>
       </div>
     </div>
     <aside>
@@ -115,8 +115,8 @@
         </div>
         <div class="user-actions">
           <ul>
-            <li><a href="book-add.html" class="my-pens">اضافة مقال</a></li>
-            <li><a href="article-add.html" class="my-books">اضافة كتاب</a></li>
+            <li><a href="article-add.html" class="my-pens">اضافة مقال</a></li>
+            <li><a href="book-add.html" class="my-books">اضافة كتاب</a></li>
           </ul>
         </div>
         <!--.social
@@ -293,11 +293,13 @@
           <li><a href="contact-us.html">إتصل بنا</a></li>
         </ul>
       </div>
+      <p class="copyrights">أقلام وكتب © 2014</p>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/jquery-scrolltofixed.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

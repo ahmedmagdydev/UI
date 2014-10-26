@@ -3,9 +3,46 @@
 			float: right;
 			margin-left: 9px;
 		}
-.top{position: relative;margin: 14px;}
+.top{
+	position: relative;
+	margin: 14px;
+	.divider{
+		width: 80%;
+		height: 1px;
+		background-color: whitesmoke;
+		margin-bottom: 10px;	
+	}
+	.retweet,.commented,.like,.dislike{
+		a{
+			color:darken($blue,20%);
+		}
+		i{
+			margin: 0 5px;
+		}
+	}
+	.retweet{
+		i{
+			color:#0ba2ce;
+		}
+	}
+	.commented{
+		i{
+			color:#0ba2ce;
+		}
+	}
+	.like{
+		i{
+			color:#157d00;
+		}
+	}
+	.dislike{
+		i{
+			color:#ff0101;
+		}
+	}
+}
 .home{
-	width: calc(100% - 235px);
+	width: calc(100% - 221px);
 	float: left;
 	.writer-info{
 		display: inline-block;
@@ -20,6 +57,7 @@
 		
 	}
 	.content{
+		margin: 20px;
 		h2{
 			padding:2px 28px;
 			margin: 20px 0;
@@ -33,6 +71,9 @@
 			}
 			
 		&.book h2{
+			background:url(../img/book-title.png) no-repeat right;
+		}
+		&.pen h2{
 			background:url(../img/article-title.png) no-repeat right;
 		}
 	}
@@ -41,7 +82,8 @@
 			width: 12%;
 			display: inline-block;
 			float: right;
-			padding-top: 5px;
+			padding-top: 2px;
+			padding-right: 21px;
 		}
 		p{
 			width: 80%;
@@ -62,12 +104,16 @@
 		padding: 5px 8px;
 		background: #f4f4f4;
 		border:$border-darker;
-		margin-left: 36px;
+		margin-left: 13px;
 		float: right;
 		font-size: 12px;
 		height: 28px;
 		min-width: 50px;
 		text-align: center;
+		transition:background .2s linear;
+		&:hover{
+			background:darken(#f4f4f4,8%);
+		}
 		&.active{
 			border-color:$blue;
 			i{
@@ -87,6 +133,7 @@
 		}
 		&.retweet{
 			color: #1ca5cf;
+			margin-left: 0;
 		}
 	}
 }

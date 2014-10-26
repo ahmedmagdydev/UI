@@ -1,5 +1,5 @@
 .login{
-	background: url(../img/login-bg.jpg) no-repeat center center fixed; 
+	background: url(../img/login-bg.jpg) no-repeat top center fixed; 
 	background-size: cover;
 	padding:25px 50px;
 	.logo{
@@ -10,14 +10,14 @@
 		a{
 			padding: .5em; 
 			background: url(../img/signup-icon.png) right no-repeat;
-			font-size: 14px;
+			font-size: 17px;
 			font-weight: bold;
 			padding-right: 28px;
 			color: #fff;
 			border: none;
 		}
 	}
-	#login-form,#register-form{
+	#login-form,#register-form,#forgot-form{
 		background-color: rgba(0, 0, 0, 0.5);
 		width: 380px;
 		margin: 10px auto;
@@ -37,6 +37,9 @@
 			&.user-pass{
 				background-position: 224px -31px;
 			}
+			&.user-mail{
+				background-position: 224px -66px;
+			}
 
 		}
 		.submit{
@@ -52,6 +55,16 @@
 			display: block;
 			text-align: center;
 			padding: 14px;
+			transition: box-shadow .2s linear;
+			&:hover{
+				box-shadow: 0px 5px 10px 0 #313131;
+			}
+		}
+	}
+	#forgot-form{
+		width: 500px;
+		.form-control.user-mail{
+			background-position: 344px -66px;
 		}
 	}
 	.links{
@@ -66,7 +79,6 @@
 
 			}
 			&:first-child a{
-					padding-right:0;
 					border:none;
 				}
 		}
@@ -78,5 +90,10 @@
 		width: 136px;
 		background: white !important;
 		padding-right: 5px !important;
+		& + span{
+			display: inline-block;
+			margin-top: 11px;
+		}
 	}
+
 }

@@ -52,14 +52,16 @@
 	height: 135px;
 	border: 1px solid  #e5e5e5;
 	padding-right: 94px;
+	&.article,&.person{
+		padding-right: 164px;
+	}
 	img.result-img{
-		width: 60px;
 		float: right;
 		margin-left: 10px;
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 80px;
+		height: 100%;
 	}
 	h3 a{
 		color: #095e77;

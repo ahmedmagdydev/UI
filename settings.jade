@@ -40,8 +40,15 @@ html(dir="rtl")
 									select.select
 										option option 
 										option option 
+							.form-group
+								label تفعيل
+								.control
+									// here you will find the check box that is related to this switch
+									input(type="checkbox")
+									.Switch.Round.Off
+										.Toggle
 							.form-control
 								.button-group
 									button(type="button").btn.btn-default حفظ
-									button(type="button").btn.btn-default إلغاء
+									button(type="button").btn.btn-danger إلغاء
 		include assets/jade/footer

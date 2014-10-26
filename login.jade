@@ -9,10 +9,13 @@ html(dir="rtl")
 			#login-form
 				.form-group
 					label.required اسم المستخدم
-					input.form-control.user-name(type="text")
+					input.form-control.user-name(type="text" required)
 				.form-group
 					label.required كلمة السر
-					input.form-control.user-pass(type="password")
+					input.form-control.user-pass(type="password" required)
+				.form-group
+					.error اسم المستخدم او كلمة المرور التى ادخلتها غير صحيحة
+
 				.form-group
 					a.submit(href="index.html") دخول
 				.inline-form.clearfix

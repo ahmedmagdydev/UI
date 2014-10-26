@@ -26,7 +26,7 @@
 			color: $blue-dark;
 		}
 	}
-	a{color:$black;font-weight: bold;}
+	a{color:$black;}
 	
 
 	.follow-others{
@@ -51,10 +51,18 @@
 		
 	}	
 	
-
+	.copyrights{
+		background-color:#f4f4f4;
+		margin: -1px;
+		border-top: 1px solid #e8e8e8;
+		text-align:center;
+		color:#a3a3a3;
+		padding-top: 7px;
+		font-size: .9em;
+	}
 }
 .follow-others,.choosen-pens,.choosen-books{
-	background:url(../img/short-border.jpg) no-repeat 185px 45px;
+	background:url(../img/short-border.jpg) no-repeat 185px 35px;
 	border-bottom:$border-dark;
 	padding-bottom:10px;
 	padding-top:10px;
@@ -63,8 +71,10 @@
 	height: 18px;
 	padding-right:23px;
 	margin: 10px;
+	margin-top: 0;
 	background:url(../img/left-side-title.png) no-repeat right;
 	display: block;
+	font-weight: bold;
 }
 }
 .choosen-pens{
@@ -100,8 +110,12 @@
 	padding: 0 20px 0 6px;
 	margin-left: 7px;
 	border-left:  $border-dark;
+	font-size: 11px;
+	line-height: 18px;
+
 	&:last-child{
 		border:none;
+		margin-left: 0;
 	}
 	&.followrs-count{
 		background-position:right 0;
@@ -117,5 +131,8 @@
 	}
 	&.retweets-count{
 		background-position:right -48px;
+	}
+	.count{
+		line-height: 16px;
 	}
 }

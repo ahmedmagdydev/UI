@@ -1,0 +1,121 @@
+-var page = {  link1:'مقالتي' , link2:'كتبي',link3:'نبذه عن الكاتب'}
+doctype html
+html(dir="rtl")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.profile
+			.top.clearfix
+				.profile-summary
+					.profile-right
+						.profile-pic
+							img(src="img/profile-pic.jpg")
+							.profile-details
+								ul
+									li.following: a(href="#") 890
+									li.followers: a(href="#") 890
+									li.views 890
+						.inline-buttons
+							button.share(href="#" style="width:100%")
+								i.fa.fa-share-alt 
+								|   شـــارك
+					.profile-info
+						a.domain(href="#")
+							h2 karimfarid.pensandbooks.com
+						h2.title نبذه عن الكاتب
+						
+						p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوالمقروءستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليهاهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء   .
+							a(href="#").more ..... المزيد
+					//- .new-panel
+						.choosen-pens
+							a.title(href="#") أحدث المقالات
+							- for (var x = 0; x < 7; x++)
+								.pen
+									img(src="img/pen.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
+							
+						.choosen-books
+							a.title(href="#") أحدث الكتب
+							- for (var x = 0; x < 6; x++)
+								.book
+									img(src="img/book-thumb.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
+			.bottom.clearfix
+				.user-data.clearfix
+					.data
+						label الاسم
+						span كريم فريد
+					.data
+						label العمر
+						span 31
+					.data
+						label عضو منذ
+						span 30\4\2014
+					.data
+						label.sex.hide-text النوع
+						span ذكر
+					.data
+						label.nationality.hide-text الجنسة
+						span مصر
+					.data
+						label.job.hide-text المهنة
+						span مصور
+					.data
+						label.study.hide-text لكلية
+						span  حاسبات ومعلومات - عين شمس
+					.data
+						label.email.hide-text البريد
+						span Karim.samy.20@gmail.com
+					.data
+						label.fa.fa-barcode
+						span  402-5545-505461
+					.data
+						label.fa.fa-star
+						span السباحة - كرة القدم
+					.data
+						label.phone.hide-text الهاتف
+						span 01020241733
+					.data
+						label تابعنى
+						span
+							ul.social.clearfix
+								li.youtube: a(href="#")
+								li.facebook: a(href="#")
+								li.twitter: a(href="#")
+								li.blogger: a(href="#")
+				.articles.clearfix
+					h2.panel-header مقالاتى
+					- for(i=0;i<10;i++)
+						div
+							img.article-thumb(src="img/article.jpg")
+							h3.title: a(href="article-view.html") الفريد
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name كريم فريد
+								.category أدب
+								ul.pull-left.info
+									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
+				.books.clearfix
+					h2.panel-header كتبى
+					- for(i=0;i<10;i++)
+						div
+							img.book-thumb(src="img/book.jpg")
+							h3.title: a(href="book-view.html") الفريد
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name كريم فريد
+								.category شعر
+								ul.pull-left.info
+									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
+		include assets/jade/footer

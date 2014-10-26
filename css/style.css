@@ -460,7 +460,7 @@ li {
 
 p {
   margin-bottom: 2px;
-  margin-top: 4px;
+  margin-top: 2px;
   font-family: tahoma;
 }
 
@@ -493,6 +493,10 @@ a.follow {
   background-color: #92e2f9;
   color: #fff !important;
   font-size: 9px;
+  transition: background-color .2s linear;
+}
+a.follow:hover {
+  background-color: #31c8f4;
 }
 
 .nicescroll-rails > div {
@@ -514,16 +518,30 @@ a.more {
   padding: 5px;
 }
 
+.profile .pagination .btn, .followers .pagination .btn {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.store .pagination {
+  margin: 10px;
+}
+
 .pagination {
   margin: 10px 0;
   text-align: center;
 }
 .pagination .btn {
+  color: #000;
   width: 100%;
   font-size: 28px;
   outline: none;
   background-color: whitesmoke;
   border: 1px solid  #e5e5e5;
+  transition: box-shadow .2s linear;
+}
+.pagination .btn:hover {
+  box-shadow: 0px 5px 7px 0 #AFAFAF;
 }
 .pagination li {
   display: inline;
@@ -545,6 +563,7 @@ a.more {
 }
 
 .panel-header {
+  position: relative;
   background-color: whitesmoke;
   position: relative;
   padding: 10px;
@@ -556,7 +575,7 @@ a.more {
 }
 .panel-header > span {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 10px;
   font-weight: normal;
 }
@@ -575,6 +594,10 @@ a.more {
   line-height: 15px;
   margin-left: 0;
 }
+.panel-header .report {
+  padding: 4px 7px;
+  margin-right: 5px;
+}
 
 .panel-body p {
   padding: 0 14px 17px 0;
@@ -591,6 +614,7 @@ a.more {
 
 .footer {
   margin: 5px 0;
+  text-align: center;
 }
 .footer li {
   display: inline-block;
@@ -600,10 +624,17 @@ a.more {
 .footer li:first-child a {
   border-right: none;
 }
+.footer li:first-child a:before {
+  content: "";
+  margin: 0;
+}
 .footer li a {
-  color: #acacac;
-  border-right: 1px solid #acacac;
+  color: #797979;
   padding: 3px;
+}
+.footer li a:before {
+  content: "|";
+  margin: 0 0 0 8px;
 }
 
 ol li {
@@ -635,6 +666,9 @@ h3 {
   background: #f7f7f7;
   font-weight: normal;
 }
+.table-details th:last-child, .table-details td:last-child {
+  text-align: center;
+}
 .table-details th {
   background: #007597;
   color: #fff;
@@ -655,10 +689,6 @@ h3 {
   height: 25px;
   display: inline-block;
   background: url(../img/social-icons.jpg) no-repeat top right;
-}
-.social li a:hover {
-  background-position-y: bottom !important;
-  transition: all .2s linear;
 }
 .social li.twitter a {
   background-position: -24px top;
@@ -691,6 +721,8 @@ h3 {
 .form-group label {
   display: block;
   margin-bottom: 3px;
+  text-align: left;
+  padding-left: 10px;
 }
 .form-group .form-control {
   width: 100%;
@@ -735,8 +767,11 @@ h3 {
   float: right;
   margin-bottom: 10px;
 }
+.form-horizontal .control a {
+  color: #0ba2ce;
+}
 .form-horizontal textarea {
-  min-height: 200px;
+  resize: none;
 }
 
 .button-group {
@@ -750,11 +785,22 @@ h3 {
   border-radius: 3px;
   font-size: 120%;
   padding: 5px 12px;
+  border: none;
+  color: #fff;
 }
 .btn.btn-default {
-  color: #fff;
   background-color: #005b76;
-  border: none;
+  transition: background-color .2s linear;
+}
+.btn.btn-default:hover {
+  background-color: #003c4d;
+}
+.btn.btn-danger {
+  background-color: #BD2727;
+  transition: background-color .2s linear;
+}
+.btn.btn-danger:hover {
+  background-color: #9b2020;
 }
 
 .flat input, .flat textarea {
@@ -780,7 +826,6 @@ h3 {
   height: 15px;
   margin: 10px;
   background: #005b76;
-  transition: all 0.3s ease-in-out;
   font-size: 12pt;
   color: #FFF;
   font-smoothing: antialiased;
@@ -862,8 +907,84 @@ input[type="file"]:active::before {
   font-size: 19px;
 }
 
+.Switch {
+  position: relative;
+  display: inline-block;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ccc;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+  height: 18px;
+  padding: 6px 6px 5px 6px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #ececec;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+}
+.Switch .Round {
+  padding: 0px 20px;
+  border-radius: 40px;
+}
+
+.Switch.Round .Toggle {
+  border-radius: 40px;
+  width: 14px;
+  height: 14px;
+}
+
+.Switch .Toggle {
+  position: absolute;
+  top: 1px;
+  width: 37px;
+  height: 25px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background: #fff;
+  background: -moz-linear-gradient(top, #ececec 0%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #ececec 0%, white 100%);
+  background: -o-linear-gradient(top, #ececec 0%, white 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, white 100%);
+  background: linear-gradient(top, #ececec 0%, white 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+}
+
+.Switch.Round.Off .Toggle {
+  left: 58%;
+}
+
+.Switch.Round.On .Toggle {
+  left: 3%;
+  background: #33d2da;
+}
+
+.Switch.Round {
+  padding: 0px 20px;
+  border-radius: 40px;
+}
+
+.form-info, .error, .success {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 9px;
+}
+
+.error {
+  border-color: red;
+  color: #ffa5a5;
+}
+
 .login {
-  background: url(../img/login-bg.jpg) no-repeat center center fixed;
+  background: url(../img/login-bg.jpg) no-repeat top center fixed;
   background-size: cover;
   padding: 25px 50px;
 }
@@ -876,13 +997,13 @@ input[type="file"]:active::before {
 .login .new-user a {
   padding: .5em;
   background: url(../img/signup-icon.png) right no-repeat;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   padding-right: 28px;
   color: #fff;
   border: none;
 }
-.login #login-form, .login #register-form {
+.login #login-form, .login #register-form, .login #forgot-form {
   background-color: rgba(0, 0, 0, 0.5);
   width: 380px;
   margin: 10px auto;
@@ -890,21 +1011,24 @@ input[type="file"]:active::before {
   color: #fff;
   border-radius: 10px;
 }
-.login #login-form span, .login #register-form span {
+.login #login-form span, .login #register-form span, .login #forgot-form span {
   vertical-align: sub;
   vertical-align: -webkit-baseline-middle;
 }
-.login #login-form .form-control, .login #register-form .form-control {
+.login #login-form .form-control, .login #register-form .form-control, .login #forgot-form .form-control {
   background: white url(../img/edit-input.png) no-repeat;
   padding-right: 38px;
 }
-.login #login-form .form-control.user-name, .login #register-form .form-control.user-name {
+.login #login-form .form-control.user-name, .login #register-form .form-control.user-name, .login #forgot-form .form-control.user-name {
   background-position: 224px 0;
 }
-.login #login-form .form-control.user-pass, .login #register-form .form-control.user-pass {
+.login #login-form .form-control.user-pass, .login #register-form .form-control.user-pass, .login #forgot-form .form-control.user-pass {
   background-position: 224px -31px;
 }
-.login #login-form .submit, .login #register-form .submit {
+.login #login-form .form-control.user-mail, .login #register-form .form-control.user-mail, .login #forgot-form .form-control.user-mail {
+  background-position: 224px -66px;
+}
+.login #login-form .submit, .login #register-form .submit, .login #forgot-form .submit {
   width: 100%;
   border-radius: 3px;
   height: 50px;
@@ -917,6 +1041,16 @@ input[type="file"]:active::before {
   display: block;
   text-align: center;
   padding: 14px;
+  transition: box-shadow .2s linear;
+}
+.login #login-form .submit:hover, .login #register-form .submit:hover, .login #forgot-form .submit:hover {
+  box-shadow: 0px 5px 10px 0 #313131;
+}
+.login #forgot-form {
+  width: 500px;
+}
+.login #forgot-form .form-control.user-mail {
+  background-position: 344px -66px;
 }
 .login .links {
   text-align: center;
@@ -930,7 +1064,6 @@ input[type="file"]:active::before {
   border-right: 1px solid #313131;
 }
 .login .links ul li:first-child a {
-  padding-right: 0;
   border: none;
 }
 
@@ -939,6 +1072,10 @@ input[type="file"]:active::before {
   width: 136px;
   background: white !important;
   padding-right: 5px !important;
+}
+#register-form .magazine-name + span {
+  display: inline-block;
+  margin-top: 11px;
 }
 
 .blackbar {
@@ -1048,11 +1185,10 @@ input[type="file"]:active::before {
   border: none;
   border-radius: 3px;
   height: 29px;
-  margin-right: 8%;
 }
 .top-nav .main-search button[type="submit"] {
   position: absolute;
-  left: -57px;
+  left: 0;
   top: 0;
   background: white url(../img/search.jpg) no-repeat right;
   border: none;
@@ -1085,6 +1221,29 @@ input[type="file"]:active::before {
 .notifications .seeAll {
   padding: 7px;
   text-align: center;
+}
+
+.main-nav {
+  margin: 0 20px;
+  background: #3d3d3b;
+  border-radius: 6px;
+}
+.main-nav li {
+  display: inline;
+  float: left;
+  margin: 5px 10px;
+  font-size: 25px;
+}
+.main-nav li:hover a {
+  color: #0ba2ce;
+}
+.main-nav .profil-icon {
+  background: url(../img/profile-icon.png);
+  width: 32px;
+  height: 23px;
+}
+.main-nav .profil-icon:hover {
+  background: url(../img/profile-icon-hover.png);
 }
 
 aside {
@@ -1126,6 +1285,10 @@ aside {
   display: block;
   padding: 13px 42px 0 0;
   font-size: 10px;
+  transition: color .2s linear;
+}
+.side-bar-footer li a:hover {
+  color: #31c8f4;
 }
 .side-bar-footer li a.settings {
   background-image: url(../img/settings.png);
@@ -1143,6 +1306,8 @@ aside {
   border-bottom: 1px solid #4d4d4d;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  border-top: 1px solid #4d4d4d;
+  margin-top: 4px;
 }
 
 .user-info li {
@@ -1168,6 +1333,10 @@ aside {
   text-align: center;
   font-size: 12px;
   color: #d2d2d2;
+  transition: color .2s linear;
+}
+.user-info li .count:hover {
+  color: #31c8f4;
 }
 
 .user-actions li:first-child a {
@@ -1324,7 +1493,6 @@ a.user .domain {
 }
 .left-side-bar a {
   color: #3d3d3b;
-  font-weight: bold;
 }
 .left-side-bar .follow-others .title {
   background-position: right 0px;
@@ -1342,9 +1510,18 @@ a.user .domain {
 .left-side-bar .follow-others .follow-user:last-child {
   border: none;
 }
+.left-side-bar .copyrights {
+  background-color: #f4f4f4;
+  margin: -1px;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  color: #a3a3a3;
+  padding-top: 7px;
+  font-size: .9em;
+}
 
 .follow-others, .choosen-pens, .choosen-books {
-  background: url(../img/short-border.jpg) no-repeat 185px 45px;
+  background: url(../img/short-border.jpg) no-repeat 185px 35px;
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -1354,8 +1531,10 @@ a.user .domain {
   height: 18px;
   padding-right: 23px;
   margin: 10px;
+  margin-top: 0;
   background: url(../img/left-side-title.png) no-repeat right;
   display: block;
+  font-weight: bold;
 }
 
 .choosen-pens .title {
@@ -1391,9 +1570,12 @@ a.user .domain {
   padding: 0 20px 0 6px;
   margin-left: 7px;
   border-left: 1px solid #e8e8e8;
+  font-size: 11px;
+  line-height: 18px;
 }
 .info li:last-child {
   border: none;
+  margin-left: 0;
 }
 .info li.followrs-count {
   background-position: right 0;
@@ -1409,6 +1591,9 @@ a.user .domain {
 }
 .info li.retweets-count {
   background-position: right -48px;
+}
+.info li .count {
+  line-height: 16px;
 }
 
 .filter {
@@ -1463,14 +1648,16 @@ a.user .domain {
   border: 1px solid  #e5e5e5;
   padding-right: 94px;
 }
+.result.article, .result.person {
+  padding-right: 164px;
+}
 .result img.result-img {
-  width: 60px;
   float: right;
   margin-left: 10px;
   position: absolute;
   top: 0;
   right: 0;
-  width: 80px;
+  height: 100%;
 }
 .result h3 a {
   color: #095e77;
@@ -1495,6 +1682,24 @@ article {
   float: right;
   margin: 61px 275px 0 0 !important;
 }
+article.newsFeed {
+  width: 100%;
+  margin: 0 !important;
+  float: none;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 10px !important;
+}
+article.newsFeed .top {
+  min-height: 320px;
+}
+
+.container.center-article {
+  float: right;
+  margin: 61px 275px 0 0 !important;
+  background: transparent;
+  border: 0;
+}
 
 .profile-summary {
   padding-bottom: 0;
@@ -1507,13 +1712,24 @@ article {
   text-align: center;
 }
 .profile-summary .profile-right .inline-buttons button {
-  margin-top: 18px;
-  background: #0ba2ce;
+  margin-top: 6px;
+  background: #4acff5;
   font-size: 14px;
   color: #fff;
   border: 0;
   outline: none;
-  padding: 4px 12px;
+  padding: 4px 23px;
+  transition: background .2s linear;
+}
+.profile-summary .profile-right .inline-buttons button:hover {
+  background: #0ba2ce;
+}
+.profile-summary .profile-right .inline-buttons button.follow {
+  width: 140px;
+  background: #0ba2ce;
+}
+.profile-summary .profile-right .inline-buttons button.follow:hover {
+  background: #0984a7;
 }
 .profile-summary .profile-pic {
   float: right;
@@ -1597,6 +1813,7 @@ article {
   border-left: 2px solid #0ba2ce;
   margin-left: 10px;
   vertical-align: middle;
+  color: #095d77;
 }
 .user-data .data label.hide-text {
   background: url(../img/user-data.png) no-repeat right 3px;
@@ -1617,7 +1834,7 @@ article {
 .user-data .data label.phone {
   background-position: right -84px;
 }
-.user-data .data:last-child {
+.user-data .data:last-child, .user-data .data:nth-child(11) {
   border-bottom: 0;
 }
 
@@ -1638,10 +1855,16 @@ article.profile {
   background: transparent !important;
 }
 article.profile .articles .panel-header, article.profile .books .panel-header {
+  box-shadow: 0px 5px 7px 0 #AFAFAF;
   text-align: center;
 }
 article.profile .articles > div, article.profile .books > div {
   margin: 8px 0.3% !important;
+  width: 19.3% !important;
+}
+article.profile .articles > div .category, article.profile .books > div .category {
+  float: right;
+  color: #999999;
 }
 
 .user-pic img {
@@ -1654,9 +1877,33 @@ article.profile .articles > div, article.profile .books > div {
   position: relative;
   margin: 14px;
 }
+.top .divider {
+  width: 80%;
+  height: 1px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+}
+.top .retweet a, .top .commented a, .top .like a, .top .dislike a {
+  color: #06566d;
+}
+.top .retweet i, .top .commented i, .top .like i, .top .dislike i {
+  margin: 0 5px;
+}
+.top .retweet i {
+  color: #0ba2ce;
+}
+.top .commented i {
+  color: #0ba2ce;
+}
+.top .like i {
+  color: #157d00;
+}
+.top .dislike i {
+  color: #ff0101;
+}
 
 .home {
-  width: calc(100% - 235px);
+  width: calc(100% - 221px);
   float: left;
 }
 .home .writer-info {
@@ -1668,6 +1915,9 @@ article.profile .articles > div, article.profile .books > div {
   color: #3d3d3b;
   font-weight: bold;
   font-size: 15px;
+}
+.home .content {
+  margin: 20px;
 }
 .home .content h2 {
   padding: 2px 28px;
@@ -1681,13 +1931,17 @@ article.profile .articles > div, article.profile .books > div {
   text-align: justify;
 }
 .home .content.book h2 {
+  background: url(../img/book-title.png) no-repeat right;
+}
+.home .content.pen h2 {
   background: url(../img/article-title.png) no-repeat right;
 }
 .home .book-view label {
   width: 12%;
   display: inline-block;
   float: right;
-  padding-top: 5px;
+  padding-top: 2px;
+  padding-right: 21px;
 }
 .home .book-view p {
   width: 80%;
@@ -1708,12 +1962,16 @@ article.profile .articles > div, article.profile .books > div {
   padding: 5px 8px;
   background: #f4f4f4;
   border: 1px solid #cccccc;
-  margin-left: 36px;
+  margin-left: 13px;
   float: right;
   font-size: 12px;
   height: 28px;
   min-width: 50px;
   text-align: center;
+  transition: background .2s linear;
+}
+.article-actions a:hover {
+  background: #e0e0e0;
 }
 .article-actions a.active {
   border-color: #0ba2ce;
@@ -1734,6 +1992,7 @@ article.profile .articles > div, article.profile .books > div {
 }
 .article-actions a.retweet {
   color: #1ca5cf;
+  margin-left: 0;
 }
 
 .date {
@@ -1751,32 +2010,42 @@ article.store .books img.book-thumb, article.profile .books img.book-thumb {
 }
 article.store .articles img.article-thumb, article.profile .articles img.article-thumb {
   width: 173px;
-  height: 125px;
+  height: 156px;
 }
 article.store .books > div, article.store .articles > div, article.profile .books > div, article.profile .articles > div {
   background: whitesmoke;
-  width: 190px;
+  width: 17.8%;
   height: 330px;
   float: right;
   padding: 12px 9px;
-  margin: 8px 11.6px;
+  margin: 8px 1.1%;
+  text-align: center;
+  min-width: 189px;
 }
 article.store .books > div .title, article.store .articles > div .title, article.profile .books > div .title, article.profile .articles > div .title {
   margin: 0;
   padding: 0 5px;
+  text-align: right;
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 3px;
 }
 article.store .books > div .title a, article.store .articles > div .title a, article.profile .books > div .title a, article.profile .articles > div .title a {
   color: #095e77;
 }
+article.store .books > div .writer-details, article.store .articles > div .writer-details, article.profile .books > div .writer-details, article.profile .articles > div .writer-details {
+  text-align: right;
+}
 article.store .books > div .views-count, article.store .articles > div .views-count, article.profile .books > div .views-count, article.profile .articles > div .views-count {
   float: left;
 }
 article.store .articles > div, article.profile .articles > div {
-  height: 210px;
+  height: 240px;
 }
 
+.followers {
+  max-width: 992px;
+  margin: 0 auto;
+}
 .followers .pagination {
   margin: 0 10px;
 }
@@ -1785,7 +2054,7 @@ article.store .articles > div, article.profile .articles > div {
   position: relative;
   width: 188px;
   height: 188px;
-  margin: 11px;
+  margin: 4px;
   overflow: hidden;
   display: inline-block;
 }
@@ -1811,20 +2080,25 @@ article.store .articles > div, article.profile .articles > div {
 
 .write-comment button[type="submit"] {
   width: 75px;
-  height: 37px;
+  height: 44px;
   background: #0ba2ce url(../img/comment-icon.png) no-repeat 50px;
   padding-right: 28px;
   border: none;
   color: #fff;
   font-size: 13px;
   margin-right: -3px;
+  transition: background-color .2s linear;
 }
-.write-comment input[type="text"] {
+.write-comment button[type="submit"]:hover {
+  background-color: #0984a7;
+}
+.write-comment textarea {
   width: calc(100% - 78px);
   border: 1px solid #e8e8e8;
-  height: 37px;
-  vertical-align: bottom;
+  vertical-align: top;
   padding-right: 3%;
+  resize: vertical;
+  line-height: 1.4 !important;
 }
 
 .comments .title {
@@ -1851,6 +2125,7 @@ article.store .articles > div, article.profile .articles > div {
 }
 .comment .comment-thumb {
   float: right;
+  margin-top: 6px;
 }
 .comment .comment-body {
   overflow: hidden;
@@ -1894,6 +2169,16 @@ article.store .articles > div, article.profile .articles > div {
 }
 .messages .table-striped th:last-child {
   text-align: center;
+}
+.messages .table-striped td {
+  vertical-align: -webkit-baseline-middle;
+}
+.messages .table-striped td p {
+  height: 0;
+  overflow: hidden;
+}
+.messages .table-striped td p.show {
+  height: auto;
 }
 .messages .table-striped tbody tr:nth-child(odd) {
   background: #f7f7f7;

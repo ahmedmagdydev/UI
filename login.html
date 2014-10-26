@@ -2,8 +2,9 @@
 <html dir="rtl">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pens & Books</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Pens and books</title>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -17,11 +18,14 @@
       <div id="login-form">
         <div class="form-group">
           <label class="required">اسم المستخدم</label>
-          <input type="text" class="form-control user-name">
+          <input type="text" required class="form-control user-name">
         </div>
         <div class="form-group">
           <label class="required">كلمة السر</label>
-          <input type="password" class="form-control user-pass">
+          <input type="password" required class="form-control user-pass">
+        </div>
+        <div class="form-group">
+          <div class="error">اسم المستخدم او كلمة المرور التى ادخلتها غير صحيحة</div>
         </div>
         <div class="form-group"><a href="index.html" class="submit">دخول</a></div>
         <div class="inline-form clearfix">
@@ -44,6 +48,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/jquery-scrolltofixed.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -5,93 +5,143 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
-		article.center-article
-			.top.clearfix
-				.home
-					.writer-info
-						.user-pic: img(src="img/profile-pic.jpg")
-						a.user-url(href="profile.html") Karim Farid
-						div
-							span.date 13-4-2014
-							span.time 12:22PM
-					.book.content
-						h2: a(href="book-view.html") الفريد
-						p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل
-							a.more(href="#")    .... المزيد
-				img.cover(src="img/book.jpg")
-				.article-actions
-					a.like(href="#")
-						i.fa.fa-arrow-up 
-						span 598
-					a.dislike(href="#")
-						i.fa.fa-arrow-down
-						span 3
-					a.retweet(href="#")
+		.container.center-article
+			article.newsFeed
+				.top.clearfix
+					p.retweet
+						a(href="profile.html") منال عبد الفتاح‏
 						i.fa.fa-retweet
-						span 255
-			.comment-area
-				form
-					.write-comment
-						input(type="text" placeholder="أكتب التعليق  . . . ")
-						button(type="submit") تعليق
-				.comments
-					.title.clearfix
-						h3 التعليقات
-						span.comments-count 56 تعليقات
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
-					.comment
-						.comment-thumb: img(src="img/commenter.jpg")
-						.comment-body
-							a.commenter-name(href="#") Ahmed Magdy
-							p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
-						.comment-date 26 مارس 2014   في   PM 12:5
+						a(href="profile.html") الفريد
+						|    - منذ 30 دقيقة
+					.divider
+					p.commented
+						a(href="profile.html") منال عبد الفتاح‏
+						i.fa.fa-comment
+						a(href="profile.html") الفريد
+						|    - منذ 30 دقيقة
+					.divider
+					p.like
+						a(href="profile.html") منال عبد الفتاح‏
+						i.fa.fa-arrow-up
+						a(href="profile.html") الفريد
+						|    - منذ 30 دقيقة
+					.divider
+					p.dislike
+						a(href="profile.html") منال عبد الفتاح‏
+						i.fa.fa-arrow-down
+						a(href="profile.html") الفريد
+						|    - منذ 30 دقيقة
+					.divider
+					.home
+						.writer-info
+							.user-pic: img(src="img/profile-pic.jpg")
+							a.user-url(href="profile.html") Karim Farid
+							div
+								span.date 13-4-2014
+								span.time 12:22PM
+						.book.content
+							h2: a(href="book-view.html") الفريد
+							p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل
+								a.more(href="#")    .... المزيد
+					img.cover(src="img/book.jpg")
+					.article-actions
+						a.like(href="#")
+							i.fa.fa-arrow-up 
+							span 598
+						a.dislike(href="#")
+							i.fa.fa-arrow-down
+							span 3
+						a.retweet(href="#")
+							i.fa.fa-retweet
+							span 255
+				.comment-area
+					form
+						.write-comment
+							textarea( placeholder="أكتب التعليق  . . . ")
+							button(type="submit") تعليق
+					.comments
+						.title.clearfix
+							h3 التعليقات
+							span.comments-count 56 تعليقات
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p  طريقة لوريم إيبسوم لأنها تعطيتوزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "عليقالتشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  استخدام طريقة .
+							.comment-date 26 مارس 2014   في   PM 12:5
+			article.newsFeed
+				.top.clearfix
+					.home
+						.writer-info
+							.user-pic
+								img(src="img/profile-pic.jpg")
+							a.user-url(href="#") Karim Farid
+							div
+								.date 13-4-2014
+								.time 12:22PM
+						.pen.content
+							h2: a(href="view-article.html") مقال
+							p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو شكل  أن المحتوى المقروء لصفحة ما سيلهي القارئ لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل  الخارجي للنص أو لخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل
+								a.more(href="#") ....... المزيد 
+					img(src="img/article.jpg").cover
+					.article-actions
+						a.like(href="#")
+							i.fa.fa-arrow-up 
+							span 598
+						a.dislike(href="#")
+							i.fa.fa-arrow-down
+							span 3
+						a.retweet(href="#")
+							i.fa.fa-retweet
+							span 255
 		include assets/jade/left-side-bar
 		include assets/jade/footer
 				

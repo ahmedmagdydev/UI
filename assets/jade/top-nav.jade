@@ -1,10 +1,23 @@
 .blackbar
 	.top-nav.clearfix
-		#headNav.pull-right
+		h1.pageLogo.hide-text.pull-left: a(href="http://www.pensandbooks.com")
+			i.imgLogo Pens and Books 
+		ul.pull-left.main-nav
+			li.main-home
+				a(href="index.html"): i.fa.fa-home
+					
+			li.archive
+				a(href="store.html"): i.fa.fa-archive
+					
+			li.profile
+				a(href="profile.html"): i.fa.profil-icon
+		.main-search.pull-left
+			form
+				input(type="search" , placeholder="ابحث هنا ...")
+				button(type="submit")
+		#headNav.pull-left
 			ul.pageNav
-				li.main-home
-					a.hide-text(href="index.html")
-						u  الرئيسية
+				
 				li.flag
 					a.hide-text(href="#")
 						u flag
@@ -79,18 +92,8 @@
 					a.hide-text(href="messages.html")
 						u messages
 					span.alert 5
-				li.archive
-					a.hide-text(href="store.html")
-						u archive
-					span.alert 5
-				li.profile
-					a.hide-text(href="profile.html")
-						u profile
-					span.alert 5
+				
 		
-		.main-search.pull-right
-			form
-				input(type="search" , placeholder="ابحث هنا ...")
-				button(type="submit")
-		h1.pageLogo.hide-text.pull-left: a(href="http://www.pensandbooks.com")
-			i.imgLogo Pens and Books 
+	
+		
+		

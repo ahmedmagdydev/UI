@@ -8,8 +8,8 @@ html(dir="rtl")
 		article
 			.top.clearfix
 				.messages
-					h2 الرسائل 
-						span (55)
+					h2.panel-header الرسائل 
+						| (55)
 					table.table-striped
 						thead
 							tr
@@ -29,7 +29,10 @@ html(dir="rtl")
 									td
 										img(src="img/commenter.jpg")
 										a.sender(href="#") احمد مجدى
-									td: a.messageTitle(href="#") المقال الصحفي المتوازي الثنائي
+									td
+										a.messageTitle(href="#") المقال الصحفي المتوازي الثنائي
+										// add the message content in the paragraph below the message title to show or hide it by clicking the message title
+										p التشهناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل أن المحتوى المقروء لصفحة ما سيلهي القارئ لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو لخارجي للنص أو لصفحة ما سيلهي القارئ عن التركيز على الشكل
 									td: a(href="#") 25 ابريل 2014
 									td: a.delete-icon(href="#")
 					.pagination

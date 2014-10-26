@@ -2,6 +2,23 @@ article{
 	width: calc(100% - 282px);
 	float: right;
 	margin: 61px 275px 0 0 !important;
+	&.newsFeed{
+		width: 100%;
+		margin: 0 !important;
+		float: none;
+		background-color: #fff;
+		border: 1px solid #e8e8e8;
+		margin-bottom: 10px !important;
+		.top{
+			min-height: 320px;
+		}
+	}
+}
+.container.center-article{
+	float: right;
+	margin: 61px 275px 0 0 !important;
+	background: transparent;
+	border: 0;
 }
 .profile-summary{
 	padding-bottom: 0;
@@ -11,13 +28,24 @@ article{
 		.inline-buttons{
 			text-align: center;
 			button{
-				margin-top: 18px;
-				background:$blue;
+				margin-top: 6px;
+				background:lighten($blue,20%);
 				font-size: 14px;
 				color: #fff;
 				border:0;
 				outline: none;
-				padding: 4px 12px;
+				padding: 4px 23px;
+				transition:background .2s linear;
+				&:hover{
+					background:$blue;
+				}
+				&.follow{
+					width: 140px;
+					background:$blue;
+					&:hover{
+						background:darken($blue,8%);
+					}
+				}
 			}
 		}
 	}
@@ -108,6 +136,7 @@ article{
 			border-left:2px solid $blue;
 			margin-left: 10px;
 			vertical-align: middle;
+			color:#095d77;
 			&.hide-text{
 				background:url(../img/user-data.png) no-repeat right 3px;
 				height: 17px;
@@ -131,7 +160,7 @@ article{
 				background-position:right -84px;
 			}
 		}
-		&:last-child{
+		&:last-child,&:nth-child(11){
 			border-bottom:0;
 		}
 	}
@@ -153,10 +182,17 @@ article.profile{
 	 background: transparent !important; 
 	.articles,.books{
 		.panel-header{
+			box-shadow: 0px 5px 7px 0 #AFAFAF;
 			text-align: center;
+			
 		}
 			&>div{
 			margin: 8px 0.3% !important;
+			width: 19.3% !important;
+			.category{
+				float: right;
+				color: #999999;
+			}
 		}
 	}
 }
