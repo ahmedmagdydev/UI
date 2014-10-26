@@ -1224,22 +1224,27 @@ input[type="file"]:active::before {
 }
 
 .main-nav {
-  margin: 0 20px;
+  margin: -9px 20px;
   border-radius: 6px;
+  height: 51px;
 }
 .main-nav li {
   display: inline;
   float: left;
-  margin: 5px 10px;
+  padding: 13px 7px;
+  margin: 0 2px;
   font-size: 25px;
 }
 .main-nav li:hover a {
   color: #0ba2ce;
 }
+.main-nav li:hover {
+  background: #3d3d3b;
+}
 .main-nav .profil-icon {
   background: url(../img/profile-icon.png);
   width: 32px;
-  height: 23px;
+  height: 22px;
 }
 .main-nav .profil-icon:hover {
   background: url(../img/profile-icon-hover.png);

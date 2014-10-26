@@ -144,21 +144,27 @@
 	}
 }
 .main-nav{
-	margin: 0 20px;
+	margin: -9px 20px;
 	border-radius: 6px;
+	height: 51px;
 	li{
 		display: inline;
 		float: left;
-		margin: 5px 10px;
+		padding: 13px 7px;
+		margin: 0 2px;
 		font-size: 25px;
 		&:hover a{
 			color:$blue;
+		}
+		&:hover{
+			background:#3d3d3b;
+
 		}
 	}
 	.profil-icon{
 		background:url(../img/profile-icon.png);
 		width: 32px;
-		height: 23px;
+		height: 22px;
 		&:hover{
 
 		background:url(../img/profile-icon-hover.png);
