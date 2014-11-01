@@ -189,7 +189,6 @@ figure {
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -306,8 +305,6 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -441,8 +438,6 @@ a {
 }
 
 html * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -483,7 +478,6 @@ html, body {
   margin: 9px;
   border: 1px solid #e8e8e8;
   float: right;
-  width: -webkit-calc(100% - 283px - 269px);
   width: calc(100% - 283px - 269px);
   background-color: #fff;
 }
@@ -499,7 +493,6 @@ a.follow {
   background-color: #92e2f9;
   color: #fff !important;
   font-size: 9px;
-  -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 a.follow:hover {
@@ -508,7 +501,6 @@ a.follow:hover {
 
 .nicescroll-rails > div {
   width: 100%;
-  -webkit-transition: width .2s ease;
   transition: width .2s ease;
 }
 .nicescroll-rails > div:hover {
@@ -546,11 +538,9 @@ a.more {
   outline: none;
   background-color: whitesmoke;
   border: 1px solid  #e5e5e5;
-  -webkit-transition: -webkit-box-shadow .2s linear;
   transition: box-shadow .2s linear;
 }
 .pagination .btn:hover {
-  -webkit-box-shadow: 0px 5px 7px 0 #AFAFAF;
   box-shadow: 0px 5px 7px 0 #AFAFAF;
 }
 .pagination li {
@@ -755,9 +745,6 @@ h3 {
 }
 
 .inline-form * {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -803,7 +790,6 @@ h3 {
 }
 .btn.btn-default {
   background-color: #005b76;
-  -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 .btn.btn-default:hover {
@@ -811,7 +797,6 @@ h3 {
 }
 .btn.btn-danger {
   background-color: #BD2727;
-  -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 .btn.btn-danger:hover {
@@ -852,10 +837,7 @@ h3 {
   right: 0;
   bottom: 0;
   opacity: 0;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   line-height: 15px;
   text-align: center;
@@ -865,8 +847,6 @@ h3 {
 }
 .table-striped input:checked + label .fa {
   opacity: 1;
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
 
@@ -940,7 +920,6 @@ input[type="file"]:active::before {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: #ececec;
-  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 16px;
@@ -965,11 +944,12 @@ input[type="file"]:active::before {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   background: #fff;
+  background: -moz-linear-gradient(top, #ececec 0%, white 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, white));
   background: -webkit-linear-gradient(top, #ececec 0%, white 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(white));
+  background: -o-linear-gradient(top, #ececec 0%, white 100%);
+  background: -ms-linear-gradient(top, #ececec 0%, white 100%);
   background: linear-gradient(top, #ececec 0%, white 100%);
-  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
   z-index: 999;
   -webkit-transition: all 0.15s ease-in-out;
@@ -1005,12 +985,17 @@ input[type="file"]:active::before {
 
 .login {
   background: url(../img/login-bg.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
   background-size: cover;
   padding: 25px 50px;
 }
+.login .main-content {
+  margin-top: 0;
+}
 .login .logo {
   float: left;
+}
+.login label {
+  text-align: right;
 }
 .login .new-user {
   float: right;
@@ -1058,16 +1043,13 @@ input[type="file"]:active::before {
   font-weight: bold;
   font-size: 15px;
   border: 1px solid #cccccc;
-  -webkit-box-shadow: 0px 9px 21px 0px #313131;
   box-shadow: 0px 9px 21px 0px #313131;
   display: block;
   text-align: center;
   padding: 14px;
-  -webkit-transition: -webkit-box-shadow .2s linear;
   transition: box-shadow .2s linear;
 }
 .login #login-form .submit:hover, .login #register-form .submit:hover, .login #forgot-form .submit:hover {
-  -webkit-box-shadow: 0px 5px 10px 0 #313131;
   box-shadow: 0px 5px 10px 0 #313131;
 }
 .login #forgot-form {
@@ -1117,7 +1099,7 @@ input[type="file"]:active::before {
   margin: 0;
 }
 .top-nav .pageLogo a {
-  width: 171px;
+  width: 229px;
   height: 33px;
   background: url(../img/logo-page.png);
   display: block;
@@ -1203,7 +1185,7 @@ input[type="file"]:active::before {
   position: relative;
 }
 .top-nav .main-search input {
-  width: 700px;
+  width: 659px;
   background: white;
   padding: 5px 5px 5px 38px;
   border: none;
@@ -1275,7 +1257,6 @@ input[type="file"]:active::before {
 }
 
 aside {
-  height: -webkit-calc(100% - 51px);
   height: calc(100% - 51px);
   float: right;
   position: fixed;
@@ -1314,7 +1295,6 @@ aside {
   display: block;
   padding: 13px 42px 0 0;
   font-size: 10px;
-  -webkit-transition: color .2s linear;
   transition: color .2s linear;
 }
 .side-bar-footer li a:hover {
@@ -1363,7 +1343,6 @@ aside {
   text-align: center;
   font-size: 12px;
   color: #d2d2d2;
-  -webkit-transition: color .2s linear;
   transition: color .2s linear;
 }
 .user-info li .count:hover {
@@ -1378,7 +1357,6 @@ aside {
   padding: 10px 30px;
   background: #007597;
   border-top: 1px solid #336b7b;
-  -webkit-transition: background-color .1s linear;
   transition: background-color .1s linear;
   background-image: url(../img/user-actions.png);
   background-repeat: no-repeat;
@@ -1467,7 +1445,6 @@ a.user .domain {
   padding: 10px 30px;
   background: #0ba2ce;
   border-top: 1px solid #336b7b;
-  -webkit-transition: background-color .1s linear;
   transition: background-color .1s linear;
   background-image: url(../img/user-actions.png);
   background-repeat: no-repeat;
@@ -1491,7 +1468,6 @@ a.user .domain {
 .store.side-bar #accordion ul li a {
   display: block;
   background: url(../img/list-bullet.png) no-repeat right;
-  -webkit-transition: padding-right .2s ease;
   transition: padding-right .2s ease;
   padding: 8px 18px;
 }
@@ -1712,7 +1688,6 @@ a.user .domain {
 }
 
 article {
-  width: -webkit-calc(100% - 282px);
   width: calc(100% - 282px);
   float: right;
   margin: 61px 275px 0 0 !important;
@@ -1754,7 +1729,6 @@ article.newsFeed .top {
   border: 0;
   outline: none;
   padding: 4px 23px;
-  -webkit-transition: background .2s linear;
   transition: background .2s linear;
 }
 .profile-summary .profile-right .inline-buttons button:hover {
@@ -1778,7 +1752,6 @@ article.newsFeed .top {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 .profile-summary .profile-pic .profile-details li {
@@ -1802,7 +1775,6 @@ article.newsFeed .top {
 .profile-summary .profile-info {
   overflow: hidden;
   position: relative;
-  width: -webkit-calc(100% - 288px);
   width: calc(100% - 288px);
   float: right;
 }
@@ -1877,7 +1849,6 @@ article.newsFeed .top {
 }
 
 .new-panel {
-  width: -webkit-calc(100% - 675px);
   width: calc(100% - 675px);
   float: right;
 }
@@ -1894,17 +1865,31 @@ article.profile {
   background: transparent !important;
 }
 article.profile .articles .panel-header, article.profile .books .panel-header {
-  -webkit-box-shadow: 0px 5px 7px 0 #AFAFAF;
   box-shadow: 0px 5px 7px 0 #AFAFAF;
   text-align: center;
 }
 article.profile .articles > div, article.profile .books > div {
   margin: 8px 0.3% !important;
   width: 19.3% !important;
+  position: relative;
 }
 article.profile .articles > div .category, article.profile .books > div .category {
   float: right;
   color: #999999;
+}
+article.profile .articles > div a.close, article.profile .books > div a.close {
+  position: absolute;
+  left: 7px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  height: 24px;
+  width: 24px;
+  font-size: 19px;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+article.profile .articles > div:hover a.close, article.profile .books > div:hover a.close {
+  opacity: 1;
 }
 
 .user-pic img {
@@ -1943,7 +1928,6 @@ article.profile .articles > div .category, article.profile .books > div .categor
 }
 
 .home {
-  width: -webkit-calc(100% - 221px);
   width: calc(100% - 221px);
   float: left;
 }
@@ -1977,14 +1961,14 @@ article.profile .articles > div .category, article.profile .books > div .categor
 .home .content.pen h2 {
   background: url(../img/article-title.png) no-repeat right;
 }
-.home .book-view label {
+.home .book-view label, .home .article-view label {
   width: 12%;
   display: inline-block;
   float: right;
   padding-top: 2px;
   padding-right: 21px;
 }
-.home .book-view p {
+.home .book-view p, .home .article-view p {
   width: 80%;
   float: right;
 }
@@ -2009,7 +1993,6 @@ article.profile .articles > div .category, article.profile .books > div .categor
   height: 28px;
   min-width: 50px;
   text-align: center;
-  -webkit-transition: background .2s linear;
   transition: background .2s linear;
 }
 .article-actions a:hover {
@@ -2129,18 +2112,16 @@ article.store .articles > div, article.profile .articles > div {
   color: #fff;
   font-size: 13px;
   margin-right: -3px;
-  -webkit-transition: background-color .2s linear;
   transition: background-color .2s linear;
 }
 .write-comment button[type="submit"]:hover {
   background-color: #0984a7;
 }
 .write-comment textarea {
-  width: -webkit-calc(100% - 78px);
   width: calc(100% - 78px);
   border: 1px solid #e8e8e8;
   vertical-align: top;
-  padding-right: 3%;
+  padding-right: 7px;
   resize: vertical;
   line-height: 1.4 !important;
 }
@@ -2274,3 +2255,5 @@ article.store .articles > div, article.profile .articles > div {
 .panel-notifications .retweet:before {
   content: "\f079";
 }
+
+/*# sourceMappingURL=style.css.map */

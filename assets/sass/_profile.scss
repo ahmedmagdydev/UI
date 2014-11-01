@@ -189,9 +189,24 @@ article.profile{
 			&>div{
 			margin: 8px 0.3% !important;
 			width: 19.3% !important;
+			position: relative;
 			.category{
 				float: right;
 				color: #999999;
+			}
+			a.close {
+				position: absolute;
+				left: 7px;
+				background: rgba(0, 0, 0,.5);
+				padding: 5px;
+				height: 24px;
+				width: 24px;
+				font-size: 19px;
+				opacity: 0;
+				transition:opacity .2s linear;
+			}
+			&:hover a.close{
+				opacity:1;
 			}
 		}
 	}

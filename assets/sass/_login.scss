@@ -2,8 +2,14 @@
 	background: url(../img/login-bg.jpg) no-repeat top center fixed; 
 	background-size: cover;
 	padding:25px 50px;
+	.main-content{
+		margin-top: 0;
+	}
 	.logo{
 		float: left;
+	}
+	label{
+		text-align: right;
 	}
 	.new-user{
 		float: right;
