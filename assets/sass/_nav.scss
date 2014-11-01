@@ -17,9 +17,14 @@
 
 		}
 	}
+	#headNav{
+		width: 277px;
+		margin-right: -19px;
+	}
 	ul.pageNav{
 		padding: 0;
-		margin: 5px 0 5px 100px;	
+		width: 88px;
+		margin: 5px auto;
 	}
 	.pageNav>li{
 		display: inline;
@@ -97,8 +102,10 @@
 	}
 	.main-search {
 		position: relative;
+		width: 50.5%;
+		width: calc(100% - 657px);
 		input{
-			width:659px;
+			width:100%;
 			background: #fff ;
 			padding: 5px 5px 5px 38px;
 			border:none;

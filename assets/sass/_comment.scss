@@ -19,12 +19,14 @@
 		}
 	}
 	textarea{
+		width: 90.4%;
 		width: calc(100% - 78px);
 		border:$border-dark;
 		vertical-align: top;
 		padding-right:7px;
 		resize: vertical;
 		line-height: 1.4 !important;
+		height: 44px;
 	}
 }
 .comments{
