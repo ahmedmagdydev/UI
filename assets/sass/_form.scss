@@ -260,3 +260,9 @@ border-radius: 9px;
 	@extend .form-info;
 
 }
+
+.compose,.book-add,.article-add{
+	textarea.form-control{
+		height: 200px;
+	}
+}

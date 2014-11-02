@@ -5,23 +5,24 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
-		article.center-article
+		article
 			.top.clearfix
-				.compose.panel-header
-					h2 رسالة جديدة
+				.compose
+					.panel-header
+						h2 رسالة جديدة
 
-				.panel
-					.form-horizontal.flat
-						.form-group
-							label الى
-							.control: input.form-control(type="text")
-						.form-group
-							label الموضوع
-							.control: input.form-control(type="text")
-						.form-group
-							label الموضوع
-							.control: textarea(placeholder="نص الرسالة").form-control
-						.button-group
-							button(type="button").btn.btn-default إرسال
-							button(type="button").btn.btn-danger إلغاء
+					.panel
+						.form-horizontal.flat
+							.form-group
+								label الى
+								.control: input.form-control(type="text")
+							.form-group
+								label الموضوع
+								.control: input.form-control(type="text")
+							.form-group
+								label الموضوع
+								.control: textarea(placeholder="نص الرسالة").form-control
+							.button-group
+								button(type="button").btn.btn-default إرسال
+								button(type="button").btn.btn-danger إلغاء
 		include assets/jade/footer

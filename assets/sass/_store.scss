@@ -45,7 +45,7 @@ article.store , article.profile {
 	}
 }
 .followers{
-	max-width: 992px;
+	width: 992px;
 	margin: 0 auto;
 	.pagination{
 		margin: 0 10px;
@@ -70,6 +70,12 @@ article.store , article.profile {
 		position: absolute;
 		bottom:10px;
 		left:10px;
+		background-color: $blue;
+		padding: 2px 5px;
+		transition:background-color .2s linear;
+		&:hover{
+			background-color:lighten($blue,15%);
+		}
 	}
 }
 // .side-bar.store{

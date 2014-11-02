@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 	 // divider
 	$("section.result").append('<div class="divider"></div>');
 	 
-	$("#search,.messages,.book-add,.article-add").parents("article").css('background-color', '#fff');
+	$("#search,.messages,.book-add,.article-add,.compose").parents("article").css('background-color', '#fff');
 	 	 // niceScroll
 	// var myNiceScroll = function  (element) {
 	//  	var maxHeight	= $(".side-bar").height()-20;
