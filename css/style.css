@@ -434,6 +434,10 @@ th {
   content: "\e600";
 }
 
+.no-csscalc body, .no-csscalc .blackbar {
+  min-width: 1352px;
+}
+
 body {
   font-size: 14px;
   line-height: 19px;
@@ -1030,9 +1034,6 @@ input[type="file"]:active::before {
 }
 .login label {
   text-align: right;
-}
-.login .new-user {
-  float: right;
 }
 .login .new-user a {
   padding: .5em;
@@ -1797,7 +1798,6 @@ article.newsFeed .top {
   background: #0984a7;
 }
 .profile-summary .profile-pic {
-  float: right;
   position: relative;
 }
 .profile-summary .profile-pic .profile-details {
@@ -1922,7 +1922,7 @@ article.profile {
   background: transparent !important;
 }
 article.profile .articles .panel-header, article.profile .books .panel-header {
-  box-shadow: 0px 5px 7px 0 #AFAFAF;
+  box-shadow: 0px 2px 4px 0 #AFAFAF;
   text-align: center;
 }
 article.profile .articles > div, article.profile .books > div {
@@ -1934,18 +1934,25 @@ article.profile .articles > div .category, article.profile .books > div .categor
   float: right;
   color: #999999;
 }
-article.profile .articles > div a.close, article.profile .books > div a.close {
+article.profile .articles > div .controls, article.profile .books > div .controls {
   position: absolute;
-  left: 7px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  height: 24px;
-  width: 24px;
-  font-size: 19px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  top: 14px;
+  padding: 2px 5px;
+  border-radius: 5px;
   opacity: 0;
   transition: opacity .2s linear;
 }
-article.profile .articles > div:hover a.close, article.profile .books > div:hover a.close {
+article.profile .articles > div .controls .close, article.profile .books > div .controls .close {
+  margin-right: 6px;
+  font-size: 19px;
+  color: #D80000;
+}
+article.profile .articles > div .controls .edit, article.profile .books > div .controls .edit {
+  color: #2DE000;
+}
+article.profile .articles > div:hover .controls, article.profile .books > div:hover .controls {
   opacity: 1;
 }
 
@@ -1985,7 +1992,7 @@ article.profile .articles > div:hover a.close, article.profile .books > div:hove
 }
 
 .home {
-  width: 72%;
+  width: 71%;
   width: calc(100% - 221px);
   float: left;
 }
@@ -2292,7 +2299,6 @@ article.store .articles > div, article.profile .articles > div {
 
 .panel-notifications p {
   clear: both;
-  display: inline-block;
 }
 .panel-notifications a {
   color: #0ba2ce;

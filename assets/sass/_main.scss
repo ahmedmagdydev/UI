@@ -44,7 +44,9 @@
 }
 
  
-  
+  .no-csscalc body ,.no-csscalc .blackbar{
+  	min-width: 1352px;
+  }
   body{
 	font-size:14px;
 	line-height: 19px;

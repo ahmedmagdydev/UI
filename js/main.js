@@ -139,5 +139,25 @@ jQuery(document).ready(function($) {
             }
         });
 
+if(!Modernizr.csscalc){
+	var viewportWidth = $(window).width();
+		if (viewportWidth > 1360) {
+	    $('.center-article').width(viewportWidth-560);
+	    var searchParent = $('.top-nav .main-search').parent().width();
+	    $('.top-nav .main-search').width(searchParent-657);
+	    var homeParent = $('.home').parent().width();
+	    $('.home').width(homeParent - 221);
+	    };
+	$(window).resize(function() {
+		var viewportWidth = $(window).width();
+		if (viewportWidth > 1360) {
+		    $('.center-article').width(viewportWidth-560);
+		    var searchParent = $('.top-nav .main-search').parent().width();
+		    $('.top-nav .main-search').width(searchParent-657);
+		    homeParent = $('.home').parent().width();
+		    $('.home').width(homeParent - 221);
+	    };
+});
 
+}
 });
