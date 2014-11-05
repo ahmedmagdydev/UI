@@ -5,6 +5,10 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
+		#settingsMode.dropdown.dropdown-tip
+			ul.dropdown-menu
+				li.delete: a(href="#") حذف
+				li.edit: a(href="#") تعديل
 		.container.center-article
 			article.newsFeed
 				.top.clearfix
@@ -33,6 +37,9 @@ html(dir="rtl")
 						|    - منذ 30 دقيقة
 					.divider
 					.home
+						a(href="#" data-dropdown="#settingsMode").dropdownSettings
+							i.fa.fa-gears
+
 						.writer-info
 							.user-pic: img(src="img/profile-pic.jpg")
 							a.user-url(href="profile.html") Karim Farid
@@ -120,6 +127,8 @@ html(dir="rtl")
 			article.newsFeed
 				.top.clearfix
 					.home
+						a(href="#" data-dropdown="#settingsMode").dropdownSettings
+							i.fa.fa-gears
 						.writer-info
 							.user-pic
 								img(src="img/profile-pic.jpg")

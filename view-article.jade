@@ -5,8 +5,14 @@ html(dir="rtl")
 	body
 		include assets/jade/top-nav
 		include assets/jade/side-bar
+		#settingsMode.dropdown.dropdown-tip
+			ul.dropdown-menu
+				li.delete: a(href="#") حذف
+				li.edit: a(href="#") تعديل
 		article.center-article
 			.top.clearfix
+				a(href="#" data-dropdown="#settingsMode").dropdownSettings
+					i.fa.fa-gears
 				.panel-header
 					h2 بنى سلول
 					span

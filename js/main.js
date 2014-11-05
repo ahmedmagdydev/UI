@@ -141,7 +141,7 @@ jQuery(document).ready(function($) {
 
 if(!Modernizr.csscalc){
 	var viewportWidth = $(window).width();
-		if (viewportWidth > 1360) {
+		if (viewportWidth > 1330) {
 	    $('.center-article').width(viewportWidth-560);
 	    var searchParent = $('.top-nav .main-search').parent().width();
 	    $('.top-nav .main-search').width(searchParent-657);

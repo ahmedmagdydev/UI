@@ -137,6 +137,12 @@
         </ul>
       </div>
     </aside>
+    <div id="settingsMode" class="dropdown dropdown-tip">
+      <ul class="dropdown-menu">
+        <li class="delete"><a href="#">حذف</a></li>
+        <li class="edit"><a href="#">تعديل</a></li>
+      </ul>
+    </div>
     <div class="container center-article">
       <article class="newsFeed">
         <div class="top clearfix">
@@ -148,7 +154,7 @@
           <div class="divider"></div>
           <p class="dislike"><a href="profile.html">منال عبد الفتاح‏</a><i class="fa fa-arrow-down"></i><a href="profile.html">الفريد</a>   - منذ 30 دقيقة</p>
           <div class="divider"></div>
-          <div class="home">
+          <div class="home"><a href="#" data-dropdown="#settingsMode" class="dropdownSettings"><i class="fa fa-gears"></i></a>
             <div class="writer-info">
               <div class="user-pic"><img src="img/profile-pic.jpg"></div><a href="profile.html" class="user-url">Karim Farid</a>
               <div><span class="date">13-4-2014</span><span class="time">12:22PM</span></div>
@@ -239,7 +245,7 @@
       </article>
       <article class="newsFeed">
         <div class="top clearfix">
-          <div class="home">
+          <div class="home"><a href="#" data-dropdown="#settingsMode" class="dropdownSettings"><i class="fa fa-gears"></i></a>
             <div class="writer-info">
               <div class="user-pic"><img src="img/profile-pic.jpg"></div><a href="#" class="user-url">Karim Farid</a>
               <div><span class="date">13-4-2014</span><span class="time">12:22PM</span></div>
@@ -367,6 +373,7 @@
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/jquery-scrolltofixed.js"></script>
     <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.dropdown.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
