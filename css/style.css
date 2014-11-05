@@ -749,6 +749,21 @@ h3 {
   color: #0ba2ce;
 }
 
+.errorMessage {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 343px;
+  text-align: center;
+}
+.errorMessage input.form-control {
+  width: 280px;
+  text-align: center;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -1285,8 +1300,8 @@ input[type="file"]:active::before {
 }
 .main-nav li.main-home {
   font-size: 28px;
-  padding-top: 14px;
-  padding-bottom: 9px;
+  padding-top: 12px;
+  padding-bottom: 11px;
 }
 .main-nav li.profile {
   padding-bottom: 10px;

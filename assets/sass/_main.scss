@@ -345,3 +345,17 @@ h3{
 		color: $blue;
 	}
 }
+.errorMessage{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 343px;
+	text-align: center;
+	input.form-control{
+		width: 280px;
+		text-align:center;
+	}
+}
